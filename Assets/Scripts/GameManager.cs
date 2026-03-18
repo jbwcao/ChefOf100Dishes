@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-    Queue<Ingredient> inventory;
+    public Queue<Ingredient> inventory;
 
     void Awake() {
         if (Instance == null) {

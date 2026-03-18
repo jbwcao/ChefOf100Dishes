@@ -15,7 +15,6 @@ public class MasterPrefab : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        inventoryManager = FindFirstObjectByType<InventoryManager>();
         GetComponent<SpriteRenderer>().sprite = this.sprite;
     }
 

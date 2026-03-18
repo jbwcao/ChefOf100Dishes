@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class InventoryManager : MonoBehaviour
 {
 
+    //FAIR WARNING IM NOT SURE IF THIS WORKS YET SINCE THE QUEUE IS NOT IMPLEMENTED
+    
     public List<GameObject> spawnPoints = new List<GameObject>();
     public Ingredient[] items = new Ingredient[9];
 
@@ -30,7 +32,9 @@ public class InventoryManager : MonoBehaviour
                 GameObject ingredientObj = Instantiate(masterPrefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
                 MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
 
+                // Sets all of the instance variables values of the new gameobject
                 ingredientObj.name = items[i].name;
+                ingredientItem.inventoryManager = this;
                 ingredientItem.sprite = items[i].sprite;
                 ingredientItem.name = items[i].name;
                 ingredientItem.arrayIndex = i;
@@ -46,8 +50,31 @@ public class InventoryManager : MonoBehaviour
         
     }
 
+    // Future button presses will hide unhide the menu
+    public void Activate()
+    {
+        gameObject.SetActive(true);
+    }
+    public void Deactivate()
+    {
+        gameObject.SetActive(false);        
+    }
+
+    // When a gameobject is destoryed it clears the corresponding array index
     public void clear(int arrayIndex)
     {
         items[arrayIndex] = null;
+    }
+
+    // This is to refill the queue
+    public void OnDestroy()
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i] != null)
+            {
+                GameManager.Instance.inventory.Enqueue(items[i]);
+            }
+        }
     }
 }

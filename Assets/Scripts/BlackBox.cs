@@ -37,4 +37,11 @@ public class BlackBox : MonoBehaviour {
         return "this is not a dish";
 
     }
+    private void OnTriggerEnter2D(Collider coll) {
+        if (coll.GameObject.compareTag("Ingredient")) {
+            droppedIngredient.Add(coll.GameObject);
+            Destroy(coll.GameObject);
+            
+        }
+    }
 }

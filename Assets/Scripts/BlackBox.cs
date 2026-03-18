@@ -28,6 +28,7 @@ public class BlackBox : MonoBehaviour {
                 }
 
                 if (flag) {
+                    droppedIngredient.Clear();
                     return recipe.dishname;
                 }
             }
@@ -37,10 +38,10 @@ public class BlackBox : MonoBehaviour {
         return "this is not a dish";
 
     }
-    private void OnTriggerEnter2D(Collider coll) {
-        if (coll.GameObject.compareTag("Ingredient")) {
-            droppedIngredient.Add(coll.GameObject);
-            Destroy(coll.GameObject);
+    private void OnTriggerEnter2D(Collider2D coll) {
+        if (coll.gameObject.CompareTag("Ingredient")) {
+            droppedIngredient.Add(coll.gameObject.GetComponent<IngredientObject>().ingredient);
+            Destroy(coll.gameObject);
             
         }
     }

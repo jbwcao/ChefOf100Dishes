@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        
         inventory = new Queue<Ingredient>();
     }
 

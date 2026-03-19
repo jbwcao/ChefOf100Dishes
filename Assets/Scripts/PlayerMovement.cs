@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Physics")]
     public float gravity;
+    public float peakJumpGravity;
 
     InputAction moveAction;
     InputAction jumpAction;
@@ -75,9 +76,19 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityY = jumpStrength;
 
         float startingY = transform.position.y;
-        while(transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
+        float elapsedJump = 0;
+
+        while (transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
         {
-            rb.gravityScale = 0;
+            elapsedJump = (transform.position.y - startingY) / maxJumpHeight;
+            rb.gravityScale = Mathf.Lerp(0, peakJumpGravity, elapsedJump);
+
+            Debug.Log(elapsedJump);
+
+            if (rb.linearVelocityY == 0)
+            {
+                break;
+            }
             yield return null;
         }
         

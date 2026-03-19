@@ -582,11 +582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
       propertyPath: coyoteTime
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
       propertyPath: jumpBuffer
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
       propertyPath: jumpStrength
@@ -594,11 +594,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
       propertyPath: maxJumpHeight
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
       propertyPath: airAcceleration
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
+      propertyPath: peakJumpGravity
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4597824338978825969, guid: 7951b0af3dd98624b8740d2b86097a41, type: 3}
       propertyPath: groundAcceleration

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4291663449720928502}
   - component: {fileID: 1501027940848981609}
   - component: {fileID: 6888526731117201053}
+  - component: {fileID: 1885633005307609274}
   m_Layer: 7
   m_Name: Testenemy
   m_TagString: Untagged
@@ -196,3 +197,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxHealth: 0
   contactDamage: 0
+--- !u!114 &1885633005307609274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904357986581032626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1068ecede5ab5f34ca6de2cc659a53d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyRegistration

@@ -630,7 +630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerAttack
   damage: 1
   attackSpeed: 0.75
-  attackSize: {x: 1, y: 2}
+  attackSize: {x: 2, y: 2}
   range: 1
   enemyLayers:
     serializedVersion: 2

@@ -1,63 +1,54 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class playerAttack : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
+    [Header("Attack Stats")]
     public int damage = 1;
     public float attackSpeed = 0.75f;
-    public Vector2 attackSize =  new Vector2(1f,0.5f);
-
+    public Vector2 attackSize = new Vector2(1f,0.5f);
     public float range = 1.15f;
-    
-    public InputAction playerAttacks;//TODO figure this new input system out for getting an attack input
-    public Transform attackPoint;
+
+    [Header("Enemies")]
     public LayerMask enemyLayers;
-    
-    
+
+    InputAction attackInput;
+    Rigidbody2D rb;
 
     void Start()
     {
-        
+        attackInput = InputSystem.actions.FindAction("Attack");
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-       if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (attackInput.WasPerformedThisFrame())
         {
             Debug.Log("Attacked");
-            attack();
-        }
-   //     if(UnityEngine.Input("attack")){
-    //        attack();
-    //    } 
-    }
 
-    private void OnEnable()
-    {
-        playerAttacks.Enable();
-    }
-    private void OnDisable()
-    {
-        playerAttacks.Disable();
-    }
-
-    void attack()
-    {
-        //animator.SetTrigger("attack") // play attack animation
-        Collider2D[] enemiesHit = Physics2D.OverlapBoxAll(attackPoint.position, attackSize, 0f, enemyLayers);
-        foreach(Collider2D enemy in enemiesHit){
-            //enemy.gameObject.GetComponent<>;
-            Debug.Log("Enemy hit: " + enemy.name);
-
+            float attackDirection = rb.linearVelocityX >= 0 ? 1 : -1;
+            Attack(attackDirection * range);
         }
     }
 
-    void OnDrawGizmosSelected()
+    void Attack(float attackDirectionOffset)
     {
-        if (attackPoint == null)
+        //animator.SetTrigger("attack") // TODO: play attack animation
+
+        Vector2 attackCenter = (Vector2) transform.position + new Vector2(attackDirectionOffset, 0);
+        Collider2D[] enemiesHit = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, enemyLayers);
+
+        foreach(Collider2D enemy in enemiesHit)
         {
-            return ;
+            Debug.Log("Enemy hit: " + enemy.name);
+            Destroy(enemy.gameObject);
         }
-        Gizmos.DrawWireCube(attackPoint.position, attackSize);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube((Vector2) transform.position + new Vector2(range, 0), attackSize);
+        Gizmos.DrawWireCube((Vector2) transform.position - new Vector2(range, 0), attackSize);
     }
 }

@@ -15,9 +15,13 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D EnemyRB;
     SpriteRenderer sprite;
 
+    // We can query the bitmask once rather than for every attack
+    int terrainLayer;
+
     // TODO: implent a stop before turning and moving again
     void Start()
     {
+        terrainLayer = LayerMask.GetMask("Terrain");
         EnemyRB = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         currentDir = direction;
@@ -52,23 +56,19 @@ public class EnemyMovement : MonoBehaviour
         {
             //draw a ray that points right for checking for walls and check if enemy is moving right 
             //second statment checks if there's no floor
-            if (Physics2D.Raycast(transform.position, Vector2.right, halfwidth + 0.1f, LayerMask.GetMask("Terrain")) ||
-            !Physics2D.Raycast(rightPos, Vector2.down , halfwidth + 0.1f, LayerMask.GetMask("Terrain")))
+            if (Physics2D.Raycast(transform.position, Vector2.right, halfwidth + 0.1f, terrainLayer) ||
+            !Physics2D.Raycast(rightPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
             
             }
         } else if(EnemyRB.linearVelocityX < 0)
         {
-            if (Physics2D.Raycast(transform.position, Vector2.left, halfwidth + 0.1f, LayerMask.GetMask("Terrain")) ||
-             !Physics2D.Raycast(leftPos, Vector2.down , halfwidth + 0.1f, LayerMask.GetMask("Terrain")))
+            if (Physics2D.Raycast(transform.position, Vector2.left, halfwidth + 0.1f, terrainLayer) ||
+             !Physics2D.Raycast(leftPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
             }
         }
-
-
-        
     }
-
 }

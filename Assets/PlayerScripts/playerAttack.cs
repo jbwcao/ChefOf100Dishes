@@ -3,8 +3,9 @@ using UnityEngine.InputSystem;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack Stats")]
-    public int damage = 1;
+    public int damage = 2;
     public float attackSpeed = 0.75f;
+    private float attackCooldown = 0f;
     public Vector2 attackSize = new Vector2(1f, 0.5f);
     public float range = 1.15f;
 
@@ -31,10 +32,17 @@ public class PlayerAttack : MonoBehaviour
         float xInput = moveAction.ReadValue<Vector2>().x;
         directionFacing = xInput > 0 ? 1 : (xInput < 0 ? -1 : directionFacing);
 
-        if (attackAction.WasPerformedThisFrame())
+
+        //timer for reseting attack
+        if (attackCooldown > 0f)
         {
-            Debug.Log("Attacked");
-            Debug.Log($"Direction Facing: {directionFacing}");
+            attackCooldown -= Time.deltaTime;
+        }
+
+
+        if (attackAction.WasPerformedThisFrame() && attackCooldown <= 0f)
+        {
+            Debug.Log("Attacked, " + $"Direction Facing: {directionFacing}");
 
             float attackDirection = rb.linearVelocityX >= 0 ? 1 : -1;
             Attack(attackDirection * range);
@@ -47,11 +55,12 @@ public class PlayerAttack : MonoBehaviour
 
         Vector2 attackCenter = (Vector2) transform.position + new Vector2(attackDirectionOffset, 0);
         Collider2D[] enemiesHit = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, enemyLayers);
+        attackCooldown = attackSpeed;
 
         foreach(Collider2D enemy in enemiesHit)
         {
             Debug.Log("Enemy hit: " + enemy.name);
-            Destroy(enemy.gameObject);
+            enemy.gameObject.GetComponent<EnemyHitbox>().takeDamage(damage);
         }
     }
 

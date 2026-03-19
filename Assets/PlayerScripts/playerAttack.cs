@@ -15,29 +15,18 @@ public class PlayerAttack : MonoBehaviour
     InputAction moveAction;
     Rigidbody2D rb;
 
-    private int directionFacing; // 1 for facing right, -1 for facing left
-
     void Start()
     {
         attackAction = InputSystem.actions.FindAction("Attack");
         moveAction = InputSystem.actions.FindAction("Move");
         rb = GetComponent<Rigidbody2D>();
-
-        directionFacing = 1;
     }
 
     void Update()
     {
-        float xInput = moveAction.ReadValue<Vector2>().x;
-        directionFacing = xInput > 0 ? 1 : (xInput < 0 ? -1 : directionFacing);
-
         if (attackAction.WasPerformedThisFrame())
         {
-            Debug.Log("Attacked");
-            Debug.Log($"Direction Facing: {directionFacing}");
-
-            float attackDirection = rb.linearVelocityX >= 0 ? 1 : -1;
-            Attack(attackDirection * range);
+            Attack(PlayerMovement.FacingDirection * range);
         }
     }
 

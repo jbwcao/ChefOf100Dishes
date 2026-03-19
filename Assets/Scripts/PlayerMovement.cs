@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
+[DisallowMultipleComponent]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Horizontal Movement")]
@@ -25,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Collider2D col;
 
+    public static int FacingDirection { get; private set; }
+
     private float coyoteTimer;
     private float jumpBufferTimer;
 
@@ -35,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
 
+        FacingDirection = -1;
         coyoteTimer = 0;
         jumpBufferTimer = 0;
         rb.gravityScale = gravity;
@@ -54,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityX = 0;
         }
         else {
+            FacingDirection = (int) Mathf.Ceil(xInput);
+            transform.localScale = new Vector2(-6 * FacingDirection, transform.localScale.y);
             rb.linearVelocityX += (onGround ? groundAcceleration : airAcceleration) * xInput * Time.deltaTime;
 
             rb.linearVelocityX = rb.linearVelocityX > maxHorizontalSpeed ? maxHorizontalSpeed : rb.linearVelocityX;

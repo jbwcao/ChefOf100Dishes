@@ -111,6 +111,8 @@ MonoBehaviour:
   sprite: {fileID: 0}
   name: 
   inventoryManager: {fileID: 0}
+  ingredient: {fileID: 0}
+  dish: {fileID: 0}
 --- !u!114 &-8334368436415630798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +160,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.25
 --- !u!50 &-6760389721869777643
 Rigidbody2D:
   serializedVersion: 5

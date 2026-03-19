@@ -7,7 +7,8 @@ using System;
 public class Cookbook : ScriptableObject {
     [System.Serializable]
     public class Recipe {
-        [SerializeField] public string dishname;
+        [SerializeField] public Dish dish;
+        
         [SerializeField] public List<Ingredient> ingredients;
     }
     [SerializeField] public List<Recipe> recipes;

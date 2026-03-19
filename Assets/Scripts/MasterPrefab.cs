@@ -9,6 +9,7 @@ public class MasterPrefab : MonoBehaviour
     public string name;
     public InventoryManager inventoryManager;
     public Ingredient ingredient;
+    public Dish dish;
 
 
 

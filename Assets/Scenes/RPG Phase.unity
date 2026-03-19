@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 65748360}
   - component: {fileID: 65748359}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CookButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 231617895}
   - component: {fileID: 231617894}
   m_Layer: 0
-  m_Name: BlackBOx
+  m_Name: BlackBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

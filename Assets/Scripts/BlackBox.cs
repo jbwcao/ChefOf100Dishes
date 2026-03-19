@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using System;
 public class BlackBox : MonoBehaviour {
     public Cookbook cookbook;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     List<Ingredient> droppedIngredient;
+    public Transform dishSpawn;
+    public GameObject masterPrefab;
     void Start() {
         droppedIngredient = new List<Ingredient>();
     }
 
-    // Update is called once per frame
-    void Update() {
-        
-    }
     public void Cook() {
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
        
@@ -29,7 +26,16 @@ public class BlackBox : MonoBehaviour {
 
                 if (flag) {
                     droppedIngredient.Clear();
-                    Debug.Log(recipe.dishname);
+
+                    Debug.Log(recipe.dish.name);
+
+                    GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
+                    MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
+                    
+                    ingredientObj.name = recipe.dish.name;
+                    ingredientItem.sprite = recipe.dish.sprite;
+                    ingredientItem.name = recipe.dish.name;
+                    ingredientItem.dish = recipe.dish;
                 }
             }
         }

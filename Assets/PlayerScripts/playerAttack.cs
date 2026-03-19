@@ -5,26 +5,36 @@ public class PlayerAttack : MonoBehaviour
     [Header("Attack Stats")]
     public int damage = 1;
     public float attackSpeed = 0.75f;
-    public Vector2 attackSize = new Vector2(1f,0.5f);
+    public Vector2 attackSize = new Vector2(1f, 0.5f);
     public float range = 1.15f;
 
     [Header("Enemies")]
     public LayerMask enemyLayers;
 
-    InputAction attackInput;
+    InputAction attackAction;
+    InputAction moveAction;
     Rigidbody2D rb;
+
+    private int directionFacing; // 1 for facing right, -1 for facing left
 
     void Start()
     {
-        attackInput = InputSystem.actions.FindAction("Attack");
+        attackAction = InputSystem.actions.FindAction("Attack");
+        moveAction = InputSystem.actions.FindAction("Move");
         rb = GetComponent<Rigidbody2D>();
+
+        directionFacing = 1;
     }
 
     void Update()
     {
-        if (attackInput.WasPerformedThisFrame())
+        float xInput = moveAction.ReadValue<Vector2>().x;
+        directionFacing = xInput > 0 ? 1 : (xInput < 0 ? -1 : directionFacing);
+
+        if (attackAction.WasPerformedThisFrame())
         {
             Debug.Log("Attacked");
+            Debug.Log($"Direction Facing: {directionFacing}");
 
             float attackDirection = rb.linearVelocityX >= 0 ? 1 : -1;
             Attack(attackDirection * range);

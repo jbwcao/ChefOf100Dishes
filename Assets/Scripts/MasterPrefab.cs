@@ -8,6 +8,7 @@ public class MasterPrefab : MonoBehaviour
 
     public string name;
     public InventoryManager inventoryManager;
+    public Ingredient ingredient;
 
 
 

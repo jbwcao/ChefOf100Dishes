@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85a1808ecf0444e18b2b5d5f764a05f, type: 3}
   m_Name: Tomato
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  name: 
-  sprite: {fileID: 0}
+  name: tomato
+  sprite: {fileID: -3962807554240710951, guid: 724083ab8851b6148b1549cb98bd9887, type: 3}

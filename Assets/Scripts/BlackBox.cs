@@ -13,7 +13,7 @@ public class BlackBox : MonoBehaviour {
     void Update() {
         
     }
-    public string Cook() {
+    public void Cook() {
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
        
         foreach (Cookbook.Recipe recipe in cookbook.recipes) {
@@ -29,20 +29,23 @@ public class BlackBox : MonoBehaviour {
 
                 if (flag) {
                     droppedIngredient.Clear();
-                    return recipe.dishname;
+                    Debug.Log(recipe.dishname);
                 }
             }
         }
 
         droppedIngredient.Clear();
-        return "this is not a dish";
+        
 
     }
     private void OnTriggerEnter2D(Collider2D coll) {
         if (coll.gameObject.CompareTag("Ingredient")) {
-            droppedIngredient.Add(coll.gameObject.GetComponent<IngredientObject>().ingredient);
+            droppedIngredient.Add(coll.gameObject.GetComponent<MasterPrefab>().ingredient);
             Destroy(coll.gameObject);
-            
+            foreach (Ingredient i in droppedIngredient)
+            {
+                Debug.Log(i.name);
+            }
         }
     }
 }

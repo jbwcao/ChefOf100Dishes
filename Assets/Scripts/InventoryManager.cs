@@ -38,6 +38,7 @@ public class InventoryManager : MonoBehaviour
                 ingredientItem.sprite = items[i].sprite;
                 ingredientItem.name = items[i].name;
                 ingredientItem.arrayIndex = i;
+                ingredientItem.ingredient = items[i];
             }
 
         }

@@ -7,7 +7,10 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-    Queue<Ingredient> inventory;
+    public Queue<Ingredient> inventory;
+
+    public Ingredient testIngredient1;
+    public Ingredient testIngredient2;
 
     void Awake() {
         if (Instance == null) {
@@ -17,7 +20,13 @@ public class GameManager : MonoBehaviour {
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        
         inventory = new Queue<Ingredient>();
+        Instance.addInventory(testIngredient1);
+        Instance.addInventory(testIngredient2);
+        
+        
+
     }
 
     // Update is called once per frame

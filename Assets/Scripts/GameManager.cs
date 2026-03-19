@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour {
     
     public Queue<Ingredient> inventory;
 
+    public Ingredient testIngredient1;
+    public Ingredient testIngredient2;
+
     void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -19,6 +22,11 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         
         inventory = new Queue<Ingredient>();
+        Instance.addInventory(testIngredient1);
+        Instance.addInventory(testIngredient2);
+        
+        
+
     }
 
     // Update is called once per frame

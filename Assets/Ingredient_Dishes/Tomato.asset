@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tomato
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   name: tomato
-  sprite: {fileID: -3962807554240710951, guid: 724083ab8851b6148b1549cb98bd9887, type: 3}
+  sprite: {fileID: -8515223518686309063, guid: 11b9ab4e88db1ae4f9a3e497d38f7f56, type: 3}

@@ -2,9 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-[DisallowMultipleComponent]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Horizontal Movement")]
@@ -20,14 +18,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Physics")]
     public float gravity;
-    public float peakJumpGravity;
 
     InputAction moveAction;
     InputAction jumpAction;
     Rigidbody2D rb;
     Collider2D col;
-
-    public static int FacingDirection { get; private set; }
 
     private float coyoteTimer;
     private float jumpBufferTimer;
@@ -39,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
 
-        FacingDirection = -1;
         coyoteTimer = 0;
         jumpBufferTimer = 0;
         rb.gravityScale = gravity;
@@ -59,8 +53,6 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityX = 0;
         }
         else {
-            FacingDirection = (int) Mathf.Ceil(xInput);
-            transform.localScale = new Vector2(-6 * FacingDirection, transform.localScale.y);
             rb.linearVelocityX += (onGround ? groundAcceleration : airAcceleration) * xInput * Time.deltaTime;
 
             rb.linearVelocityX = rb.linearVelocityX > maxHorizontalSpeed ? maxHorizontalSpeed : rb.linearVelocityX;
@@ -83,19 +75,9 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityY = jumpStrength;
 
         float startingY = transform.position.y;
-        float elapsedJump = 0;
-
-        while (transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
+        while(transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
         {
-            elapsedJump = (transform.position.y - startingY) / maxJumpHeight;
-            rb.gravityScale = Mathf.Lerp(0, peakJumpGravity, elapsedJump);
-
-            Debug.Log(elapsedJump);
-
-            if (rb.linearVelocityY == 0)
-            {
-                break;
-            }
+            rb.gravityScale = 0;
             yield return null;
         }
         

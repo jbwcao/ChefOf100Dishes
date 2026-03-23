@@ -49,7 +49,10 @@ public class EnemyHitbox : MonoBehaviour
         //drop a designated food item
         foreach (GameObject i in droppedItems)
         {
-            Instantiate(i, transform.position, transform.rotation);
+            if (i != null)
+            {
+                Instantiate(i, transform.position, transform.rotation);
+            }
             
         }
         Destroy(this.gameObject); //May want to update to drop a corpse on death as well + some effects

@@ -6,6 +6,8 @@ public class PlayerAttack : MonoBehaviour
     public int damage = 2;
     public float attackSpeed = 0.75f;
     private float attackCooldown = 0f;
+    public float knockBackUpwardsPower = 2f;
+    public float knockBackPower = 8f;
     public Vector2 attackSize = new Vector2(1f, 0.5f);
     public float range = 1.15f;
 
@@ -60,6 +62,7 @@ public class PlayerAttack : MonoBehaviour
         foreach(Collider2D enemy in enemiesHit)
         {
             Debug.Log("Enemy hit: " + enemy.name);
+            enemy.gameObject.GetComponent<EnemyMovement>().applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
             enemy.gameObject.GetComponent<EnemyHitbox>().takeDamage(damage);
         }
     }

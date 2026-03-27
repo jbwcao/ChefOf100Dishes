@@ -1,4 +1,6 @@
 using System;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -27,11 +29,23 @@ public class EnemyHitbox : MonoBehaviour
         
     }
 
-    void applyKnockback()
+
+//isn't used, check EnemyMovement for used version
+    public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 0f, float knockbackForce = 8f)
     {
-        // get swing direction
-        // get enemy direction
-        // move enemy away from player attack
+
+        float xDir = transform.position.x > hitFromPosition.x ? 1f : -1f;
+
+        //set x velocity to 0 for smoother knockback
+        EnemyRB.linearVelocityX = 0f;
+
+        //direction is angled a little bit upward for pazzaz
+        Vector2 force = new Vector2(xDir, upwardForce).normalized * knockbackForce;
+
+
+        //force applied to enemy
+        EnemyRB.AddForce(force, ForceMode2D.Impulse);
+        
     }
 
     public void takeDamage(int damage)
@@ -65,7 +79,12 @@ public class EnemyHitbox : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Debug.Log("Player hit");
-            collision.gameObject.GetComponent<PlayerHealth>().takeDamage(contactDamage); // get the damage/health script from player and call takedamage()
+            //contact damage returns true if i-frames are off, otherwise skips knockback call 
+            if (collision.gameObject.GetComponent<PlayerHealth>().takeDamage(contactDamage))// get the damage/health script from player and call takedamage()
+            {
+                collision.gameObject.GetComponent<PlayerMovement>().applyKnockback(transform.position);// can add enemy specific knockback if needed 
+            } 
+            
         }
     }
 

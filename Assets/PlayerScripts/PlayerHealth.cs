@@ -1,5 +1,7 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,7 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public float iframeLength = 1.5f;
     private float ifameTimer;
 
-
+    public float damageBlinkTime = 0.1f;
+    public SpriteRenderer sr;
     public Rigidbody2D PlayerRB;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void takeDamage(int damage)
+    public bool takeDamage(int damage)
     {
         if (ifameTimer <= 0)
         { 
@@ -39,9 +42,12 @@ public class PlayerHealth : MonoBehaviour
             {
                 death();
             }
-
+            
             ifameTimer = iframeLength;
+            StartCoroutine(BlinkRed());
+            return true;
         }
+        return false;
     }
 
     void death()
@@ -49,4 +55,22 @@ public class PlayerHealth : MonoBehaviour
         //TODO: replace with death animation then transition over to game over
         Destroy(this.gameObject);
     }
+
+
+    private IEnumerator BlinkRed()
+    {
+        Color original = sr.color;
+
+        while (ifameTimer > 0)
+        {
+            sr.color = Color.red;
+            yield return new WaitForSeconds(damageBlinkTime);
+
+            sr.color = original;
+            yield return new WaitForSeconds(damageBlinkTime);
+        }
+
+        sr.color = original;
+    }
+
 }

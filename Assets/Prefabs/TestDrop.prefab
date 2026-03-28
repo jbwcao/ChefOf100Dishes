@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 1939997576970081377}
   - component: {fileID: 7474695240902816150}
   - component: {fileID: 8559145765188168605}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: TestDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

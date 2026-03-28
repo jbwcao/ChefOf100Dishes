@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,20 +8,25 @@ using UnityEngine.Rendering;
 public class Explosive : MonoBehaviour
 {
     public int damage = 2;
+    public float explosionRadius = 2f;
     public float knockBack;
     public float armTime = 1.5f;
     private float countDown;
 
+    [Header("Bomb Visuals")]
     public float blinkStartTime = 0.25f; // will fluctuate from white, to normal in 0.25 seconds, then faster the next time
     public float blinkEndTime = 0.01f;
     public Color blinkColor = Color.white;
     private float currentBlinkTime;
     private bool currentlyBlinking = false;
+    public GameObject explosionCirclePrefab;
     
-    public float squezeAndStreach;
+
+    public LayerMask hurtMask;    // player/enemy layers
+    public LayerMask blockingMask; // terrain/platforms layer
 
     public SpriteRenderer sr;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Should bombs explode on contact to the player
     void Start()
     {
         countDown = armTime;
@@ -44,11 +50,36 @@ public class Explosive : MonoBehaviour
 
     private void KaBoom()
     {
-        //TODO fill this with explosion logic
-        //check for player in explosion radius, then apply knockback and damage
+        //explosion visulaized
+        ShowExplosionCircle();
+
+        //Check for whats in the blast radius
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius, hurtMask);
+
+        foreach (Collider2D target in hits)
+        {
+            Vector2 targetPoint = target.bounds.center;
+
+            //checks whether terrain blocks the blast
+            RaycastHit2D blockHit = Physics2D.Linecast(transform.position, targetPoint, blockingMask);
+
+            if (blockHit.collider != null)
+            {
+                // something in terrain blocked the explosion
+                continue;
+            }
+
+            if (target.CompareTag("Player"))
+            {
+                target.GetComponent<PlayerHealth>().takeDamage(damage);
+                //TODO - replace basic explosion with variables depending how close to the center of the blast
+                target.GetComponent<PlayerMovement>().applyKnockback(transform.position);
+            }
+            
+        }
+
         Destroy(gameObject);
     }
-
 
     //flash a color, then shorten time it takes to flash
     //Please note this only changes tint, a shader has to be used for the proper blinking for the proper sprite
@@ -81,5 +112,20 @@ public class Explosive : MonoBehaviour
         currentBlinkTime =  Mathf.Lerp(currentBlinkTime, blinkEndTime, blinkStartTime/countDown);
         sr.color = originalColor;
         currentlyBlinking = false;
+    }
+
+    private void ShowExplosionCircle()
+    {
+        GameObject circle = Instantiate(
+            explosionCirclePrefab,
+            transform.position,
+            Quaternion.identity
+        );
+
+        // Assumes the sprite's default diameter is 1 world unit
+        float diameter = explosionRadius * 2f;
+        circle.transform.localScale = new Vector3(diameter, diameter, 1f);
+
+        
     }
 }

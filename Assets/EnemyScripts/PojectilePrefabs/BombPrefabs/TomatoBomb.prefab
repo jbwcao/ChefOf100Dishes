@@ -166,7 +166,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &9040064796417418707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,10 +180,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Explosive
   damage: 2
+  explosionRadius: 2
   knockBack: 12
   armTime: 3
   blinkStartTime: 0.5
   blinkEndTime: 0.01
   blinkColor: {r: 1, g: 1, b: 1, a: 1}
-  squezeAndStreach: 0
+  explosionCirclePrefab: {fileID: 5003053116312104055, guid: b7ee9ab621edc3b41b68d77aeda436c3, type: 3}
+  hurtMask:
+    serializedVersion: 2
+    m_Bits: 131072
+  blockingMask:
+    serializedVersion: 2
+    m_Bits: 64
   sr: {fileID: 4429878241763864205}

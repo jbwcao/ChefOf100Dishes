@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3038396630718756677
+--- !u!1001 &7876281444296293832
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580586001430190447, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Name
-      value: TomatoBomber Variant
+      value: TomatoBomber
       objectReference: {fileID: 0}
     - target: {fileID: 3272162830261805492, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: enemySpeed
@@ -70,22 +70,37 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2580586001430190447, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2421821086118706892}
+      addedObject: {fileID: 3436487495499092551}
   m_SourcePrefab: {fileID: 100100000, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
---- !u!1 &719055214919527978 stripped
+--- !u!1 &5665028560009585831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2580586001430190447, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
-  m_PrefabInstance: {fileID: 3038396630718756677}
+  m_PrefabInstance: {fileID: 7876281444296293832}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2421821086118706892
+--- !u!114 &3436487495499092551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719055214919527978}
+  m_GameObject: {fileID: 5665028560009585831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 479484fa143dc2b4f834a1fef792fd4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  projectile: {fileID: 2058602034558011223, guid: 7c23cf3c5abfec640b5e83dbe240ae8d, type: 3}
+  projectileAmount: 1
+  fireRate: 2.5
+  projectileBurstIntervals: 0.25
+  spread: 0.15
+  minTimeToReachDest: 1.5
+  MaxTimeToReachDest: 2.5
+  rayCount: 36
+  raydistance: 15
+  rb: {fileID: 8033462005100966627}
+--- !u!50 &8033462005100966627 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 158394679482912555, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
+  m_PrefabInstance: {fileID: 7876281444296293832}
+  m_PrefabAsset: {fileID: 0}

@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.WSA;
 
 public class TomatoLob : MonoBehaviour
 {
@@ -7,25 +9,35 @@ public class TomatoLob : MonoBehaviour
 
     // the type of projectile the tomato will toss
     public GameObject projectile;
+    
+    [Header("Firing stats")]
     public int projectileAmount = 1;
+     public float fireRate = 3f;
     public float projectileBurstIntervals = 0.05f;
-    public float fireRate = 3f;
+   
     private float attackCooldown;
     public float spread = 0f;
 
-    private bool playerDetected = false;
-    public float graceTimeBeforeAttack = 1.5f;
-    private float graceTimer;
+    //time to reach dest determines the arc at which the bomb is thrown
+    [Header("Projectile arc")]
+    public float minTimeToReachDest = 1.5f;
+    public float MaxTimeToReachDest = 2.5f;
 
-    private int visionMask; //what it checks for 
+
 
     //shoot out a raycast in all directions, if this hit player start attacking
     //get player current location and save the point
     //calculate the trajectory of the projectile and shoot
     //begin cooldown until next shot
 
+    [Header("Player Search Var")]
     public int rayCount = 36; // amount of angles it checks around itself
     public float raydistance = 15f; //player detection radius
+
+    private bool playerDetected = false;
+    private bool attacking = false;
+    private int visionMask; //what it checks for 
+
 
     public Rigidbody2D rb;
     void Start()
@@ -38,12 +50,11 @@ public class TomatoLob : MonoBehaviour
     void Update()
     {
         //should only look around once 
-        lookAround();
-
-        if (graceTimer > 0)
+        if (!attacking)
         {
-            graceTimer -= Time.deltaTime;
+            lookAround();
         }
+    
 
         if (attackCooldown > 0)
         {
@@ -64,17 +75,19 @@ public class TomatoLob : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, raydistance, visionMask);
 
-            //show notice to the player position and wait for a grace time 
+            //show notice to the player position 
 
-            //start grace timer while keeping track of player
             if(hit.collider != null && hit.collider.CompareTag("Player")) // add another statment checking cooldown
             {
                 if(attackCooldown <= 0)
                 {
                     
-                    
-                    attack(hit.collider.transform.position);
+                    //attack(hit.collider.transform.position);
+                    StartCoroutine(Attack(hit.collider.transform.position));
+                    break;
                 }
+
+
                 /*
                 if(!playerDetected)
                 {
@@ -104,46 +117,49 @@ public class TomatoLob : MonoBehaviour
                 Debug.DrawRay(transform.position, (Vector2)transform.position + direction * raydistance, Color.green);
             }
         }
-
-        
-    }
-    private void detectionVisualizer(RaycastHit2D hit, Vector2 direction)
-    {
-        if (hit.collider != null)
-            {
-                Debug.DrawRay(transform.position, hit.point, Color.red);
-                Debug.Log("Hit: " + hit.collider.name);
-            }
-            else
-            {
-                Debug.DrawRay(transform.position, (Vector2)transform.position + direction * raydistance, Color.green);
-            }
     }
 
 
     private void alert()
     {
         // act like a little notice startle
-        graceTimer = graceTimeBeforeAttack;
         playerDetected = true;
         rb.AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);;
     }
+ 
 
-    //may switch to a coroutine 
-    private void attack(Vector3 attackLocation)
+    private IEnumerator Attack(Vector3 attackLocation)
     {
-        
-        //attack logic 
+        Debug.Log("Starting attack Chain");
+        attacking = true;
+
         for(int i=0; i < projectileAmount; i++)
         {
-            //calculate arc between player position and current position 
-            //calculate for spread
-            //wait  projectileBurstInterval before fireing again
+            //random time to reach locataion
+            float timeToReachDest = UnityEngine.Random.Range(minTimeToReachDest, MaxTimeToReachDest);
 
-            //placeholder, teleports bomb to player location
-            Instantiate(projectile, attackLocation, transform.rotation);
+            Vector2 start = transform.position;
+            Vector2 end = (Vector2)attackLocation + new Vector2(UnityEngine.Random.Range(-spread, spread), 0);
+
+            float vx = (end.x - start.x) / timeToReachDest;
+            float vy = (end.y - start.y - 0.5f * Physics2D.gravity.y * timeToReachDest) / timeToReachDest;
+            //0.5f represents the arc, up to 1.5f for large arcs
+
+            //create and launch the projectile
+            GameObject tomato = Instantiate(projectile, transform.position, transform.rotation);
+            Rigidbody2D rb = tomato.GetComponent<Rigidbody2D>();
+            rb.linearVelocity = new Vector2 (vx, vy);
+
+            //wait  projectileBurstInterval before fireing again
+             yield return new WaitForSeconds(projectileBurstIntervals);
+
+
+
+  
         }
 
-        attackCooldown = fireRate;
+        attackCooldown = fireRate; 
+        attacking = false;
     }
+
 }

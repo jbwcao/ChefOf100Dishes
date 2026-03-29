@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.WSA;
 
 public class TomatoLob : MonoBehaviour
@@ -31,19 +32,20 @@ public class TomatoLob : MonoBehaviour
     //begin cooldown until next shot
 
     [Header("Player Search Var")]
-    public int rayCount = 36; // amount of angles it checks around itself
-    public float raydistance = 15f; //player detection radius
+    public float detectionRadius = 12f;
 
-    private bool playerDetected = false;
+    //private bool playerDetected = false; 
     private bool attacking = false;
-    private int visionMask; //what it checks for 
+    private int searchMask; //what it checks for 
+    private int blockMask; // what blocks view
 
 
     public Rigidbody2D rb;
     void Start()
     {
         //BUG: currently can detect the players attack as part of their body, put on different layer?
-        visionMask = LayerMask.GetMask("Player", "Terrain");
+        searchMask = LayerMask.GetMask("Player");
+        blockMask = LayerMask.GetMask("Terrain");
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class TomatoLob : MonoBehaviour
         //should only look around once 
         if (!attacking)
         {
+            //need to stop checking every frame
             lookAround();
         }
     
@@ -65,65 +68,40 @@ public class TomatoLob : MonoBehaviour
 
     private void lookAround()
     {
-        //logic for player detection, shoots a ray in every direction
-        for (int i = 0; i < rayCount; i++)
+        //get all objects in view radius
+        Collider2D[] viewArea = Physics2D.OverlapCircleAll(transform.position, detectionRadius, searchMask);
+        foreach (Collider2D target in viewArea)
         {
-            float angle = i * (360f / rayCount);
-            float radians = angle * Mathf.Deg2Rad;
-
-            Vector2 direction = new Vector2 (Mathf.Cos(radians), Mathf.Sin(radians));
-
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, raydistance, visionMask);
-
-            //show notice to the player position 
-
-            if(hit.collider != null && hit.collider.CompareTag("Player")) // add another statment checking cooldown
+            if (target.CompareTag("Player"))
             {
-                if(attackCooldown <= 0)
+                //draw raycast, checks for any terrain between enemy and player
+                RaycastHit2D blockHit = Physics2D.Linecast(transform.position, target.transform.position, blockMask);
+
+                if (blockHit.collider != null)
                 {
-                    
-                    //attack(hit.collider.transform.position);
-                    StartCoroutine(Attack(hit.collider.transform.position));
-                    break;
+                    // something in terrain blocked the explosion
+                    continue;
                 }
 
-
-                /*
-                if(!playerDetected)
+                if (attackCooldown <= 0)
                 {
-                    //start grace timer
-                    alert();
+                     StartCoroutine(Attack(target.transform.position));
                 }
-
-                if( graceTimer <= 0 && attackCooldown <= 0)
-                {
-                    
-                    attack(hit.collider.transform.position);
-                }
-                */
-                // need a way to keep track of player if player is not in sight
-
-            }
-
-
-            //Following code is used to visulaize raycasts
-           if (hit.collider != null)
-            {
-                Debug.DrawRay(transform.position, (Vector2)transform.position + direction * raydistance, Color.red);
-                Debug.Log("Hit: " + hit.collider.name);
-            }
-            else
-            {
-                Debug.DrawRay(transform.position, (Vector2)transform.position + direction * raydistance, Color.green);
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 
 
     private void alert()
     {
         // act like a little notice startle
-        playerDetected = true;
+        //playerDetected = true;
         rb.AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);;
     }
  
@@ -145,6 +123,7 @@ public class TomatoLob : MonoBehaviour
             float vy = (end.y - start.y - 0.5f * Physics2D.gravity.y * timeToReachDest) / timeToReachDest;
             //0.5f represents the arc, up to 1.5f for large arcs
 
+            //TODO - instead of instantation and destroying objects, pool items
             //create and launch the projectile
             GameObject tomato = Instantiate(projectile, transform.position, transform.rotation);
             Rigidbody2D rb = tomato.GetComponent<Rigidbody2D>();

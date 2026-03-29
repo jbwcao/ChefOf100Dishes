@@ -3,7 +3,7 @@ using Mono.Cecil;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
-public class ItemPickup : MonoBehaviour
+public class ItemPickup : MonoBehaviour, IInteractable
 {
     //Issues:
     //need reference to ingridents for sprite and data
@@ -24,7 +24,7 @@ public class ItemPickup : MonoBehaviour
     public float glowStartupTime = 0.2f;
     private Color originalColor;
 
-    public GameObject assignedItem;
+    public Ingredient assignedItem;
     public Rigidbody2D itemRB;
     public Collider2D interactableArea;
     public SpriteRenderer sr;
@@ -37,6 +37,9 @@ public class ItemPickup : MonoBehaviour
         
         //launch item at random velocity in a random direction that isn't down
         lob();
+        GetComponent<SpriteRenderer>().sprite = assignedItem.sprite;
+        //resizeSprite(new Vector2(0.5f, 0.5f));
+        //sr.sprite = assignedItem.sprite;
         originalColor = sr.color;
     }
 
@@ -45,6 +48,24 @@ public class ItemPickup : MonoBehaviour
     {
         
     }
+
+    //stuff needed for I-Interactable
+    public void Interact(GameObject interactor)
+    {
+        //TODO - add pickup logic here
+        //must put assignedItem into player inventory
+        Debug.Log(assignedItem.name + " interacted by " + interactor.name);
+
+        Destroy(gameObject);
+    }
+
+    //used to calculate closest interactable to player
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+
+
 
     void lob()
     {
@@ -71,6 +92,23 @@ public class ItemPickup : MonoBehaviour
         }
         
     }
+
+
+    public void resizeSprite(Vector2 size)
+    {
+        if (sr == null || sr.sprite == null)
+            return;
+
+        Vector2 spriteSize = sr.sprite.bounds.size;
+        Vector2 targetSize = GetComponent<BoxCollider2D>().size;
+
+        transform.localScale = new Vector3(
+            targetSize.x / spriteSize.x,
+            targetSize.y / spriteSize.y,
+            1f
+        );
+    }
+
 
     IEnumerator Glow()
     {

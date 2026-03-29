@@ -261,6 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemySpeed: 1
   direction: 1
+  knockbackTime: 0.15
 --- !u!114 &7360360242729103680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,4 +279,4 @@ MonoBehaviour:
   EnemyRB: {fileID: 158394679482912555}
   EnemyCollider: {fileID: 2569486218305732315}
   droppedItems:
-  - {fileID: 2537333587115087512, guid: 9fdc8c44aa9460844ab9949f07536f10, type: 3}
+  - {fileID: 2537333587115087512, guid: a68fe038431ed574b92647b140748c88, type: 3}

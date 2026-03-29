@@ -96,6 +96,7 @@ MonoBehaviour:
   spread: 0.15
   minTimeToReachDest: 1.5
   MaxTimeToReachDest: 2.5
+  detectionRadius: 12
   rayCount: 36
   raydistance: 15
   rb: {fileID: 8033462005100966627}

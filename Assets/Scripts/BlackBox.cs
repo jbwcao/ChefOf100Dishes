@@ -1,11 +1,15 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UI;
+
 public class BlackBox : MonoBehaviour {
     public Cookbook cookbook;
     List<Ingredient> droppedIngredient;
     public Transform dishSpawn;
     public GameObject masterPrefab;
+    public List<GameObject> spawnPoints = new List<GameObject>();
+    List<GameObject> potDisplay = new List<GameObject>();
     void Start() {
         droppedIngredient = new List<Ingredient>();
     }
@@ -41,12 +45,20 @@ public class BlackBox : MonoBehaviour {
         }
 
         droppedIngredient.Clear();
+        for (int i = 0; i < spawnPoints.Count; i++) {
+            spawnPoints[i].GetComponent<Image>().sprite = null;
+            spawnPoints[i].SetActive(false);
+
+        }
         
 
     }
     private void OnTriggerEnter2D(Collider2D coll) {
         if (coll.gameObject.CompareTag("Ingredient")) {
             droppedIngredient.Add(coll.gameObject.GetComponent<MasterPrefab>().ingredient);
+            int index = droppedIngredient.Count - 1;
+            spawnPoints[index].GetComponent<Image>().sprite = droppedIngredient[index].sprite;
+            spawnPoints[index].SetActive(true);
             Destroy(coll.gameObject);
             foreach (Ingredient i in droppedIngredient)
             {

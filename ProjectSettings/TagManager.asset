@@ -8,6 +8,7 @@ TagManager:
   - Ingredient
   - Terrain
   - Projectile
+  - Enemy
   layers:
   - Default
   - TransparentFX

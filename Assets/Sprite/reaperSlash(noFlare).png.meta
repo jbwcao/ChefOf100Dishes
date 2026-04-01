@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 702c2dcb035686140b457282c631f2a7
+guid: 0ad846f2ddd3c724c89a231b62a99ce7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6857198203370676318
-    second: mush_0
+      213: -9136169421773223711
+    second: reaperSlash(noFlare)_0
+  - first:
+      213: -1268281040929840747
+    second: reaperSlash(noFlare)_1
+  - first:
+      213: -3519236084700542967
+    second: reaperSlash(noFlare)_2
+  - first:
+      213: 1844820546667411913
+    second: reaperSlash(noFlare)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mush_0
+      name: reaperSlash(noFlare)_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 19
-        height: 23
+        x: 0
+        y: 0
+        width: 58
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e502b5a5f69a92f50800000000000000
-      internalID: 6857198203370676318
+      spriteID: 1e8cb6ff05ec53180800000000000000
+      internalID: -9136169421773223711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperSlash(noFlare)_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591a308ec19266ee0800000000000000
+      internalID: -1268281040929840747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperSlash(noFlare)_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90800ba3d69292fc0800000000000000
+      internalID: -3519236084700542967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperSlash(noFlare)_3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 0
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9f37e438e1a9910800000000000000
+      internalID: 1844820546667411913
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5fc604dfc84e07d4dac8f40f7c6cb2c2
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":58.0,"y":50.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      mush_0: 6857198203370676318
+      reaperSlash(noFlare)_0: -9136169421773223711
+      reaperSlash(noFlare)_1: -1268281040929840747
+      reaperSlash(noFlare)_2: -3519236084700542967
+      reaperSlash(noFlare)_3: 1844820546667411913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

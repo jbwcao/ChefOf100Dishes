@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XInput;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack Stats")]
@@ -17,6 +19,11 @@ public class PlayerAttack : MonoBehaviour
     InputAction attackAction;
     InputAction moveAction;
     Rigidbody2D rb;
+    Animator animator;
+
+    
+    public Animator slashAnimator;
+    public SpriteRenderer slashSr;
 
     private int directionFacing; // 1 for facing right, -1 for facing left
 
@@ -25,13 +32,17 @@ public class PlayerAttack : MonoBehaviour
         attackAction = InputSystem.actions.FindAction("Attack");
         moveAction = InputSystem.actions.FindAction("Move");
         rb = GetComponent<Rigidbody2D>();
-
+        animator = GetComponent<Animator>();
         directionFacing = 1;
+
+        slashSr.sprite = null;
     }
 
     void Update()
     {
+        
         float xInput = moveAction.ReadValue<Vector2>().x;
+
         directionFacing = xInput > 0 ? 1 : (xInput < 0 ? -1 : directionFacing);
 
 
@@ -45,25 +56,28 @@ public class PlayerAttack : MonoBehaviour
         if (attackAction.WasPerformedThisFrame() && attackCooldown <= 0f)
         {
             Debug.Log("Attacked, " + $"Direction Facing: {directionFacing}");
-
-            float attackDirection = rb.linearVelocityX >= 0 ? 1 : -1;
-            Attack(attackDirection * range);
+            Attack(directionFacing * range);
         }
     }
 
     void Attack(float attackDirectionOffset)
     {
-        //animator.SetTrigger("attack") // TODO: play attack animation
-
+        //attack animation looks janky with moving
+        attackCooldown = attackSpeed;
         Vector2 attackCenter = (Vector2) transform.position + new Vector2(attackDirectionOffset, 0);
         Collider2D[] enemiesHit = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, enemyLayers);
-        attackCooldown = attackSpeed;
+        animator.Play("Attack", 0, 0f);
+        slashAnimator.Play("SwingFlare", 0, 0f);
 
         foreach(Collider2D enemy in enemiesHit)
         {
-            Debug.Log("Enemy hit: " + enemy.name);
-            enemy.gameObject.GetComponent<EnemyMovement>().applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
-            enemy.gameObject.GetComponent<EnemyHitbox>().takeDamage(damage);
+            if (enemy.CompareTag("Enemy"))
+            {
+                Debug.Log("Enemy hit: " + enemy.name);
+                enemy.gameObject.GetComponent<EnemyMovement>().applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
+                enemy.gameObject.GetComponent<EnemyHitbox>().takeDamage(damage);
+            }
+           
         }
     }
 
@@ -71,6 +85,5 @@ public class PlayerAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube((Vector2) transform.position + new Vector2(range, 0), attackSize);
-        Gizmos.DrawWireCube((Vector2) transform.position - new Vector2(range, 0), attackSize);
     }
 }

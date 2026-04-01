@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Platformer Phase.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/RPG Phase.unity
+    guid: 57456e6687f095b4cb47ab5f4c44250b
+  - enabled: 1
+    path: Assets/Scenes/PlatformerTest2.unity
+    guid: 507670b4e4dfc384b8eb19bfa0a75072
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

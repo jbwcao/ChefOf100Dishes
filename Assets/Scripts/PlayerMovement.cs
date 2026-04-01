@@ -3,6 +3,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XInput;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,7 +24,15 @@ public class PlayerMovement : MonoBehaviour
     InputAction moveAction;
     InputAction jumpAction;
     Rigidbody2D rb;
+    SpriteRenderer sr;
     Collider2D col;
+    Animator animator;
+    Transform slash;
+    public SpriteRenderer slashSr;
+
+    private Vector3 originalLocalPos;
+
+
 
     private bool perventControl = false;
     public float knockbackTime = 0.15f;
@@ -34,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        slash = transform.Find("AttackFlare");
+
+        originalLocalPos = slash.localPosition;
+
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
 
@@ -57,8 +72,19 @@ public class PlayerMovement : MonoBehaviour
             {
                 // TODO: Implement a tweakable deceleration value
                 rb.linearVelocityX = 0;
+                animator.SetBool("IsMoving", false);
             }
             else {
+                animator.SetBool("IsMoving", true);
+                
+                sr.flipX = xInput > 0;
+                slashSr.flipX = xInput > 0;
+                //flipSlash(xInput > 0);
+                SetFacing(xInput > 0);
+                
+                //slash.localPosition = slash.localPosition * (xInput > 0? -1: 1);
+
+
                 rb.linearVelocityX += (onGround ? groundAcceleration : airAcceleration) * xInput * Time.deltaTime;
 
                 rb.linearVelocityX = rb.linearVelocityX > maxHorizontalSpeed ? maxHorizontalSpeed : rb.linearVelocityX;
@@ -116,5 +142,12 @@ public class PlayerMovement : MonoBehaviour
     void EndKnockback()
     {
         perventControl = false;
+    }
+
+    public void SetFacing(bool facingRight)
+    {
+        Vector3 pos = originalLocalPos;
+        pos.x = facingRight ? Mathf.Abs(originalLocalPos.x) : -Mathf.Abs(originalLocalPos.x);
+        slash.localPosition = pos;
     }
 }

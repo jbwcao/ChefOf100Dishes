@@ -51,6 +51,7 @@ public class EnemyHitbox : MonoBehaviour
     public void takeDamage(int damage)
     {
         currHealth -= damage;
+        Debug.Log(name + " took damage, health left: " + currHealth);
         //coroutine flash white in sprite renderer
         if (currHealth <= 0)
         {

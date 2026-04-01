@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 702c2dcb035686140b457282c631f2a7
+guid: 951d5457289944045a549c09ef555926
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6857198203370676318
-    second: mush_0
+      213: 7115669711603854285
+    second: slashFlare_0
+  - first:
+      213: -6344798195853394170
+    second: slashFlare_1
+  - first:
+      213: 873711097780237372
+    second: slashFlare_2
+  - first:
+      213: -2115510558328565267
+    second: slashFlare_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mush_0
+      name: slashFlare_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 19
-        height: 23
+        x: 128
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e502b5a5f69a92f50800000000000000
-      internalID: 6857198203370676318
+      spriteID: dcb672bf6efefb260800000000000000
+      internalID: 7115669711603854285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slashFlare_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f7e9438afb2f7a0800000000000000
+      internalID: -6344798195853394170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slashFlare_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34f1834d9b002c00800000000000000
+      internalID: 873711097780237372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slashFlare_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1dc3c0b5234a2e0800000000000000
+      internalID: -2115510558328565267
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ba87984ae1b57e640ba2188875645152
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      mush_0: 6857198203370676318
+      slashFlare_0: 7115669711603854285
+      slashFlare_1: -6344798195853394170
+      slashFlare_2: 873711097780237372
+      slashFlare_3: -2115510558328565267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

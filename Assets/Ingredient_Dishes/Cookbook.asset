@@ -17,3 +17,8 @@ MonoBehaviour:
     ingredients:
     - {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
     - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
+  - dish: {fileID: 11400000, guid: a5667095762561343b23d1caffca1079, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}

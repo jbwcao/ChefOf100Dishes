@@ -52,10 +52,8 @@ public class ItemPickup : MonoBehaviour, IInteractable
     //stuff needed for I-Interactable
     public void Interact(GameObject interactor)
     {
-        //TODO - add pickup logic here
-        //must put assignedItem into player inventory
         Debug.Log(assignedItem.name + " interacted by " + interactor.name);
-
+        GameManager.Instance.addInventory(assignedItem);
         Destroy(gameObject);
     }
 

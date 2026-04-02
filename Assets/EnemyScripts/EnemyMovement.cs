@@ -68,6 +68,8 @@ public class EnemyMovement : MonoBehaviour
             !Physics2D.Raycast(rightPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
+                sprite.flipX = true;
+
             
             }
         } else if(EnemyRB.linearVelocityX < 0)
@@ -76,6 +78,7 @@ public class EnemyMovement : MonoBehaviour
              !Physics2D.Raycast(leftPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
+                sprite.flipX = false;
             }
         }
     }

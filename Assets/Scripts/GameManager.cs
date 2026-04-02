@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour {
 
     public Ingredient testIngredient1;
     public Ingredient testIngredient2;
+    public Ingredient testIngredient3;
+    public Ingredient testIngredient4;
+    public Ingredient testIngredient5;
+    public Ingredient testIngredient6;
+    public Ingredient testIngredient7;
 
     void Awake() {
         if (Instance == null) {
@@ -24,6 +29,11 @@ public class GameManager : MonoBehaviour {
         inventory = new Queue<Ingredient>();
         Instance.addInventory(testIngredient1);
         Instance.addInventory(testIngredient2);
+        Instance.addInventory(testIngredient3);
+        Instance.addInventory(testIngredient4);
+        Instance.addInventory(testIngredient5);
+        Instance.addInventory(testIngredient6);
+        Instance.addInventory(testIngredient7);
         
         
 

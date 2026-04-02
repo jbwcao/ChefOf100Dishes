@@ -7,10 +7,18 @@ public class Customer : MonoBehaviour
     private bool satisfied = false;
     Cookbook cookbook;
     [SerializeField] public List<Dish> wantedDishes;
+    public GameObject wantedDishUIPrefab;
+    public Vector3 uiOffset = new Vector3(2, 1, 0);
+
+
+    
         
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameObject ui = Instantiate(wantedDishUIPrefab, transform.position + uiOffset, Quaternion.identity);
+        ui.transform.SetParent(transform);
+        ui.GetComponent<WantedDishUI>().SetDishes(wantedDishes);
         //GenerateWantedDish();
         
     }
@@ -36,6 +44,7 @@ public class Customer : MonoBehaviour
         {
             wantedDishes.Remove(item.dish);
             Destroy(coll.gameObject);
+            
         }
         if (wantedDishes.Count == 0)
         {

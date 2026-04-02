@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bread
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   name: bread
-  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: -4077725077854293524, guid: 955025dbaddb0734f94e87aaf3cd2205, type: 3}

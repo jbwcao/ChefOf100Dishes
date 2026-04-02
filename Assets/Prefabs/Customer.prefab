@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Customer
   wantedDishes: []
+  wantedDishUIPrefab: {fileID: 8198072420157313740, guid: 0bff20fe1c4464624ab7aecadaa7c1c1, type: 3}
+  uiOffset: {x: 1, y: 0, z: 0}
 --- !u!61 &420027958763691301
 BoxCollider2D:
   m_ObjectHideFlags: 0

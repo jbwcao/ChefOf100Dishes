@@ -29,11 +29,6 @@ public class GameManager : MonoBehaviour {
         inventory = new Queue<Ingredient>();
         Instance.addInventory(testIngredient1);
         Instance.addInventory(testIngredient2);
-        Instance.addInventory(testIngredient3);
-        Instance.addInventory(testIngredient4);
-        Instance.addInventory(testIngredient5);
-        Instance.addInventory(testIngredient6);
-        Instance.addInventory(testIngredient7);
         
         
 

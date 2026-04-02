@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c32f589abb446e1a6d5050d569c73c, type: 3}
   m_Name: Salad
   m_EditorClassIdentifier: Assembly-CSharp::Dish
-  name: 
-  sprite: {fileID: 0}
+  name: salad
+  sprite: {fileID: -1149380200027496179, guid: 53e923f7144ee4f41a12001fc110e6a5, type: 3}

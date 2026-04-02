@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour {
 
     public Ingredient testIngredient1;
     public Ingredient testIngredient2;
+    public Ingredient testIngredient3;
+    public Ingredient testIngredient4;
+    public Ingredient testIngredient5;
+    public Ingredient testIngredient6;
+    public Ingredient testIngredient7;
 
     void Awake() {
         if (Instance == null) {

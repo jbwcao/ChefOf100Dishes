@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ChickenNug
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: chicken_nuggets
-  sprite: {fileID: 0}
+  sprite: {fileID: 5427136678421570168, guid: 11b9ab4e88db1ae4f9a3e497d38f7f56, type: 3}

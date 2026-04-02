@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85a1808ecf0444e18b2b5d5f764a05f, type: 3}
   m_Name: Chicken
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  name: 
+  name: chicken
   sprite: {fileID: 0}

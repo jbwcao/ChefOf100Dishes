@@ -8,7 +8,7 @@ public class Customer : MonoBehaviour
     Cookbook cookbook;
     [SerializeField] public List<Dish> wantedDishes;
     public GameObject wantedDishUIPrefab;
-    public Vector3 uiOffset = new Vector3(2, 1, 0);
+    public Vector3 uiOffset = new Vector3(3, 1, 0);
 
 
     

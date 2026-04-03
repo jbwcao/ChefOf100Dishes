@@ -167,6 +167,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1819251255879721975, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2864342440962223611, guid: aa440ae8c330c4995926478c24903963, type: 3}
+    - target: {fileID: 6620107251400274626, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
+      propertyPath: uiOffset.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6620107251400274626, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
       propertyPath: wantedDishes.Array.size
       value: 1
@@ -1967,38 +1975,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 420027958763691301, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 420027958763691301, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_Size.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_Color.g
-      value: 0.023584902
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_Color.r
-      value: 0.94410115
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6620107251400274626, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
-      propertyPath: wantedDish
-      value: 
-      objectReference: {fileID: 11400000, guid: a5a276bdaf4324b13bddae96b5c24e18, type: 2}
     - target: {fileID: 270497367702169633, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -2055,6 +2031,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 420027958763691301, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 420027958763691301, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.023584902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.94410115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819251255879721975, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620107251400274626, guid: fd710572b035b4fa09d4e5c9d804909c, type: 3}
+      propertyPath: wantedDish
+      value: 
+      objectReference: {fileID: 11400000, guid: a5a276bdaf4324b13bddae96b5c24e18, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2799,6 +2807,14 @@ PrefabInstance:
     - target: {fileID: 270497367702169633, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819251255879721975, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2864342440962223611, guid: aa440ae8c330c4995926478c24903963, type: 3}
+    - target: {fileID: 6620107251400274626, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
+      propertyPath: uiOffset.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6620107251400274626, guid: 7e994575b2a01ce4c8bbc643ff444f11, type: 3}
       propertyPath: wantedDishes.Array.size

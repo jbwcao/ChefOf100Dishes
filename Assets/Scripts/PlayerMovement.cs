@@ -110,12 +110,23 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityY = jumpStrength;
 
         float startingY = transform.position.y;
-        while(transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
-        {
-            rb.gravityScale = 0;
-            yield return null;
-        }
-        
+        float elapsedJump = 0;
+
+        while (transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
+            while (transform.position.y - startingY < maxJumpHeight && jumpAction.IsPressed())
+            {
+                elapsedJump = (transform.position.y - startingY) / maxJumpHeight;
+                rb.gravityScale = Mathf.Lerp(0, gravity, elapsedJump);
+
+                Debug.Log(elapsedJump);
+
+                if (rb.linearVelocityY == 0)
+                {
+                    break;
+                }
+                rb.gravityScale = 0;
+                yield return null;
+            }
         rb.gravityScale = gravity;
     }
 

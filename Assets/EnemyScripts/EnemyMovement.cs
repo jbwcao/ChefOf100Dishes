@@ -10,6 +10,9 @@ public class EnemyMovement : MonoBehaviour
     float halfwidth;// sprite width
     float halfhight;
 
+    private bool stopMoving = false;
+    public float knockbackTime = 0.15f;
+
     Vector2 movement;
 
     Rigidbody2D EnemyRB;
@@ -32,8 +35,12 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        directionChecker();
-        basic_move();
+        if (!stopMoving)
+        {
+            directionChecker();
+            basic_move();  
+        }
+        
     }
 
 
@@ -45,6 +52,7 @@ public class EnemyMovement : MonoBehaviour
     }
 
 
+    //TODO: Enemies freak out when airborn, fix
     private void directionChecker()
     {
         Vector2 rightPos = transform.position;
@@ -70,5 +78,32 @@ public class EnemyMovement : MonoBehaviour
                 currentDir *= -1;
             }
         }
+    }
+
+
+    public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
+    {
+        stopMoving = true;
+
+        float xDir = transform.position.x > hitFromPosition.x ? 1f : -1f;
+
+        //set x velocity to 0 for smoother knockback
+        EnemyRB.linearVelocityX = 0f;
+
+        //direction is angled a little bit upward for pazzaz
+        Vector2 force = new Vector2(xDir, upwardForce).normalized * knockbackForce;
+
+
+        //force applied to enemy
+        EnemyRB.AddForce(force, ForceMode2D.Impulse);
+
+        //switch to end knockback when landing instead of timer(?)
+        Invoke(nameof(EndKnockback), knockbackTime);
+    }
+
+    
+    void EndKnockback()
+    {
+        stopMoving = false;
     }
 }

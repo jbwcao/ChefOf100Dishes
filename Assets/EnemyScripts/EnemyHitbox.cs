@@ -1,4 +1,8 @@
+using System;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class EnemyHitbox : MonoBehaviour
 {
@@ -8,12 +12,15 @@ public class EnemyHitbox : MonoBehaviour
 
     public int contactDamage;
 
-    Rigidbody2D EnemyRB;
+    public Rigidbody2D EnemyRB;
+    public Collider2D EnemyCollider;
+
+    public GameObject[] droppedItems;
 
     void Start()
     {
          currHealth = maxHealth;
-         EnemyRB = GetComponent<Rigidbody2D>();
+         
     }
 
     // Update is called once per frame
@@ -22,16 +29,29 @@ public class EnemyHitbox : MonoBehaviour
         
     }
 
-    void applyKnockback()
+
+//isn't used, check EnemyMovement for used version
+    public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 0f, float knockbackForce = 8f)
     {
-        // get swing direction
-        // get enemy direction
-        // move enemy away from player attack
+
+        float xDir = transform.position.x > hitFromPosition.x ? 1f : -1f;
+
+        //set x velocity to 0 for smoother knockback
+        EnemyRB.linearVelocityX = 0f;
+
+        //direction is angled a little bit upward for pazzaz
+        Vector2 force = new Vector2(xDir, upwardForce).normalized * knockbackForce;
+
+
+        //force applied to enemy
+        EnemyRB.AddForce(force, ForceMode2D.Impulse);
+        
     }
 
-    void takeDamage(int damage)
+    public void takeDamage(int damage)
     {
         currHealth -= damage;
+        Debug.Log(name + " took damage, health left: " + currHealth);
         //coroutine flash white in sprite renderer
         if (currHealth <= 0)
         {
@@ -42,17 +62,30 @@ public class EnemyHitbox : MonoBehaviour
     private void death()
     {
         //drop a designated food item
+        foreach (GameObject i in droppedItems)
+        {
+            if (i != null)
+            {
+                Instantiate(i, transform.position, transform.rotation);
+            }
+            
+        }
         Destroy(this.gameObject); //May want to update to drop a corpse on death as well + some effects
     }
 
 
 
-
-     private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-       if (other.transform.CompareTag("Player"))
+        if (collision.transform.CompareTag("Player"))
         {
-            //other.gameObject.GetComponent<> // get the damage/health script from player and call takedamage()
+            Debug.Log("Player hit");
+            //contact damage returns true if i-frames are off, otherwise skips knockback call 
+            if (collision.gameObject.GetComponent<PlayerHealth>().takeDamage(contactDamage))// get the damage/health script from player and call takedamage()
+            {
+                collision.gameObject.GetComponent<PlayerMovement>().applyKnockback(transform.position);// can add enemy specific knockback if needed 
+            } 
+            
         }
     }
 

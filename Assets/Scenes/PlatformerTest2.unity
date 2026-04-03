@@ -924,21 +924,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 948961333}
     m_Modifications:
-    - target: {fileID: 822870768030403720, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
-      propertyPath: 'droppedItems.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2537333587115087512, guid: a68fe038431ed574b92647b140748c88, type: 3}
-    - target: {fileID: 3436487495499092551, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
-      propertyPath: detectionRadius
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 5665028560009585831, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: m_Name
       value: TomatoBomber
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665028560009585831, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7277696599868849931, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1194,14 +1182,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: KillableTestenemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2580586001430190447, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7360360242729103680, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
-      propertyPath: maxHealth
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1228,10 +1208,6 @@ PrefabInstance:
     - target: {fileID: 5721768928984408550, guid: 12d17a899bda64540a877e0969cea172, type: 3}
       propertyPath: m_Name
       value: KillableTestenemy(Elite)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5721768928984408550, guid: 12d17a899bda64540a877e0969cea172, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7622174569665697460, guid: 12d17a899bda64540a877e0969cea172, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1329,10 +1305,6 @@ PrefabInstance:
     - target: {fileID: 2565638477803528478, guid: e5649ff7eec6bc24e9e9ad8f7b8c6368, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7554141651581930578, guid: e5649ff7eec6bc24e9e9ad8f7b8c6368, type: 3}
-      propertyPath: detectionRadius
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

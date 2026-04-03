@@ -12,9 +12,6 @@ public class ItemPickup : MonoBehaviour, IInteractable
     //solve how to handle overlaping cases
     //Player can interact with dropped items(layer issue)
 
-    public Ingredient tomato;
-    public Ingredient mushroom;
-
 
     Vector2 itemLobDirection;
     public float minPower = 10;
@@ -57,7 +54,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
         //TODO - add pickup logic here
         //must put assignedItem into player inventory
         Debug.Log(assignedItem.name + " interacted by " + interactor.name);
-        GameManager.Instance.addInventory(mushroom);
+        GameManager.Instance.addInventory(assignedItem);
 
         Destroy(gameObject);
     }

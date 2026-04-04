@@ -1,17 +1,28 @@
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public class Customer : MonoBehaviour
 {
-    public Cookbook cookbook;
-    public Dish wantedDish;
+    private bool satisfied = false;
+    Cookbook cookbook;
+    [SerializeField] public List<Dish> wantedDishes;
+    public GameObject wantedDishUIPrefab;
+    public Vector3 uiOffset = new Vector3(3, 1, 0);
+
+
+    
         
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GenerateWantedDish();
+        GameObject ui = Instantiate(wantedDishUIPrefab, transform.position + uiOffset, Quaternion.identity);
+        ui.transform.SetParent(transform);
+        ui.GetComponent<WantedDishUI>().SetDishes(wantedDishes);
+        //GenerateWantedDish();
         
     }
-    void GenerateWantedDish()
+    /** void GenerateWantedDish()
     {
         int index = Random.Range(0, cookbook.recipes.Count);
         wantedDish = cookbook.recipes[index].dish;
@@ -20,6 +31,7 @@ public class Customer : MonoBehaviour
     }
 
     // Update is called once per frame
+    */
     void Update()
     {
         
@@ -27,13 +39,23 @@ public class Customer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        Debug.Log("Entered customer trigger: " + coll.gameObject.name);
-        MasterPrefab item = coll.gameObject.GetComponent<MasterPrefab>();
-
-        if (item.dish == wantedDish)
+        MasterPrefab item = coll.gameObject.GetComponent<MasterPrefab>(); 
+        if (wantedDishes.Contains(item.dish))
         {
-            Debug.Log("Customer Satisfied");
+            wantedDishes.Remove(item.dish);
             Destroy(coll.gameObject);
+            
         }
+        if (wantedDishes.Count == 0)
+        {
+            satisfied = true;
+            gameObject.SetActive(false);
+        }
+        Debug.Log(wantedDishes.Count);
+        Debug.Log(satisfied);
+       
+        
     }
+
+        
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d85a1808ecf0444e18b2b5d5f764a05f, type: 3}
-  m_Name: Tomato
+  m_Name: Bread
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  name: tomato
-  sprite: {fileID: -8515223518686309063, guid: 11b9ab4e88db1ae4f9a3e497d38f7f56, type: 3}
+  name: bread
+  sprite: {fileID: -4077725077854293524, guid: 955025dbaddb0734f94e87aaf3cd2205, type: 3}

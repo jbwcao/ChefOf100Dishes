@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 53e923f7144ee4f41a12001fc110e6a5
+guid: 71fbec1567fb42d49bd738ef4844357c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1149380200027496179
-    second: tomato_thrower_0
-  - first:
-      213: 3840574562875459635
-    second: tomato_thrower_1
+      213: -7006943214847442331
+    second: chickenNugget_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tomato_thrower_0
+      name: chickenNugget_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 16
-        width: 9
-        height: 11
+        x: 9
+        y: 10
+        width: 40
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d016e793cc49c00f0800000000000000
-      internalID: -1149380200027496179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tomato_thrower_1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 7
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 338c79977367c4530800000000000000
-      internalID: 3840574562875459635
+      spriteID: 5624fad354652ce90800000000000000
+      internalID: -7006943214847442331
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tomato_thrower_0: -1149380200027496179
-      tomato_thrower_1: 3840574562875459635
+      chickenNugget_0: -7006943214847442331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

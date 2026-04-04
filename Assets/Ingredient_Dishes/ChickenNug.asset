@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d85a1808ecf0444e18b2b5d5f764a05f, type: 3}
-  m_Name: Tomato
-  m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  name: tomato
-  sprite: {fileID: -8515223518686309063, guid: 11b9ab4e88db1ae4f9a3e497d38f7f56, type: 3}
+  m_Script: {fileID: 11500000, guid: 50c32f589abb446e1a6d5050d569c73c, type: 3}
+  m_Name: ChickenNug
+  m_EditorClassIdentifier: Assembly-CSharp::Dish
+  name: chicken_nuggets
+  sprite: {fileID: -7006943214847442331, guid: 71fbec1567fb42d49bd738ef4844357c, type: 3}

@@ -13,7 +13,6 @@ public class ItemPickup : MonoBehaviour, IInteractable
     //Player can interact with dropped items(layer issue)
 
 
-
     Vector2 itemLobDirection;
     public float minPower = 10;
     public float maxPower = 15;
@@ -54,6 +53,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
     {
         Debug.Log(assignedItem.name + " interacted by " + interactor.name);
         GameManager.Instance.addInventory(assignedItem);
+
         Destroy(gameObject);
     }
 

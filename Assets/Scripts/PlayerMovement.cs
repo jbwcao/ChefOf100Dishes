@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer slashSr;
 
     private Vector3 originalLocalPos;
+    public LayerMask groundlayer;
 
 
 
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         if (!perventControl)
         {
             Vector2 moveValue = moveAction.ReadValue<Vector2>();
-            RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, col.bounds.min.y - 0.01f), new Vector2(0, -1), 0.1f);
+            RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, col.bounds.min.y - 0.01f), new Vector2(0, -1), 0.1f, groundlayer);
 
             bool onGround = hit.collider == null? false : hit.collider.CompareTag("Platform");
             float xInput = moveValue.x;
@@ -117,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
                 elapsedJump = (transform.position.y - startingY) / maxJumpHeight;
                 rb.gravityScale = Mathf.Lerp(0, gravity, elapsedJump);
 
-                Debug.Log(elapsedJump);
+                //Debug.Log(elapsedJump);
 
                 if (rb.linearVelocityY == 0)
                 {

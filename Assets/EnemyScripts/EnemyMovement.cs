@@ -40,11 +40,12 @@ public class EnemyMovement : MonoBehaviour
             directionChecker();
             basic_move();  
         }
+
         
     }
 
 
-    private void basic_move(){
+    public virtual void basic_move(){
         movement.x = enemySpeed * currentDir;
         movement.y = EnemyRB.linearVelocityY;
         EnemyRB.linearVelocity = movement;
@@ -53,7 +54,7 @@ public class EnemyMovement : MonoBehaviour
 
 
     //TODO: Enemies freak out when airborn, fix
-    private void directionChecker()
+    public virtual void directionChecker()
     {
         Vector2 rightPos = transform.position;
         Vector2 leftPos = transform.position;
@@ -83,8 +84,8 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-
-    public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
+    //vertual allows for overriding in subclasses
+    public virtual void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
     {
         stopMoving = true;
 

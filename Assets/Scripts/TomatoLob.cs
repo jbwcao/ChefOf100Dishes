@@ -40,10 +40,12 @@ public class TomatoLob : MonoBehaviour
     private int blockMask; // what blocks view
 
 
+    SpriteRenderer sr;
     public Rigidbody2D rb;
     void Start()
     {
         //BUG: currently can detect the players attack as part of their body, put on different layer?
+        sr = GetComponent<SpriteRenderer>();
         searchMask = LayerMask.GetMask("Player");
         blockMask = LayerMask.GetMask("Terrain");
     }
@@ -84,8 +86,16 @@ public class TomatoLob : MonoBehaviour
                 }
 
                 if (attackCooldown <= 0)
-                {
-                     StartCoroutine(Attack(target.transform.position));
+                {   
+                    if(transform.position.x < target.transform.position.x){ //player is to the right
+                            sr.flipX = true;
+                    }
+                    else
+                    {
+                        sr.flipX = false;
+                    }
+                    
+                    StartCoroutine(Attack(target.transform.position));
                 }
             }
         }

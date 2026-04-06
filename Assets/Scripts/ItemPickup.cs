@@ -36,7 +36,11 @@ public class ItemPickup : MonoBehaviour, IInteractable
         
         //launch item at random velocity in a random direction that isn't down
         lob();
-        GetComponent<SpriteRenderer>().sprite = assignedItem.sprite;
+        if (assignedItem != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = assignedItem.sprite;
+        }
+        
         //resizeSprite(new Vector2(0.5f, 0.5f));
         //sr.sprite = assignedItem.sprite;
         originalColor = sr.color;
@@ -67,7 +71,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
 
     void lob()
     {
-        itemRB.linearVelocity = itemLobDirection * Random.Range(minPower, maxPower);
+        itemRB.linearVelocity = itemLobDirection.normalized * Random.Range(minPower, maxPower);
     }
 
 

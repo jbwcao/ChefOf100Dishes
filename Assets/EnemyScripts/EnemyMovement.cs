@@ -1,7 +1,7 @@
 using NUnit.Framework.Internal;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour, IKnockbackable
 {
     public float enemySpeed = 1f;
     public int direction = 1; //can be 1 or -1

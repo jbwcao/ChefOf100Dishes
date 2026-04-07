@@ -4,7 +4,7 @@ using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class EnemyHitbox : MonoBehaviour
+public class EnemyHitbox : MonoBehaviour, IDamageable
 {
 
     public int maxHealth;

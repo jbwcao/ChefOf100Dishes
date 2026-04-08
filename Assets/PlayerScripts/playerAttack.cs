@@ -74,8 +74,8 @@ public class PlayerAttack : MonoBehaviour
             if (enemy.CompareTag("Enemy"))
             {
                 Debug.Log("Enemy hit: " + enemy.name);
-                enemy.gameObject.GetComponent<EnemyMovement>().applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
-                enemy.gameObject.GetComponent<EnemyHitbox>().takeDamage(damage);
+                enemy.gameObject.GetComponent<IKnockbackable>().applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
+                enemy.gameObject.GetComponent<IDamageable>().takeDamage(damage);
             }
            
         }

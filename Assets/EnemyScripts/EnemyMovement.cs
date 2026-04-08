@@ -1,7 +1,7 @@
 using NUnit.Framework.Internal;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour, IKnockbackable
 {
     public float enemySpeed = 1f;
     public int direction = 1; //can be 1 or -1
@@ -40,11 +40,12 @@ public class EnemyMovement : MonoBehaviour
             directionChecker();
             basic_move();  
         }
+
         
     }
 
 
-    private void basic_move(){
+    public virtual void basic_move(){
         movement.x = enemySpeed * currentDir;
         movement.y = EnemyRB.linearVelocityY;
         EnemyRB.linearVelocity = movement;
@@ -53,7 +54,7 @@ public class EnemyMovement : MonoBehaviour
 
 
     //TODO: Enemies freak out when airborn, fix
-    private void directionChecker()
+    public virtual void directionChecker()
     {
         Vector2 rightPos = transform.position;
         Vector2 leftPos = transform.position;
@@ -68,6 +69,8 @@ public class EnemyMovement : MonoBehaviour
             !Physics2D.Raycast(rightPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
+                sprite.flipX = true;
+
             
             }
         } else if(EnemyRB.linearVelocityX < 0)
@@ -76,12 +79,13 @@ public class EnemyMovement : MonoBehaviour
              !Physics2D.Raycast(leftPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
+                sprite.flipX = false;
             }
         }
     }
 
-
-    public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
+    //vertual allows for overriding in subclasses
+    public virtual void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
     {
         stopMoving = true;
 

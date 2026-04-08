@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public float damageBlinkTime = 0.1f;
     public SpriteRenderer sr;
     public Rigidbody2D PlayerRB;
+    public HealthUI heartUI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,11 +36,15 @@ public class PlayerHealth : MonoBehaviour
     {
         if (ifameTimer <= 0)
         { 
-        
+            
             currentHP -= damage;
+            float healthLeft = (float)currentHP/maxHP;
+            Debug.Log("Health % left: " + healthLeft);
+            heartUI.spriteUpdate(healthLeft);
 
             if(currentHP <= 0)
             {
+                currentHP = 0;
                 death();
             }
             

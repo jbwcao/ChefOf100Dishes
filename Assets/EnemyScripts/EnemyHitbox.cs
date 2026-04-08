@@ -4,7 +4,7 @@ using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class EnemyHitbox : MonoBehaviour
+public class EnemyHitbox : MonoBehaviour, IDamageable
 {
 
     public int maxHealth;
@@ -30,7 +30,7 @@ public class EnemyHitbox : MonoBehaviour
     }
 
 
-//isn't used, check EnemyMovement for used version
+//isn't used, check EnemyMovement for used version, make this usable 
     public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 0f, float knockbackForce = 8f)
     {
 

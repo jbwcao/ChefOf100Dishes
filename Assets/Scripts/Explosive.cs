@@ -13,6 +13,11 @@ public class Explosive : MonoBehaviour
     public float armTime = 1.5f;
     private float countDown;
 
+
+    public bool randomFuseTime = false;
+    public float minRandomFuse = 1f;
+    public float maxRandomFuse = 1.5f;
+
     [Header("Bomb Visuals")]
     public float blinkStartTime = 0.25f; // will fluctuate from white, to normal in 0.25 seconds, then faster the next time
     public float blinkEndTime = 0.01f;
@@ -31,6 +36,11 @@ public class Explosive : MonoBehaviour
     {
         countDown = armTime;
         currentBlinkTime = blinkStartTime;
+
+        if (randomFuseTime)
+        {
+            countDown = Random.Range(minRandomFuse, maxRandomFuse);
+        }
     }
 
     // Update is called once per frame

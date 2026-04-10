@@ -43,7 +43,7 @@ public class Blackerbox : MonoBehaviour {
                     ingredientItem.sprite = recipe.dish.sprite;
                     ingredientItem.name = recipe.dish.name;
                     ingredientItem.dish = recipe.dish;
-                    ingredientItem.ingredientList = droppedIngredient;
+                    ingredientItem.ingredientList = new List<Ingredient>(droppedIngredient);
 
                     droppedIngredient.Clear();
                 }

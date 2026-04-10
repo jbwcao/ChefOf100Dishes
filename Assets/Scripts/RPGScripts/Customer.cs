@@ -44,18 +44,10 @@ public class Customer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D coll)
     {
         MasterPrefab item = coll.gameObject.GetComponent<MasterPrefab>(); 
-        foreach (Cookbook.Recipe r in cookbook.recipes) {
-            if (r.dish == item.dish)
-            {
-                foreach (Ingredient i in r.ingredients) {
-                    if (wantedIngredient == i)
-                    {
-                        satisfied=true;
-                        Debug.Log("SATISFIED");
-                    }
-                }
-            }
-            
+        if (item.ingredientList.Contains(wantedIngredient))
+        {
+            satisfied = true;
+            Debug.Log("SATISFIES");
         }
        
        

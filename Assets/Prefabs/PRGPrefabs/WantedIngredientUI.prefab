@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2556796591935975656}
   - component: {fileID: 7773529311774298427}
   m_Layer: 0
-  m_Name: WantedDishUI
+  m_Name: WantedIngredientUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

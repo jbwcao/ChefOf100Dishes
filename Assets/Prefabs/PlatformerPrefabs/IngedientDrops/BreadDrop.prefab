@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 513346868581761919, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
+      propertyPath: maxPower
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 513346868581761919, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
+      propertyPath: minPower
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 513346868581761919, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: assignedItem
       value: 
       objectReference: {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}

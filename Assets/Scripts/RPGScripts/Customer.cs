@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class Customer : MonoBehaviour
@@ -19,12 +20,6 @@ public class Customer : MonoBehaviour
     #endregion
 
     public Cookbook cookbook;
-    
-
-
-    
-
-
     
         
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -66,20 +61,39 @@ public class Customer : MonoBehaviour
 
             satisfactionSlider.value = currSatisfied / maxSatisfied;  // update slider
 
-            Destroy(coll.gameObject);  //destroy dish object
+            
 
             Debug.Log("SATISFIES");
 
+        }
+        else
+        {
+
+            CreateTextDirectly("what is this crap?", gameObject.transform);
         }
 
         if (currSatisfied >= maxSatisfied)
         {
             Destroy(gameObject);  //destroy customer once full
         }
+
+        Destroy(coll.gameObject);  //destroy dish object
        
-       
-        
     }
+    
+
+    public void CreateTextDirectly(string message, Transform parent) {
+    GameObject go = new GameObject("DynamicText");
+    
+    go.transform.SetParent(GameObject.Find("Canvas").transform, false);
+    
+    // Add the TMPro component
+    TextMeshProUGUI text = go.AddComponent<TextMeshProUGUI>();
+    text.text = message;
+    text.fontSize = 12;
+    text.transform.position = new Vector2(-1, 4);
+    }
+
 
         
 }

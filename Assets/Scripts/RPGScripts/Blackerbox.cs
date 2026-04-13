@@ -31,11 +31,6 @@ public class Blackerbox : MonoBehaviour {
 
                 if (flag) {
 
-                    
-
-
-                    Debug.Log(recipe.dish.name);
-
                     GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
                     MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
                     

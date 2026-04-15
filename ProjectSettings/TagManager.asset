@@ -9,6 +9,7 @@ TagManager:
   - Terrain
   - Projectile
   - Enemy
+  - Door
   layers:
   - Default
   - TransparentFX

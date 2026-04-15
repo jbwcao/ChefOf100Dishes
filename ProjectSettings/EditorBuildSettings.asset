@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlatformerTest2.unity
     guid: 507670b4e4dfc384b8eb19bfa0a75072
+  - enabled: 1
+    path: Assets/Scenes/J'sPlatformerTest.unity
+    guid: 1750954f1c269904eb67ece937fad0a6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

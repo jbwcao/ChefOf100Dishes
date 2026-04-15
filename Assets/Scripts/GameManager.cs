@@ -27,8 +27,10 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         
         inventory = new Queue<Ingredient>();
-        //Instance.addInventory(testIngredient1);
-        //Instance.addInventory(testIngredient2);
+        Instance.addInventory(testIngredient1);
+        Instance.addInventory(testIngredient2);
+        
+
         
         
 

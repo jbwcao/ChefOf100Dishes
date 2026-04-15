@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MasterPrefab : MonoBehaviour
 {
@@ -8,8 +9,12 @@ public class MasterPrefab : MonoBehaviour
 
     public string name;
     public InventoryManager inventoryManager;
+   
     public Ingredient ingredient;
     public Dish dish;
+
+    public List<Ingredient> ingredientList;
+
 
 
 

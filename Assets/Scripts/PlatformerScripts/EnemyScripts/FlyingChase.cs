@@ -115,7 +115,7 @@ public class FlyingChase : MonoBehaviour, IKnockbackable
 
 
 
-    public virtual void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
+    public virtual bool applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
     {
         CancelInvoke(nameof(EndKnockback));
 
@@ -131,6 +131,7 @@ public class FlyingChase : MonoBehaviour, IKnockbackable
 
         //switch to end knockback when landing instead of timer(?)
         Invoke(nameof(EndKnockback), knockbackTime);
+        return true;
     }
 
     public void CancelKnockback()

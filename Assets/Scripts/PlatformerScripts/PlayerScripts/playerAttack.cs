@@ -73,9 +73,19 @@ public class PlayerAttack : MonoBehaviour
         {
             if (enemy.CompareTag("Enemy"))
             {
+                //bool is for breadknight, retruning false if hit from the front or is not supposed to take damage
+                bool takeDamage = true;
                 Debug.Log("Enemy hit: " + enemy.name);
-                enemy.gameObject.GetComponent<IKnockbackable>().applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
-                enemy.gameObject.GetComponent<IDamageable>().takeDamage(damage);
+                IKnockbackable knockbackable = enemy.gameObject.GetComponentInParent<IKnockbackable>();
+                if (knockbackable != null)
+                {
+                    takeDamage = knockbackable.applyKnockback(transform.position, knockBackUpwardsPower, knockBackPower);
+                }
+
+                if (takeDamage){
+                    enemy.gameObject.GetComponent<IDamageable>().takeDamage(damage);
+                }
+                
             }
            
         }

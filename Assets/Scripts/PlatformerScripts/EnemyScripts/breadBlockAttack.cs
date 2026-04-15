@@ -1,6 +1,7 @@
+using System.Collections;
 using UnityEngine;
 
-public class breadBlockAttack : EnemyMovement
+public class breadBlockAttack : EnemyMovement, IKnockbackable
 {
     public LayerMask playerLayers;
     public float lungePower = 2f;
@@ -8,35 +9,43 @@ public class breadBlockAttack : EnemyMovement
     public float timeBeforecountering = 0.15f;
     public Vector2 attackSize = new Vector2(1f, 0.5f);
     public float range = 1.15f;
+    private bool stop = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
+        
+            base.Start();
         
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        if(!stop){
+            base.Update();
+        }
     }
 
     // if the player attacks facing the front of enemy:
     // less knockback
-    public override void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2, float knockbackForce = 8)
+    public override bool applyKnockback(Vector2 hitFromPosition, float upwardForce = 2, float knockbackForce = 8)
     {
-        if (hitFromPosition.x > transform.position.x) // if player attacks from the front(Implement)
+        float horizontalDifference = hitFromPosition.x - transform.position.x;
+        bool hitFromFront = (horizontalDifference * currentDir) > 0;
+        if (hitFromFront) // if player attacks from the front(Implement)
         {
             // play a block animation
             base.applyKnockback(hitFromPosition, 0, 2);
+            StartCoroutine(Counter());
             //attack after -timeBeforecountering- seconds
+            return false;
         }
         else
         {
-            base.applyKnockback(hitFromPosition, upwardForce, knockbackForce);
+            return base.applyKnockback(hitFromPosition, upwardForce, knockbackForce);
         }
-        
     }
 
     
@@ -44,16 +53,25 @@ public class breadBlockAttack : EnemyMovement
     // deal no damage
     
 
-    //bread then counters with a swing attack, swing moves him forward a little
+    IEnumerator Counter()
+    {
+        //stop movement speed
+        stop = true;
+        yield return new WaitForSeconds(timeBeforecountering);
+        attack(currentDir * range);
+    
+    }
+
 
     void attack(float attackDirectionOffset)
     {
+        //bread then counters with a swing attack, swing moves him forward a little
         Vector2 attackCenter = (Vector2) transform.position + new Vector2(attackDirectionOffset, 0);
         Collider2D[] enemiesHit = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, playerLayers);
         //play swing attack animation here
         foreach(Collider2D target in enemiesHit)
         {
-            if (target.CompareTag("player"))
+            if (target.CompareTag("Player"))
             {
                 if (target.gameObject.GetComponent<PlayerHealth>().takeDamage(swingDamage))// get the damage/health script from player and call takedamage()
                 {
@@ -61,7 +79,13 @@ public class breadBlockAttack : EnemyMovement
                 } 
             }
         }
+        //start movement
+        stop = false;
     }
 
-
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube((Vector2) transform.position + new Vector2(range, 0), attackSize);
+    }
 }

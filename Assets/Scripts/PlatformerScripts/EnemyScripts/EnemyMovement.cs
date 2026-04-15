@@ -5,7 +5,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
 {
     public float enemySpeed = 1f;
     public int direction = 1; //can be 1 or -1
-    int currentDir;
+    protected int currentDir;
 
     float halfwidth;// sprite width
     float halfhight;
@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
     int terrainLayer;
 
     // TODO: implent a stop before turning and moving again
-    void Start()
+    protected virtual void Start()
     {
         terrainLayer = LayerMask.GetMask("Terrain");
         EnemyRB = GetComponent<Rigidbody2D>();
@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (!stopMoving)
         {
@@ -85,7 +85,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
     }
 
     //vertual allows for overriding in subclasses
-    public virtual void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
+    public virtual bool applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
     {
         stopMoving = true;
 
@@ -103,6 +103,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
 
         //switch to end knockback when landing instead of timer(?)
         Invoke(nameof(EndKnockback), knockbackTime);
+        return true;
     }
 
     

@@ -48,7 +48,7 @@ public class EnemyHitbox : MonoBehaviour, IDamageable
         
     }
 
-    public void takeDamage(int damage)
+    public virtual void takeDamage(int damage)
     {
         currHealth -= damage;
         Debug.Log(name + " took damage, health left: " + currHealth);

@@ -246,6 +246,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4053919468332610833, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053919468332610833, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     - target: {fileID: 4583496688128660078, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
       propertyPath: m_Size.x
       value: 0.36
@@ -262,10 +270,42 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5272428055915864232, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: attackSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: attackSize.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: knockbackTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: playerLayers.m_Bits
+      value: 131072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      propertyPath: timeBeforecountering
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5272428055915864232, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 414816024399707010, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509979100}
   m_SourcePrefab: {fileID: 100100000, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
 --- !u!1001 &369247087
 PrefabInstance:
@@ -409,6 +449,34 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d2c70513370b9d41ba65f1137136cb2, type: 3}
+--- !u!1 &509979099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 414816024399707010, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+  m_PrefabInstance: {fileID: 208855525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509979100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509979099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b17c9f4c1f03e047a5f9103044bfbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxHealth: 9
+  contactDamage: 1
+  EnemyRB: {fileID: 509979103}
+  EnemyCollider: {fileID: 1403926045}
+  droppedItems:
+  - {fileID: 0}
+--- !u!50 &509979103 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4878626397965263654, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+  m_PrefabInstance: {fileID: 208855525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1586,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3289392928396401354, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
   m_PrefabInstance: {fileID: 1849926907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1403926045 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 237687313429263554, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
+  m_PrefabInstance: {fileID: 208855525}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1526111092
 PrefabInstance:

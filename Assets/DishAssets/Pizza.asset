@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c32f589abb446e1a6d5050d569c73c, type: 3}
   m_Name: Pizza
   m_EditorClassIdentifier: Assembly-CSharp::Dish
-  name: 
+  name: pizza
   sprite: {fileID: 0}

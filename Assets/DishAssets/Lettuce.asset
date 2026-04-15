@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Lettuce
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   name: lettuce
-  sprite: {fileID: 1476140979647752040, guid: 1a0bedfa5309ed34f87612c7e0d9903f, type: 3}
+  sprite: {fileID: -1210109707280736948, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}

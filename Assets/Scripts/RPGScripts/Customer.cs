@@ -17,6 +17,12 @@ public class Customer : MonoBehaviour
     public GameObject wantedIngredientUIPrefab;
     public Vector3 uiOffset = new Vector3(3, 1, 0);
     Ingredient wantedIngredient;
+    private GameObject currentIngredientUI;
+    #endregion
+
+    #region text_var
+    [SerializeField] public Vector2 textOffset = new Vector2(0, 0);
+    private GameObject currentText;
     #endregion
 
     public Cookbook cookbook;
@@ -27,41 +33,49 @@ public class Customer : MonoBehaviour
     {
         GenerateWantedIngredient();
         
-        GameObject ui = Instantiate(wantedIngredientUIPrefab, transform.position + uiOffset, Quaternion.identity);
-        ui.transform.SetParent(transform);
-        ui.GetComponent<WantedIngredientUI>().SetIngredient(wantedIngredient);
-        
         //slider iniatilize
         satisfactionSlider = GetComponentInChildren<Slider>();
         satisfactionSlider.value = currSatisfied / maxSatisfied;
+
+        CreateTextDirectly("I want ...", gameObject.transform, textOffset);
     }
      void GenerateWantedIngredient()
     {
+        if (currentIngredientUI != null)
+        {
+            Destroy(currentIngredientUI);
+        } 
+
+        //Choose random from list
         int index = Random.Range(0, wantedIngredientList.Count);
         wantedIngredient = wantedIngredientList[index];
 
-        Debug.Log("Customer wants: " + wantedIngredient);
-    }
+        //Sets visual image
+        GameObject ui = Instantiate(wantedIngredientUIPrefab, transform.position + uiOffset, Quaternion.identity);
+        ui.transform.SetParent(transform);
+        ui.GetComponent<WantedIngredientUI>().SetIngredient(wantedIngredient);
+        currentIngredientUI = ui;
 
-    
-    
-    void Update()
-    {
-        
+        Debug.Log("Customer wants: " + wantedIngredient);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
     {
         MasterPrefab item = coll.gameObject.GetComponent<MasterPrefab>(); 
-        
+        if (item.dish is null)
+        {
+            return;
+        }
+
         if (item.ingredientList.Contains(wantedIngredient))
         {
-            float satisfaction = item.ingredientList.Count; //  satisfaction = complexity
+            //satisfaction = complexity
+            float satisfaction = item.ingredientList.Count;
             currSatisfied += satisfaction;
 
-            satisfactionSlider.value = currSatisfied / maxSatisfied;  // update slider
-
-            
+            // update slider
+            satisfactionSlider.value = currSatisfied / maxSatisfied;
+            GenerateWantedIngredient();
 
             Debug.Log("SATISFIES");
 
@@ -69,31 +83,37 @@ public class Customer : MonoBehaviour
         else
         {
 
-            CreateTextDirectly("what is this crap?", gameObject.transform);
+            CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
         }
 
         if (currSatisfied >= maxSatisfied)
         {
-            Destroy(gameObject);  //destroy customer once full
+            //Destroy customer once full
+            Destroy(gameObject);
         }
 
-        Destroy(coll.gameObject);  //destroy dish object
+        //Destroy dish object
+        Destroy(coll.gameObject);
        
     }
     
 
-    public void CreateTextDirectly(string message, Transform parent) {
-    GameObject go = new GameObject("DynamicText");
-    
-    go.transform.SetParent(GameObject.Find("Canvas").transform, false);
-    
-    // Add the TMPro component
-    TextMeshProUGUI text = go.AddComponent<TextMeshProUGUI>();
-    text.text = message;
-    text.fontSize = 12;
-    text.transform.position = new Vector2(-1, 4);
-    }
-
-
+    public void CreateTextDirectly(string message, Transform parent, Vector2 vector) {
+        if (currentText != null) {
+            Destroy(currentText);
+            }
+        GameObject go = new GameObject("DynamicText");
         
+        go.transform.SetParent(GetComponentInChildren<Canvas>().transform, false);
+        go.transform.localPosition = vector;
+        currentText= go;
+        
+        // Add the TMPro component
+        TextMeshPro text = go.AddComponent<TextMeshPro>();
+        text.text = message;
+        text.fontSize = 100;
+        text.enableWordWrapping = false;
+    
+    }
+  
 }

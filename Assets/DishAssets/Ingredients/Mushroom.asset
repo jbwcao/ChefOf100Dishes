@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Mushroom
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   name: mushroom
-  sprite: {fileID: -3526178637423184912, guid: 11b9ab4e88db1ae4f9a3e497d38f7f56, type: 3}
+  sprite: {fileID: 5108096644484635525, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}

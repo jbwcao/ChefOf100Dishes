@@ -36,10 +36,6 @@ public class GameManager : MonoBehaviour {
         Instance.addInventory(testIngredient1);
         Instance.addInventory(testIngredient2);
         
-
-        
-        
-
     }
 
     // Update is called once per frame
@@ -48,13 +44,12 @@ public class GameManager : MonoBehaviour {
     }
 
     public void addInventory(Ingredient ingredient) {
-        Debug.Log("inventory before: " + String.Join(" ", inventory));
-
+        
         if (inventory.Count >= 9) {
             inventory.Dequeue();
         } 
         inventory.Enqueue(ingredient);  
-        Debug.Log("inventory after: " + String.Join(" ", inventory));
+        
     }
 }
 

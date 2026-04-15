@@ -15,10 +15,10 @@ public class Blackerbox : MonoBehaviour {
     }
 
     public void Cook() {
+        Debug.Log("Cooking");
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
        
         foreach (Cookbook.Recipe recipe in cookbook.recipes) {
-            Debug.Log(recipe.dish.name);
             if (recipe.ingredients.Count == droppedIngredient.Count) {
                 bool flag = true;
                 
@@ -49,22 +49,18 @@ public class Blackerbox : MonoBehaviour {
         for (int i = 0; i < spawnPoints.Count; i++) {
             spawnPoints[i].GetComponent<Image>().sprite = null;
             spawnPoints[i].SetActive(false);
-
         }
         
 
     }
     private void OnTriggerEnter2D(Collider2D coll) {
-        if (coll.gameObject.CompareTag("Ingredient")) {
-            droppedIngredient.Add(coll.gameObject.GetComponent<MasterPrefab>().ingredient);
+        GameObject item = coll.gameObject;
+        if (item.CompareTag("Ingredient") && item.GetComponent<MasterPrefab>().dish is null) {
+            droppedIngredient.Add(item.GetComponent<MasterPrefab>().ingredient);
             int index = droppedIngredient.Count - 1;
             spawnPoints[index].GetComponent<Image>().sprite = droppedIngredient[index].sprite;
             spawnPoints[index].SetActive(true);
-            Destroy(coll.gameObject);
-            foreach (Ingredient i in droppedIngredient)
-            {
-                Debug.Log(i.name);
-            }
+            Destroy(item);
         }
     }
 }

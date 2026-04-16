@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Blackerbox : MonoBehaviour {
     public Cookbook cookbook;
@@ -10,13 +11,22 @@ public class Blackerbox : MonoBehaviour {
     public GameObject masterPrefab;
     public List<GameObject> spawnPoints = new List<GameObject>();
     List<GameObject> potDisplay = new List<GameObject>();
+    private Animator animator;
     void Start() {
         droppedIngredient = new List<Ingredient>();
+        animator = GetComponent<Animator>();
     }
 
-    public void Cook() {
+    public void Cook()
+    {
+        StartCoroutine(CookCoroutine());
+    }
+
+    IEnumerator CookCoroutine() {
         Debug.Log("Cooking");
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
+        animator.SetTrigger("Cook");
+        yield return new WaitForSeconds(1f);
        
         foreach (Cookbook.Recipe recipe in cookbook.recipes) {
             if (recipe.ingredients.Count == droppedIngredient.Count) {
@@ -30,6 +40,7 @@ public class Blackerbox : MonoBehaviour {
                 }
 
                 if (flag) {
+                    
 
                     GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
                     MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
@@ -41,6 +52,7 @@ public class Blackerbox : MonoBehaviour {
                     ingredientItem.ingredientList = new List<Ingredient>(droppedIngredient);
 
                     droppedIngredient.Clear();
+
                 }
             }
         }
@@ -63,4 +75,5 @@ public class Blackerbox : MonoBehaviour {
             Destroy(item);
         }
     }
+    
 }

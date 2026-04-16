@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 
 public class Customer : MonoBehaviour
@@ -87,6 +88,7 @@ public class Customer : MonoBehaviour
         {
 
             CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
+            StartCoroutine(CameraShake(0.3f, 0.1f));
         }
 
         if (currSatisfied >= maxSatisfied)
@@ -118,5 +120,19 @@ public class Customer : MonoBehaviour
         text.enableWordWrapping = false;
     
     }
+    IEnumerator CameraShake(float duration, float magnitude) {
+    Vector3 originalPos = Camera.main.transform.position;
+    float elapsed = 0f;
+
+    while (elapsed < duration) {
+        float x = originalPos.x + Random.Range(-1f, 1f) * magnitude;
+        float y = originalPos.y + Random.Range(-1f, 1f) * magnitude;
+        Camera.main.transform.position = new Vector3(x, y, originalPos.z);
+        elapsed += Time.deltaTime;
+        yield return null;
+    }
+
+    Camera.main.transform.position = originalPos;
+}
   
 }

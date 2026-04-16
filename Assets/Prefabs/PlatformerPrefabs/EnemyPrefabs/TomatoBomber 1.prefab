@@ -149,6 +149,9 @@ MonoBehaviour:
   minTimeToReachDest: 1.5
   MaxTimeToReachDest: 2.5
   detectionRadius: 9
+  blockMask:
+    serializedVersion: 2
+    m_Bits: 64
   rb: {fileID: 7573332728058206594}
 --- !u!50 &7573332728058206594 stripped
 Rigidbody2D:

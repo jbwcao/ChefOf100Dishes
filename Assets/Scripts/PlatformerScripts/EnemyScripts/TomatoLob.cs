@@ -37,21 +37,20 @@ public class TomatoLob : MonoBehaviour
     //private bool playerDetected = false; 
     private bool attacking = false;
     private int searchMask; //what it checks for 
-    private int blockMask; // what blocks view
+    public LayerMask blockMask; // what blocks view
 
 
     SpriteRenderer sr;
     public Rigidbody2D rb;
-    void Start()
+    protected virtual void Start()
     {
         //BUG: currently can detect the players attack as part of their body, put on different layer?
         sr = GetComponent<SpriteRenderer>();
         searchMask = LayerMask.GetMask("Player");
-        blockMask = LayerMask.GetMask("Terrain");
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         //should only look around once 
         if (!attacking)
@@ -68,7 +67,7 @@ public class TomatoLob : MonoBehaviour
     }
 
 
-    private void lookAround()
+    protected virtual void lookAround()
     {
         //get all objects in view radius
         Collider2D[] viewArea = Physics2D.OverlapCircleAll(transform.position, detectionRadius, searchMask);
@@ -116,7 +115,7 @@ public class TomatoLob : MonoBehaviour
     }
  
 
-    private IEnumerator Attack(Vector3 attackLocation)
+    protected virtual IEnumerator Attack(Vector3 attackLocation)
     {
         Debug.Log("Starting attack Chain");
         attacking = true;

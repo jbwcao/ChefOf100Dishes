@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 184514616f4a4eb47b8bc1aadac3e76e
+guid: cb7300173bd1f5a42a6e504191151474
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8924242467904156380
-    second: potato_jump_0
+      213: 368543389579951487
+    second: slime_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: potato_jump_0
+      name: slime_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 9
-        width: 21
-        height: 17
+        x: 3
+        y: 8
+        width: 23
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd2f1eced3749db70800000000000000
-      internalID: 8924242467904156380
+      spriteID: f7d3b3c92445d1500800000000000000
+      internalID: 368543389579951487
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      potato_jump_0: 8924242467904156380
+      slime_0: 368543389579951487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

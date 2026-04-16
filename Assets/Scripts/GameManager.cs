@@ -17,11 +17,7 @@ public class GameManager : MonoBehaviour {
     public Ingredient testIngredient6;
     public Ingredient testIngredient7;
 
-    public Customer customer1;
-
-    public Customer customer2;
-    
-    public Customer customer3;
+    public float[] customerSatisfaction = new float[3];
 
     void Awake() {
         if (Instance == null) {
@@ -33,8 +29,7 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         
         inventory = new Queue<Ingredient>();
-        Instance.addInventory(testIngredient1);
-        Instance.addInventory(testIngredient2);
+        
         
     }
 

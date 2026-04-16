@@ -7,8 +7,9 @@ using TMPro;
 public class Customer : MonoBehaviour
 {
     #region satisfaction_var
+    public int customerIndex;
     [SerializeField] private float maxSatisfied = 10;
-    private float currSatisfied = 0;
+    private float currSatisfied;
     private Slider satisfactionSlider;
     #endregion
 
@@ -31,6 +32,7 @@ public class Customer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currSatisfied = GameManager.Instance.customerSatisfaction[customerIndex];
         GenerateWantedIngredient();
         
         //slider iniatilize
@@ -72,6 +74,7 @@ public class Customer : MonoBehaviour
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
             currSatisfied += satisfaction;
+            GameManager.Instance.customerSatisfaction[customerIndex] = currSatisfied;
 
             // update slider
             satisfactionSlider.value = currSatisfied / maxSatisfied;

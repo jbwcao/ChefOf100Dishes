@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4583496688128660078}
   - component: {fileID: 4053919468332610833}
   - component: {fileID: 4878626397965263654}
-  - component: {fileID: 5272428055915864232}
   - component: {fileID: 115073638787602651}
   - component: {fileID: 8079582531595772237}
+  - component: {fileID: 5442272402018929826}
   m_Layer: 7
   m_Name: Breadknight
   m_TagString: Enemy
@@ -87,12 +87,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4431494890709657585, guid: d4a2792961255194ebb3faeaec73a36a, type: 3}
+  m_Sprite: {fileID: -699407594815662204, guid: 3044102b094e76b47958e9faa04ec43f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.36, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -136,7 +136,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.36, y: 0.32}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.36, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -170,21 +170,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5272428055915864232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414816024399707010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24daf1e18a387df42b5c541fa79fa9ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  enemySpeed: 1
-  direction: 1
-  knockbackTime: 0.15
 --- !u!114 &115073638787602651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,15 +202,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemySpeed: 1
   direction: 1
-  knockbackTime: 0.15
+  knockbackTime: 0.5
   playerLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 131072
   lungePower: 2
   swingDamage: 1
-  timeBeforecountering: 0.15
-  attackSize: {x: 1, y: 0.5}
-  range: 1.15
+  timeBeforecountering: 0.5
+  attackSize: {x: 3, y: 1.5}
+  range: 2
+--- !u!114 &5442272402018929826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414816024399707010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b17c9f4c1f03e047a5f9103044bfbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxHealth: 9
+  contactDamage: 1
+  EnemyRB: {fileID: 4878626397965263654}
+  EnemyCollider: {fileID: 237687313429263554}
+  droppedItems:
+  - {fileID: 0}
 --- !u!1 &1044444292979501336
 GameObject:
   m_ObjectHideFlags: 0

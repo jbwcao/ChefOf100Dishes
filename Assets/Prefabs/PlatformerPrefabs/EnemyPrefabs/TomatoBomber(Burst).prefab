@@ -17,6 +17,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3436487495499092551, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: blockMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436487495499092551, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: projectileAmount
       value: 3
       objectReference: {fileID: 0}

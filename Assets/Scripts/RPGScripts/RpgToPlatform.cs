@@ -12,6 +12,12 @@ public class RpgToPlatform : MonoBehaviour
 
     public void Clicked()
     {
+        GameManager.Instance.roundRemaining--;
+
+        if (GameManager.Instance.roundRemaining <= 0)
+        {
+         // game over
+        }
         SceneManager.LoadScene("Hub Room");
     }
 

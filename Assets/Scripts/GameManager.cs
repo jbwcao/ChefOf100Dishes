@@ -2,12 +2,15 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public Queue<Ingredient> inventory;
+    
+    public float roundRemaining;
 
     #region testing_var
     public Ingredient testIngredient1;
@@ -34,6 +37,7 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         
         inventory = new Queue<Ingredient>();
+        roundRemaining = 10f;
         
         
     }

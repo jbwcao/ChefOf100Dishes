@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public Queue<Ingredient> inventory;
+
+    public int currRound;
     
     public float roundRemaining;
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour {
     void Awake() {
         if (Instance == null) {
             Instance = this;
+            currRound = 0;
         }
         else if(Instance != this) {
             Destroy(this.gameObject);

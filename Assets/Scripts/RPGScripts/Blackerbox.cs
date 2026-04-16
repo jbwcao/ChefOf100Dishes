@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class Blackerbox : MonoBehaviour {
     public Cookbook cookbook;
@@ -12,6 +13,9 @@ public class Blackerbox : MonoBehaviour {
     public List<GameObject> spawnPoints = new List<GameObject>();
     List<GameObject> potDisplay = new List<GameObject>();
     private Animator animator;
+    [SerializeField] private Vector2 textoffset;
+    private GameObject currentText;
+
     void Start() {
         droppedIngredient = new List<Ingredient>();
         animator = GetComponent<Animator>();
@@ -27,8 +31,13 @@ public class Blackerbox : MonoBehaviour {
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
         animator.SetTrigger("Cook");
         yield return new WaitForSeconds(1f);
+
+        Cookbook.Recipe poop_recipe = cookbook.recipes[0];
+        bool matched = false;
+
        
         foreach (Cookbook.Recipe recipe in cookbook.recipes) {
+            
             if (recipe.ingredients.Count == droppedIngredient.Count) {
                 bool flag = true;
                 
@@ -40,21 +49,15 @@ public class Blackerbox : MonoBehaviour {
                 }
 
                 if (flag) {
+                    spawnDish(recipe);
+                    matched = true;
                     
-
-                    GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
-                    MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
-                    
-                    ingredientObj.name = recipe.dish.name;
-                    ingredientItem.sprite = recipe.dish.sprite;
-                    ingredientItem.name = recipe.dish.name;
-                    ingredientItem.dish = recipe.dish;
-                    ingredientItem.ingredientList = new List<Ingredient>(droppedIngredient);
-
-                    droppedIngredient.Clear();
-
                 }
             }
+        }
+        if (!matched)
+        {
+            spawnDish(poop_recipe);
         }
 
         droppedIngredient.Clear();
@@ -64,6 +67,20 @@ public class Blackerbox : MonoBehaviour {
         }
         
 
+    }
+    private void spawnDish(Cookbook.Recipe recipe)
+    {
+        GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
+        MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
+        ingredientObj.name = recipe.dish.name;
+        ingredientObj.transform.localScale = new Vector2 (1f,1f);
+        ingredientItem.sprite = recipe.dish.sprite;
+        ingredientItem.name = recipe.dish.name;
+        ingredientItem.dish = recipe.dish;
+        ingredientItem.ingredientList = new List<Ingredient>(droppedIngredient);
+        droppedIngredient.Clear();
+        CreateTextDirectly("You made " + ingredientItem.name, gameObject.transform, textoffset);
+        
     }
     private void OnTriggerEnter2D(Collider2D coll) {
         GameObject item = coll.gameObject;
@@ -75,5 +92,21 @@ public class Blackerbox : MonoBehaviour {
             Destroy(item);
         }
     }
+     private void CreateTextDirectly(string message, Transform parent, Vector2 vector) {
+        if (currentText != null) {
+            Destroy(currentText);
+            }
+        GameObject go = new GameObject("DynamicText");
+        
+        go.transform.SetParent(GameObject.Find("MainCanvas").GetComponent<Canvas>().transform, false);
+        go.transform.localPosition = vector;
+        currentText= go;
+        
+        // Add the TMPro component
+        TextMeshPro text = go.AddComponent<TextMeshPro>();
+        text.text = message;
+        text.fontSize = 130;
+        text.enableWordWrapping = false;
+     }
     
 }

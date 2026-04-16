@@ -23,7 +23,7 @@ public class Customer : MonoBehaviour
     #endregion
 
     #region text_var
-    [SerializeField] public Vector2 textOffset = new Vector2(0, 0);
+    [SerializeField] private Vector2 textOffset = new Vector2(0, 0);
     private GameObject currentText;
     #endregion
 
@@ -69,6 +69,7 @@ public class Customer : MonoBehaviour
         {
             return;
         }
+        
 
         if (item.ingredientList.Contains(wantedIngredient))
         {
@@ -88,7 +89,7 @@ public class Customer : MonoBehaviour
         {
 
             CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
-            StartCoroutine(CameraShake(0.3f, 0.1f));
+            StartCoroutine(Shake(0.3f, 0.1f));
         }
 
         if (currSatisfied >= maxSatisfied)
@@ -103,7 +104,7 @@ public class Customer : MonoBehaviour
     }
     
 
-    public void CreateTextDirectly(string message, Transform parent, Vector2 vector) {
+    private void CreateTextDirectly(string message, Transform parent, Vector2 vector) {
         if (currentText != null) {
             Destroy(currentText);
             }
@@ -120,19 +121,19 @@ public class Customer : MonoBehaviour
         text.enableWordWrapping = false;
     
     }
-    IEnumerator CameraShake(float duration, float magnitude) {
-    Vector3 originalPos = Camera.main.transform.position;
-    float elapsed = 0f;
+    IEnumerator Shake(float duration, float magnitude) {
+        Vector3 originalPos = transform.position;
+        float elapsed = 0f;
 
-    while (elapsed < duration) {
-        float x = originalPos.x + Random.Range(-1f, 1f) * magnitude;
-        float y = originalPos.y + Random.Range(-1f, 1f) * magnitude;
-        Camera.main.transform.position = new Vector3(x, y, originalPos.z);
-        elapsed += Time.deltaTime;
-        yield return null;
-    }
+        while (elapsed < duration) {
+            float x = originalPos.x + Random.Range(-1f, 1f) * magnitude;
+            float y = originalPos.y + Random.Range(-1f, 1f) * magnitude;
+            transform.position = new Vector3(x, y, originalPos.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
 
-    Camera.main.transform.position = originalPos;
+        transform.position = originalPos;
 }
   
 }

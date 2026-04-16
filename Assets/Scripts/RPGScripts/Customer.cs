@@ -65,7 +65,7 @@ public class Customer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D coll)
     {
         MasterPrefab item = coll.gameObject.GetComponent<MasterPrefab>(); 
-        if (item.dish is null)
+        if (coll.gameObject.CompareTag("Ingredient"))
         {
             return;
         }

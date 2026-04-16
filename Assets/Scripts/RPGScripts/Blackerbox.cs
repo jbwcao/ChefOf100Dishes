@@ -23,6 +23,14 @@ public class Blackerbox : MonoBehaviour {
 
     public void Cook()
     {
+        if (GameObject.FindWithTag("Dish") != null) {
+            CreateTextDirectly("Please serve current dish", gameObject.transform, textoffset);
+            return;}
+
+        if (droppedIngredient.Count <= 0) {
+            CreateTextDirectly("You need ingredients...", gameObject.transform, textoffset);
+            return;
+        }
         StartCoroutine(CookCoroutine());
     }
 
@@ -73,12 +81,12 @@ public class Blackerbox : MonoBehaviour {
         GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
         MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
         ingredientObj.name = recipe.dish.name;
-        ingredientObj.transform.localScale = new Vector2 (1f,1f);
         ingredientItem.sprite = recipe.dish.sprite;
         ingredientItem.name = recipe.dish.name;
         ingredientItem.dish = recipe.dish;
         ingredientItem.ingredientList = new List<Ingredient>(droppedIngredient);
         droppedIngredient.Clear();
+        ingredientObj.tag = "Dish";
         CreateTextDirectly("You made " + ingredientItem.name, gameObject.transform, textoffset);
         
     }

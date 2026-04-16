@@ -202,10 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd80b3c288c6e74abe63268c59d8318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  tomato: {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
-  mushroom: {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
-  minPower: 10
-  maxPower: 15
+  minPower: 3
+  maxPower: 6
   glowStartupTime: 0.2
   assignedItem: {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
   itemRB: {fileID: 7474695240902816150}

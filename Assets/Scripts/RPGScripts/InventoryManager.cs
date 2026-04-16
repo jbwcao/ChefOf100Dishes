@@ -31,6 +31,7 @@ public class InventoryManager : MonoBehaviour
             {
                 GameObject ingredientObj = Instantiate(masterPrefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
                 MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
+                ingredientObj.tag = "Ingredient";
 
                 // Sets all of the instance variables values of the new gameobject
                 ingredientObj.name = items[i].name;

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance;
@@ -9,6 +10,11 @@ public class GameManager : MonoBehaviour {
     
     public Queue<Ingredient> inventory;
 
+    public int currRound;
+    
+    public float roundRemaining;
+
+    #region testing_var
     public Ingredient testIngredient1;
     public Ingredient testIngredient2;
     public Ingredient testIngredient3;
@@ -16,10 +22,17 @@ public class GameManager : MonoBehaviour {
     public Ingredient testIngredient5;
     public Ingredient testIngredient6;
     public Ingredient testIngredient7;
+    #endregion
+
+    #region customer_var
+    public float[] customerSatisfaction = new float[3];
+    public Ingredient[] customerWantedIngredient = new Ingredient[3];
+    #endregion
 
     void Awake() {
         if (Instance == null) {
             Instance = this;
+            currRound = 0;
         }
         else if(Instance != this) {
             Destroy(this.gameObject);
@@ -27,28 +40,18 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         
         inventory = new Queue<Ingredient>();
-        Instance.addInventory(testIngredient1);
-        Instance.addInventory(testIngredient2);
-        
-
+        roundRemaining = 10f;
         
         
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-     
     }
 
     public void addInventory(Ingredient ingredient) {
-        Debug.Log("inventory before: " + String.Join(" ", inventory));
-
+        
         if (inventory.Count >= 9) {
             inventory.Dequeue();
         } 
         inventory.Enqueue(ingredient);  
-        Debug.Log("inventory after: " + String.Join(" ", inventory));
+        
     }
 }
 

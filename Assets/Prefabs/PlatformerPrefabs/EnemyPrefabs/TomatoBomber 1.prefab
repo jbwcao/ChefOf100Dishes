@@ -99,7 +99,7 @@ PrefabInstance:
     - target: {fileID: 7360360242729103680, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: 'droppedItems.Array.data[0]'
       value: 
-      objectReference: {fileID: 2537333587115087512, guid: a68fe038431ed574b92647b140748c88, type: 3}
+      objectReference: {fileID: 5972226706887278202, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
     - target: {fileID: 8988201362710684246, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Size.x
       value: 0.2
@@ -149,6 +149,9 @@ MonoBehaviour:
   minTimeToReachDest: 1.5
   MaxTimeToReachDest: 2.5
   detectionRadius: 9
+  blockMask:
+    serializedVersion: 2
+    m_Bits: 64
   rb: {fileID: 7573332728058206594}
 --- !u!50 &7573332728058206594 stripped
 Rigidbody2D:

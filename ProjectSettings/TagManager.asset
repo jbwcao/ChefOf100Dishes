@@ -10,6 +10,7 @@ TagManager:
   - Projectile
   - Enemy
   - Door
+  - Dish
   layers:
   - Default
   - TransparentFX

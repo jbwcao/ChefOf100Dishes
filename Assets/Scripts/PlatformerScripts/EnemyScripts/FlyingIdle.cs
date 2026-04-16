@@ -33,7 +33,7 @@ public class FlyingIdle : MonoBehaviour//, IKnockbackable
     void OnEnable()
     {
         //startingPoint = transform.position;
-        if (flyRoutine == null)
+        if (flyRoutine != null)
         {
              flyRoutine = StartCoroutine(franticFly());//this line causes on start
         }

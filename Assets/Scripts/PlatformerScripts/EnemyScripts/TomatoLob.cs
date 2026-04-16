@@ -47,6 +47,8 @@ public class TomatoLob : MonoBehaviour
         //BUG: currently can detect the players attack as part of their body, put on different layer?
         sr = GetComponent<SpriteRenderer>();
         searchMask = LayerMask.GetMask("Player");
+        attackCooldown = fireRate; 
+
     }
 
     // Update is called once per frame

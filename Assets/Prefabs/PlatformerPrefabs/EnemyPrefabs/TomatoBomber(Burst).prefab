@@ -8,6 +8,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 822870768030403720, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: 'droppedItems.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5972226706887278202, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
+    - target: {fileID: 1293287060945936286, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293287060945936286, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293287060945936286, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293287060945936286, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.21
+      objectReference: {fileID: 0}
     - target: {fileID: 3436487495499092551, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: fireRate
       value: 2.25
@@ -25,6 +45,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4266546194535776451, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6638713936125364755, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
+    - target: {fileID: 4266546194535776451, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
@@ -40,13 +64,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: TomatoBomber(Burst)
       objectReference: {fileID: 0}
+    - target: {fileID: 5685383468286477075, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685383468286477075, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277696599868849931, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277696599868849931, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7277696599868849931, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.32
+      value: -13.01
       objectReference: {fileID: 0}
     - target: {fileID: 7277696599868849931, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 7277696599868849931, guid: d55909305c1dcf14290c89d2d2099cc2, type: 3}
       propertyPath: m_LocalPosition.z

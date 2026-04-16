@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     
     public Queue<Ingredient> inventory;
 
+    #region testing_var
     public Ingredient testIngredient1;
     public Ingredient testIngredient2;
     public Ingredient testIngredient3;
@@ -16,8 +17,12 @@ public class GameManager : MonoBehaviour {
     public Ingredient testIngredient5;
     public Ingredient testIngredient6;
     public Ingredient testIngredient7;
+    #endregion
 
+    #region customer_var
     public float[] customerSatisfaction = new float[3];
+    public Ingredient[] customerWantedIngredient = new Ingredient[3];
+    #endregion
 
     void Awake() {
         if (Instance == null) {
@@ -31,11 +36,6 @@ public class GameManager : MonoBehaviour {
         inventory = new Queue<Ingredient>();
         
         
-    }
-
-    // Update is called once per frame
-    void Update() {
-     
     }
 
     public void addInventory(Ingredient ingredient) {

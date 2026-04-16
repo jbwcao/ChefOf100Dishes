@@ -33,8 +33,23 @@ public class Customer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //if wanted ingredient is already set from previous round
+        if (GameManager.Instance.customerWantedIngredient[customerIndex] != null)
+        {
+        wantedIngredient = GameManager.Instance.customerWantedIngredient[customerIndex];
+        // show existing UI
+        GameObject ui = Instantiate(wantedIngredientUIPrefab, transform.position + uiOffset, Quaternion.identity);
+        ui.transform.SetParent(transform);
+        ui.GetComponent<WantedIngredientUI>().SetIngredient(wantedIngredient);
+        currentIngredientUI = ui;
+        }
+        else
+        {
+            GenerateWantedIngredient();
+        }
+        
         currSatisfied = GameManager.Instance.customerSatisfaction[customerIndex];
-        GenerateWantedIngredient();
+       
         
         //slider iniatilize
         satisfactionSlider = GetComponentInChildren<Slider>();
@@ -53,13 +68,15 @@ public class Customer : MonoBehaviour
         int index = Random.Range(0, wantedIngredientList.Count);
         wantedIngredient = wantedIngredientList[index];
 
+        //save wanted inggredient to game manager
+        GameManager.Instance.customerWantedIngredient[customerIndex] = wantedIngredient;
+
+
         //Sets visual image
         GameObject ui = Instantiate(wantedIngredientUIPrefab, transform.position + uiOffset, Quaternion.identity);
         ui.transform.SetParent(transform);
         ui.GetComponent<WantedIngredientUI>().SetIngredient(wantedIngredient);
         currentIngredientUI = ui;
-
-        Debug.Log("Customer wants: " + wantedIngredient);
     }
 
     void OnTriggerEnter2D(Collider2D coll)

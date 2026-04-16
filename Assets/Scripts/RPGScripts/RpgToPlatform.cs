@@ -12,7 +12,7 @@ public class RpgToPlatform : MonoBehaviour
 
     public void Clicked()
     {
-        SceneManager.LoadScene("Platformer Phase");
+        SceneManager.LoadScene("Hub Room");
     }
 
     // Update is called once per frame

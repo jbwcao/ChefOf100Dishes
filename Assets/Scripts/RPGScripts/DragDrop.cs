@@ -5,11 +5,13 @@ public class DragDrop : MonoBehaviour
 {
       private bool isDragging = false;
     private Camera cam;
+    private Vector2 lastpos;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cam = Camera.main;
+        lastpos = transform.position;
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class DragDrop : MonoBehaviour
         if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
             isDragging = false;
+            transform.position = lastpos;
         }
 
         if (isDragging)

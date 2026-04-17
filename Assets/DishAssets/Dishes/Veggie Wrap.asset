@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50c32f589abb446e1a6d5050d569c73c, type: 3}
-  m_Name: ChickenNug
+  m_Name: Veggie Wrap
   m_EditorClassIdentifier: Assembly-CSharp::Dish
-  name: chicken nuggets
-  sprite: {fileID: -7006943214847442331, guid: 71fbec1567fb42d49bd738ef4844357c, type: 3}
+  name: Veggie Wrap
+  sprite: {fileID: 5783620032987907116, guid: b8a1b37ff21d34eef89ee203b34e07c0, type: 3}

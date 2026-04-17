@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   resetOnDeath: 0
-  RPGSceneName: RPG Scene
+  RPGSceneName: RPG Phase
   maxHP: 3
   iframeLength: 1.5
   damageBlinkTime: 0.2

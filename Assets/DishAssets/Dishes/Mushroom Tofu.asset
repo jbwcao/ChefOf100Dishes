@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Mushroom Tofu
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: Mushroom Tofu
-  sprite: {fileID: 1132789426827048992, guid: 9abb98c0b71124c979962f1363717682, type: 3}
+  sprite: {fileID: 3097829937732937525, guid: 457c46aabd8bd475e970dcafa306c9d7, type: 3}

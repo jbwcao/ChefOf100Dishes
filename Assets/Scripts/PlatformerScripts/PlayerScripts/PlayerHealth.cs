@@ -1,10 +1,13 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public bool resetOnDeath = false;
+    public string RPGSceneName = "RPG Scene";
 
     public int maxHP = 3;
     private int currentHP;
@@ -42,10 +45,10 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Health % left: " + healthLeft);
             heartUI.spriteUpdate(healthLeft);
 
-            if(currentHP <= 0)
+            if (currentHP <= 0)
             {
                 currentHP = 0;
-                death();
+                Death();
             }
             
             ifameTimer = iframeLength;
@@ -55,10 +58,16 @@ public class PlayerHealth : MonoBehaviour
         return false;
     }
 
-    void death()
+    void Death()
     {
         //TODO: replace with death animation then transition over to game over
-        Destroy(this.gameObject);
+        if (resetOnDeath)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        } else
+        {
+            SceneManager.LoadScene(RPGSceneName);
+        }
     }
 
 

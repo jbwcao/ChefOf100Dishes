@@ -10,4 +10,5 @@ public class DoorScript : MonoBehaviour
     {
         sceneName = sceneNamesPool[Random.Range(0, sceneNamesPool.Count)];
     }
+
 }

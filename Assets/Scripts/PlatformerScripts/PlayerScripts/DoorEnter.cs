@@ -4,11 +4,36 @@ using UnityEngine.SceneManagement;
 
 public class DoorEnter : MonoBehaviour
 {
-    private void OnTriggerStay2D(Collider2D collision)
+    private bool enterFlag;
+    private string sceneName;
+
+    private void Start()
     {
-        if (collision.CompareTag("Door") && Keyboard.current.eKey.wasPressedThisFrame) 
+        enterFlag = false;
+    }
+
+    private void Update()
+    {
+        if(enterFlag && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            SceneManager.LoadScene(collision.gameObject.GetComponent<DoorScript>().sceneName);
+            SceneManager.LoadScene(sceneName);
+        }    
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Door") ) 
+        {
+            enterFlag = true;
+            sceneName = collision.gameObject.GetComponent<DoorScript>().sceneName;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Door"))
+        {
+            enterFlag = false;
         }
     }
 }

@@ -20,6 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hub Room.unity
     guid: 01f46c6d9ff755b478d3ef027cbaa0bd
+  - enabled: 1
+    path: Assets/Scenes/Levels/BreadBurg.unity
+    guid: 0572c63d7679a2447ab59669e134ccc6
+  - enabled: 1
+    path: Assets/Scenes/Levels/CabbagePatch.unity
+    guid: 56da8b85a6fbafa41bb38ba5ee6f9321
+  - enabled: 1
+    path: Assets/Scenes/Levels/MushCaves.unity
+    guid: 6476c4b6c69f7f444ba58c6e95d79fe7
+  - enabled: 1
+    path: Assets/Scenes/Levels/DoubleLayered(Hard).unity
+    guid: d06b16134ba4f8944a1e4109526c49cf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1178469795011746750, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
+      propertyPath: 'sceneNamesPool.Array.data[0]'
+      value: DoubleLayered(Hard)
+      objectReference: {fileID: 0}
     - target: {fileID: 2260340709006721378, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
       propertyPath: m_Name
       value: Door (2)
@@ -375,6 +379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1178469795011746750, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
+      propertyPath: 'sceneNamesPool.Array.data[0]'
+      value: BreadBurg
+      objectReference: {fileID: 0}
     - target: {fileID: 2260340709006721378, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
       propertyPath: m_Name
       value: Door (3)
@@ -760,6 +768,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1178469795011746750, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
+      propertyPath: 'sceneNamesPool.Array.data[0]'
+      value: MushCaves
+      objectReference: {fileID: 0}
     - target: {fileID: 2260340709006721378, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
       propertyPath: m_Name
       value: Door

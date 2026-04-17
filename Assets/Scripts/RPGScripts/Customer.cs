@@ -86,9 +86,13 @@ public class Customer : MonoBehaviour
         {
             return;
         }
-        
+        if (item.dish.name == "poop")
+        {
+            CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
+            StartCoroutine(Shake(0.3f, 0.1f));
+        }
 
-        if (item.ingredientList.Contains(wantedIngredient))
+        else if (item.ingredientList.Contains(wantedIngredient))
         {
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
@@ -104,7 +108,6 @@ public class Customer : MonoBehaviour
         }
         else
         {
-
             CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
             StartCoroutine(Shake(0.3f, 0.1f));
         }

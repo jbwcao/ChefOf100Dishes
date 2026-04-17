@@ -49,8 +49,11 @@ public class GameManager : MonoBehaviour {
         
         if (inventory.Count >= 9) {
             inventory.Dequeue();
+            Debug.Log("DEQUEUE");
         } 
         inventory.Enqueue(ingredient);  
+        Debug.Log("ENQUE");
+        Debug.Log("New Inventory: " + String.Join(", ", inventory));
         
     }
 }

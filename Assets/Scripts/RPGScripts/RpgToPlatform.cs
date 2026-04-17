@@ -13,6 +13,7 @@ public class RpgToPlatform : MonoBehaviour
     public void Clicked()
     {
         GameManager.Instance.roundRemaining--;
+        FindObjectOfType<InventoryManager>().SaveInventory();
 
         if (GameManager.Instance.roundRemaining <= 0)
         {

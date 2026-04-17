@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class InventoryManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Debug.Log("START Inventory: " + String.Join(", ", GameManager.Instance.inventory));
         // This just fills the items index with the inventory from GameManager. Destructive.
         int index = 0;
         Queue<Ingredient> tempInv = GameManager.Instance.inventory;
@@ -44,6 +46,8 @@ public class InventoryManager : MonoBehaviour
 
         }
         
+        Debug.Log("should be none Inventory: " + String.Join(", ", GameManager.Instance.inventory));
+        
     }
 
     // Update is called once per frame
@@ -69,8 +73,9 @@ public class InventoryManager : MonoBehaviour
     }
 
     // This is to refill the queue
-    public void OnDestroy()
+    public void SaveInventory()
     {
+
         for (int i = 0; i < items.Length; i++)
         {
             if (items[i] != null)
@@ -78,5 +83,6 @@ public class InventoryManager : MonoBehaviour
                 GameManager.Instance.inventory.Enqueue(items[i]);
             }
         }
-    }
+        Debug.Log("Inventory: " + String.Join(", ", GameManager.Instance.inventory));
+    } 
 }

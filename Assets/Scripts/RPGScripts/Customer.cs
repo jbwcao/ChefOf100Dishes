@@ -86,7 +86,7 @@ public class Customer : MonoBehaviour
         {
             return;
         }
-        if (item.dish.name == "poop'")
+        if (item.dish.name == "poop")
         {
             CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
             StartCoroutine(Shake(0.3f, 0.1f));

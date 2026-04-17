@@ -19,6 +19,8 @@ public class Blackerbox : MonoBehaviour {
     private GameObject currentText;
     #endregion
 
+    private bool isCooking = false;
+
     void Start() {
         droppedIngredient = new List<Ingredient>();
         animator = GetComponent<Animator>();
@@ -26,6 +28,10 @@ public class Blackerbox : MonoBehaviour {
 
     public void Cook()
     {
+        if (isCooking)
+        {
+            return;
+        }
         //Checks if a dish is already waiting to be served
         if (GameObject.FindWithTag("Dish") != null) {
             CreateTextDirectly("Please serve current dish", gameObject.transform, textoffset);
@@ -43,6 +49,7 @@ public class Blackerbox : MonoBehaviour {
     //Coroutine so that the dish spawns AFTER animation
     IEnumerator CookCoroutine() {
         //Sorts pot
+        isCooking = true;
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
         
         animator.SetTrigger("Cook");
@@ -79,6 +86,7 @@ public class Blackerbox : MonoBehaviour {
         for (int i = 0; i < spawnPoints.Count; i++) {
             spawnPoints[i].GetComponent<Image>().sprite = null;
             spawnPoints[i].SetActive(false);
+        isCooking = false;
         }
         
 

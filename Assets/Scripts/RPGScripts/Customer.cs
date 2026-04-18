@@ -54,8 +54,9 @@ public class Customer : MonoBehaviour
         //slider iniatilize
         satisfactionSlider = GetComponentInChildren<Slider>();
         satisfactionSlider.value = currSatisfied / maxSatisfied;
-
         CreateTextDirectly("I want ...", gameObject.transform, textOffset);
+
+        
     }
      void GenerateWantedIngredient()
     {
@@ -77,6 +78,7 @@ public class Customer : MonoBehaviour
         ui.transform.SetParent(transform);
         ui.GetComponent<WantedIngredientUI>().SetIngredient(wantedIngredient);
         currentIngredientUI = ui;
+        CreateTextDirectly("I want ...", gameObject.transform, textOffset);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -139,6 +141,8 @@ public class Customer : MonoBehaviour
         text.text = message;
         text.fontSize = 100;
         text.enableWordWrapping = false;
+        text.alignment = TextAlignmentOptions.Center;
+        
     
     }
     IEnumerator Shake(float duration, float magnitude) {

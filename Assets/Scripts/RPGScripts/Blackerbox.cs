@@ -131,7 +131,7 @@ public class Blackerbox : MonoBehaviour {
         // Add the TMPro component
         TextMeshPro text = go.AddComponent<TextMeshPro>();
         text.text = message;
-        text.fontSize = 130;
+        text.fontSize = 120;
         text.enableWordWrapping = false;
      }
     

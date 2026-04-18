@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour {
 
     public void addInventory(Ingredient ingredient) {
         
-        if (inventory.Count >= 9) {
+        if (inventory.Count >= 12) {
             inventory.Dequeue();
             Debug.Log("DEQUEUE");
         } 

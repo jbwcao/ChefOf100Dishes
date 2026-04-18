@@ -12,7 +12,8 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject masterPrefab;
     private Animator animator;
-    private bool tabOut = false;
+    private bool redtabOut = false;
+    private bool bluetabOut = false;
     [SerializeField] private float extendedX;
     [SerializeField] private float retractedX;
 
@@ -57,16 +58,36 @@ public class InventoryManager : MonoBehaviour
 
     public void ToggleRedTab()
     {
-        tabOut = !tabOut;
-        animator.SetBool("TabOut", tabOut);
+        if (bluetabOut)
+        {
+            ToggleBlueTab();
+            return;
+        }
+        redtabOut = !redtabOut;
+        
+        animator.SetBool("RedTabOut", redtabOut);
         
         Transform button = transform.Find("RedButton");
-        button.position = tabOut ? new Vector2(extendedX, button.position.y) 
-                                : new Vector2(retractedX, button.position.y);
-        Transform pbutton = transform.Find("PlatformerButton");
-        pbutton.gameObject.SetActive(tabOut);
-
         
+        Transform pbutton = transform.Find("PlatformerButton");
+        pbutton.gameObject.SetActive(redtabOut);
+
+    }
+
+    public void ToggleBlueTab()
+    {
+        if (redtabOut)
+        {
+            ToggleRedTab();
+            return;
+        }
+        bluetabOut = !bluetabOut;
+        
+        animator.SetBool("BlueTabOut", bluetabOut);
+        Transform button = transform.Find("BlueButton");
+        button.position = bluetabOut ? new Vector2(extendedX-.1f, button.position.y) 
+                                : new Vector2(retractedX-.1f, button.position.y);
+
     }
 
     // Update is called once per frame

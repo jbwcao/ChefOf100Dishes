@@ -200,9 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a6f6b24c679b24bbc99a44286e41ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 1
-  movementSmoothing: 0.75
-  restIntervals: 0.5
+  movementSmoothing: 0.1
+  restIntervals: 0.25
   idleCircleRadius: 3
 --- !u!114 &925252447831471406
 MonoBehaviour:

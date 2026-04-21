@@ -5,7 +5,6 @@ public class spikeCollision : MonoBehaviour
 
     public int contactDamage = 1;
 
-    public Rigidbody2D RB;
     public Collider2D Collider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

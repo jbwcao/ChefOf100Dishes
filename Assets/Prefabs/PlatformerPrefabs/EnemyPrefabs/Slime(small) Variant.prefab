@@ -9,8 +9,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1199300957693347599, guid: 7791165ca6b309847b822cbde690fd5a, type: 3}
-      propertyPath: jumpPowerY
+      propertyPath: jumpPowerX
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199300957693347599, guid: 7791165ca6b309847b822cbde690fd5a, type: 3}
+      propertyPath: jumpPowerY
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1199300957693347599, guid: 7791165ca6b309847b822cbde690fd5a, type: 3}
       propertyPath: jumpDownTime

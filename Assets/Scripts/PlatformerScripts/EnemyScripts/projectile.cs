@@ -18,7 +18,7 @@ public class projectile : MonoBehaviour
     private Vector2 movement;
     
 
-
+    public LayerMask blockingLayer;
     private Rigidbody2D rb;
     private Transform player;
     private Vector2 fixedTarget;
@@ -62,6 +62,11 @@ public class projectile : MonoBehaviour
         {
             collision.GetComponent<PlayerHealth>().takeDamage(damage);
             collision.GetComponent<PlayerMovement>().applyKnockback(transform.position);
+            bulletbreak();
+        }
+        
+        if (((1 << collision.gameObject.layer) & blockingLayer) != 0)
+        {
             bulletbreak();
         }
     }

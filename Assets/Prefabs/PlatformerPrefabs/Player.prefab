@@ -212,8 +212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerAttack
   damage: 3
   attackSpeed: 0.5
-  knockBackUpwardsPower: 1
-  knockBackPower: 6
+  knockBackUpwardsPower: 0.75
+  knockBackPower: 5
   attackSize: {x: 3.5, y: 2}
   range: 2
   enemyLayers:

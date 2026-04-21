@@ -16,7 +16,7 @@ public class TomatoLob : MonoBehaviour
      public float fireRate = 3f;
     public float projectileBurstIntervals = 0.05f;
    
-    private float attackCooldown;
+    protected float attackCooldown;
     public float spread = 0f;
 
     //time to reach dest determines the arc at which the bomb is thrown
@@ -35,12 +35,12 @@ public class TomatoLob : MonoBehaviour
     public float detectionRadius = 12f;
 
     //private bool playerDetected = false; 
-    private bool attacking = false;
-    private int searchMask; //what it checks for 
+    protected bool attacking = false;
+    protected int searchMask; //what it checks for 
     public LayerMask blockMask; // what blocks view
 
 
-    SpriteRenderer sr;
+    protected SpriteRenderer sr;
     public Rigidbody2D rb;
     public Animator animator;
     public String attackAnimation;
@@ -159,9 +159,6 @@ public class TomatoLob : MonoBehaviour
             //wait  projectileBurstInterval before fireing again
              yield return new WaitForSeconds(projectileBurstIntervals);
 
-
-
-  
         }
 
         attackCooldown = fireRate; 

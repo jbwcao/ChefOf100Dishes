@@ -42,6 +42,8 @@ public class TomatoLob : MonoBehaviour
 
     SpriteRenderer sr;
     public Rigidbody2D rb;
+    public Animator animator;
+    public String attackAnimation;
     protected virtual void Start()
     {
         //BUG: currently can detect the players attack as part of their body, put on different layer?
@@ -95,6 +97,9 @@ public class TomatoLob : MonoBehaviour
                     {
                         sr.flipX = false;
                     }
+
+                    
+                    
                     
                     StartCoroutine(Attack(target.transform.position));
                 }
@@ -124,6 +129,7 @@ public class TomatoLob : MonoBehaviour
 
         for(int i=0; i < projectileAmount; i++)
         {
+
             //random time to reach locataion
             float timeToReachDest = UnityEngine.Random.Range(minTimeToReachDest, MaxTimeToReachDest);
 
@@ -133,6 +139,16 @@ public class TomatoLob : MonoBehaviour
             float vx = (end.x - start.x) / timeToReachDest;
             float vy = (end.y - start.y - 0.5f * Physics2D.gravity.y * timeToReachDest) / timeToReachDest;
             //0.5f represents the arc, up to 1.5f for large arcs
+
+
+            //attack animation, cause this gets used multiple times assign attack and animator manuly 
+                if (animator != null)
+                {
+                    animator.Play(attackAnimation, 0, 0f);
+                }
+
+
+
 
             //TODO - instead of instantation and destroying objects, pool items
             //create and launch the projectile
@@ -152,4 +168,8 @@ public class TomatoLob : MonoBehaviour
         attacking = false;
     }
 
+    internal void Attack()
+    {
+        throw new NotImplementedException();
+    }
 }

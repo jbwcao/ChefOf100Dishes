@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 public class FlyingIdle : MonoBehaviour//, IKnockbackable
 {   
-    public float moveSpeed = 1f;
+    //public float moveSpeed = 1f;
     public float movementSmoothing = 0.5f;
     public float restIntervals = 0.5f;
     
@@ -26,18 +26,20 @@ public class FlyingIdle : MonoBehaviour//, IKnockbackable
         sr = GetComponent<SpriteRenderer>();
         startingPoint = transform.position;
         //on start log an area around begining position
-        flyRoutine = StartCoroutine(franticFly());
+        //flyRoutine = StartCoroutine(franticFly());
         
     }
 
     void OnEnable()
     {
-        //startingPoint = transform.position;
-        if (flyRoutine != null)
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if (sr == null) sr = GetComponent<SpriteRenderer>();
+        startingPoint = transform.position;
+
+        if (flyRoutine == null)
         {
-             flyRoutine = StartCoroutine(franticFly());//this line causes on start
+            flyRoutine = StartCoroutine(franticFly());
         }
-       
     }
 
     void OnDisable()
@@ -111,19 +113,4 @@ public class FlyingIdle : MonoBehaviour//, IKnockbackable
         Gizmos.DrawWireSphere(startingPoint, idleCircleRadius);
     }
 
-    /*public virtual void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 8f)
-    {
-        //stopMoving = true;
-
-         float xDir = transform.position.x > hitFromPosition.x ? 1f : -1f;
-
-        //set x velocity to 0 for smoother knockback
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-
-        Vector2 force = new Vector2(xDir, upwardForce).normalized * knockbackForce;
-        rb.AddForce(force, ForceMode2D.Impulse);
-
-        //switch to end knockback when landing instead of timer(?)
-        //Invoke(nameof(EndKnockback), knockbackTime);
-    }*/
 }

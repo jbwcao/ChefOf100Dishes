@@ -58,11 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2569486218305732315, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Size.x
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2569486218305732315, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Size.y
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2569486218305732315, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Offset.x
@@ -78,6 +78,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3272162830261805492, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: enemySpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231852784109387019, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
+      propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6231852784109387019, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
@@ -102,11 +106,11 @@ PrefabInstance:
       objectReference: {fileID: 5972226706887278202, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
     - target: {fileID: 8988201362710684246, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Size.x
-      value: 0.2
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8988201362710684246, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_Size.y
-      value: 0.2
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8988201362710684246, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -123,6 +127,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2580586001430190447, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7840342522074287667}
+    - targetCorrespondingSourceObject: {fileID: 2580586001430190447, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4268562737036161539}
   m_SourcePrefab: {fileID: 100100000, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}
 --- !u!1 &5258884578072612806 stripped
 GameObject:
@@ -153,6 +160,30 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rb: {fileID: 7573332728058206594}
+  animator: {fileID: 4268562737036161539}
+  attackAnimation: Spit
+--- !u!95 &4268562737036161539
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5258884578072612806}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bc334b5aa54e384b9cc68a6897812f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &7573332728058206594 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 158394679482912555, guid: 4338aff25e8a9de4f98791af4214e3f9, type: 3}

@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour {
     public Ingredient[] customerWantedIngredient = new Ingredient[3];
     #endregion
 
+    public HashSet<Cookbook.Recipe> discoveredDishes = new HashSet<Cookbook.Recipe>();
+
     void Awake() {
         if (Instance == null) {
             Instance = this;

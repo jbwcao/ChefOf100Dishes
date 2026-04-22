@@ -2256,8 +2256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30.04001, y: -75.856255}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -22.8, y: -76}
+  m_SizeDelta: {x: 136, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767543582
 MonoBehaviour:
@@ -2481,7 +2481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -15, y: 0}
   m_SizeDelta: {x: 650, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842498252
@@ -2547,7 +2547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1469909079130451432, guid: 768c3976a1ba340779b78adf79ee740c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3071,18 +3071,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293174996}
-  m_LocalRotation: {x: -0.007330649, y: 0.007330649, z: -0.7070688, w: 0.7070688}
+  m_LocalRotation: {x: 0, y: 0.010367104, z: 0, w: 0.99994624}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.00088850537, y: 0.004045108, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 759386123}
   m_Father: {fileID: 2012774740}
-  m_LocalEulerAnglesHint: {x: 0, y: 1.188, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 1.188, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.48, y: 0.244}
-  m_SizeDelta: {x: 150, y: 30}
+  m_SizeDelta: {x: 136, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1293174998
 MonoBehaviour:
@@ -3160,7 +3160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2942197266772309456, guid: de246350860bf4629b18dbdb7cbb648f, type: 3}
+  m_Sprite: {fileID: 3700810548614518524, guid: 6615a103b58a141fca2e30a40074e3a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3271,7 +3271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3515,7 +3515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49056602, g: 0.40412924, b: 0.33552864, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4626,8 +4626,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   masterPrefab: {fileID: 3577682925880735442, guid: 831cbe00bca8f804489aa6d363f03597, type: 3}
-  tabextendedX: 0.32
-  tabretractedX: -0.65
+  tabextendedX: 0.2
+  tabretractedX: -0.72
   recipeEnterX: -0.53
   recipeExitX: 7.8
   recipeEnterY: -1.7
@@ -4637,8 +4637,8 @@ MonoBehaviour:
   platformerButton: {fileID: 1293174997}
   blueButton: {fileID: 643492756}
   recipeButton: {fileID: 767543581}
-  potSprite: {fileID: -291734240342258143, guid: f0272bbe9c2164924b6e60311754a549, type: 3}
-  bookSprite: {fileID: 4057750552865634481, guid: 1e77688ed138842eeabc9d1b1a848942, type: 3}
+  potSprite: {fileID: -4781373940957465942, guid: 5dcf44158c3e44f41a4c39dd25cbdaa6, type: 3}
+  bookSprite: {fileID: -8740448928476491163, guid: 79426fa21749b4718b6dc618fa72dca3, type: 3}
 --- !u!95 &2012774742
 Animator:
   serializedVersion: 7

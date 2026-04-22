@@ -101,6 +101,9 @@ public class Blackerbox : MonoBehaviour {
         ingredientItem.sprite = recipe.dish.sprite;
         ingredientItem.name = recipe.dish.name;
         ingredientItem.dish = recipe.dish;
+        SpriteRenderer sr = ingredientObj.GetComponent<SpriteRenderer>();
+        sr.sortingLayerName = "Default";
+        sr.sortingOrder = -1;
 
         ingredientItem.ingredientList = new List<Ingredient>(droppedIngredient);
         droppedIngredient.Clear();

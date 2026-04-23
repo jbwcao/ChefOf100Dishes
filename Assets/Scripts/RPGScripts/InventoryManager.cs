@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -12,10 +13,32 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject masterPrefab;
     private Animator animator;
+    #region booleans
     private bool redtabOut = false;
     private bool bluetabOut = false;
-    [SerializeField] private float extendedX;
-    [SerializeField] private float retractedX;
+    private bool recipeOut = false;
+    #endregion
+
+    #region co_ords
+    [SerializeField] private float tabextendedX;
+    [SerializeField] private float tabretractedX;
+    
+    [SerializeField] private float recipeEnterX;
+    [SerializeField] private float recipeExitX;
+    [SerializeField] private float recipeEnterY;
+    [SerializeField] private float recipeExitY;
+
+    #endregion
+   
+    #region tabs/buttons
+    public GameObject recipePanel;
+    public Transform redButton;
+    public Transform platformerButton;
+    public Transform blueButton;
+    public Transform recipeButton;
+    public Sprite potSprite;
+    public Sprite bookSprite;
+    #endregion
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,10 +62,16 @@ public class InventoryManager : MonoBehaviour
             {
                 GameObject ingredientObj = Instantiate(masterPrefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
                 MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
+                SpriteRenderer sr = ingredientObj.GetComponent<SpriteRenderer>();
+                sr.sortingLayerName = "Default";
+                sr.sortingOrder = -1;
+
                 ingredientObj.tag = "Ingredient";
 
                 // Sets all of the instance variables values of the new gameobject
                 ingredientObj.name = items[i].name;
+
+                
                 ingredientItem.inventoryManager = this;
                 ingredientItem.sprite = items[i].sprite;
                 ingredientItem.name = items[i].name;
@@ -67,10 +96,12 @@ public class InventoryManager : MonoBehaviour
         
         animator.SetBool("RedTabOut", redtabOut);
         
-        Transform button = transform.Find("RedButton");
         
-        Transform pbutton = transform.Find("PlatformerButton");
-        pbutton.gameObject.SetActive(redtabOut);
+        redButton.position = redtabOut ? new Vector2(tabextendedX, redButton.position.y) 
+                                : new Vector2(tabretractedX, redButton.position.y);
+        
+        
+        platformerButton.gameObject.SetActive(redtabOut);
 
     }
 
@@ -84,10 +115,36 @@ public class InventoryManager : MonoBehaviour
         bluetabOut = !bluetabOut;
         
         animator.SetBool("BlueTabOut", bluetabOut);
-        Transform button = transform.Find("BlueButton");
-        button.position = bluetabOut ? new Vector2(extendedX-.1f, button.position.y) 
-                                : new Vector2(retractedX-.1f, button.position.y);
+        blueButton.position = bluetabOut ? new Vector2(tabextendedX, blueButton.position.y) 
+                                : new Vector2(tabretractedX, blueButton.position.y);
+        
+        
+        recipeButton.gameObject.SetActive(bluetabOut);
+        // Accessing the Image component attached to a specific transform
+        Image myImage = recipeButton.GetComponent<Image>();
+        // Changing the sprite
+        myImage.sprite = bookSprite;
 
+
+        
+
+    }
+    public void ToggleRecipeButton()
+    {
+        recipeOut = !recipeOut;
+        recipePanel.SetActive(recipeOut);
+        
+        recipeButton.position = recipeOut ? new Vector2(recipeExitX, recipeExitY) 
+                                : new Vector2(recipeEnterX, recipeEnterY);
+        
+        Image myImage = recipeButton.GetComponent<Image>();
+        // Changing the sprite
+        myImage.sprite = bookSprite;
+        myImage.sprite = recipeOut ? potSprite 
+                                : bookSprite;
+
+
+        
     }
 
     // Update is called once per frame

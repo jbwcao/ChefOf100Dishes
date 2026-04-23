@@ -96,7 +96,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!114 &6537857276233350301
 MonoBehaviour:
@@ -408,10 +408,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc51bb1535bd451e947ab7e68fcebcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Customer
+  customerIndex: 0
   maxSatisfied: 10
   wantedIngredientList: []
   wantedIngredientUIPrefab: {fileID: 0}
   uiOffset: {x: 1, y: 0, z: 0}
+  textOffset: {x: 0, y: 0}
   cookbook: {fileID: 11400000, guid: 71263bc2a74d543c99a224617a946c42, type: 2}
 --- !u!61 &420027958763691301
 BoxCollider2D:

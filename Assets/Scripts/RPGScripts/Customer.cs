@@ -34,6 +34,11 @@ public class Customer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (GameManager.Instance.customerSatisfaction[customerIndex] == -1)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
         //if wanted ingredient is already set from previous round
         if (GameManager.Instance.customerWantedIngredient[customerIndex] != null)
         {
@@ -117,6 +122,8 @@ public class Customer : MonoBehaviour
 
         if (currSatisfied >= maxSatisfied)
         {
+            GameManager.Instance.customerSatisfaction[customerIndex] = -1;
+
             //Destroy customer once full
             Destroy(gameObject);
             if (GameManager.Instance.AllCustomersSatisfied())
@@ -136,7 +143,7 @@ public class Customer : MonoBehaviour
         if (currentText != null) {
             Destroy(currentText);
         }
-        
+
         GameObject go = new GameObject("DynamicText");
         
         go.transform.SetParent(GetComponentInChildren<Canvas>().transform, false);

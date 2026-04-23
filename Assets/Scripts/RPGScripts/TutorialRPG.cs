@@ -32,22 +32,22 @@ public class TutorialRPG : MonoBehaviour
         if (i == 1)
         {
             inventory.GetComponent<SpriteRenderer>().sortingOrder = 1;
-            CreateTextDirectly("This is your inventory!", gameObject.transform, inventorytextoffset);
+            CreateTextDirectly("This is your inventory.", gameObject.transform, inventorytextoffset);
             
         }
         if (i == 2)
         {
-            CreateTextDirectly("Once you have more than 12 ingredients, the first will be destroyed", gameObject.transform, inventorytextoffset);
+            CreateTextDirectly("Inventory holds 12 ingredients.\nExceed that and the oldest one gets cut.\n\nSuch is life.", gameObject.transform, inventorytextoffset);
             
         }
         if (i == 3)
         {
-            CreateTextDirectly("Press the red tab to switch to attack", gameObject.transform, inventorytextoffset);
+            CreateTextDirectly("The red tab is for attacking.\n\n(This is a cooking game by the way.)", gameObject.transform, inventorytextoffset);
             
         }
         if (i == 4)
         {
-            CreateTextDirectly("Press the blue tab to view recipes", gameObject.transform, inventorytextoffset);
+            CreateTextDirectly("The blue tab shows your recipes.\n\nGroundbreaking stuff.", gameObject.transform, inventorytextoffset);
 
         }
         if (i == 5)
@@ -56,7 +56,7 @@ public class TutorialRPG : MonoBehaviour
 
           
             blackbox.GetComponent<SpriteRenderer>().sortingOrder = 1;
-            CreateTextDirectly("Drag Ingredients here to cook dishes ", gameObject.transform, bbtextoffset);
+            CreateTextDirectly("Drag your ingredients here to cook dishes.\nNo pressure, but everyone is hungry.", gameObject.transform, bbtextoffset);
 
         }
         if (i == 6)
@@ -65,13 +65,19 @@ public class TutorialRPG : MonoBehaviour
 
             
             customer.GetComponent<SpriteRenderer>().sortingOrder = 0;
-            CreateTextDirectly("This is a customer, feed it dishes with the ingredient it wants to satisfy it! ", gameObject.transform, customertextoffset);
+            CreateTextDirectly("That creature staring at you is a customer.\nFeed it a dish with the ingredient its craving and it'll leave you alone.\nProbably.", gameObject.transform, customertextoffset);
 
 
         }
         if (i ==7)
         {
             customer.GetComponent<SpriteRenderer>().sortingOrder = -2;
+            CreateTextDirectly("Try not to burn the place down...", gameObject.transform, customertextoffset);
+
+            
+        }
+        if (i == 8)
+        {
             CreateTextDirectly(" ", gameObject.transform, customertextoffset);
 
             button.SetActive(false);
@@ -97,5 +103,6 @@ public class TutorialRPG : MonoBehaviour
         text.fontSize = 120;
         text.enableWordWrapping = false;
         text.sortingOrder = 10;
+        text.alignment = TextAlignmentOptions.Center;
      }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 public class Customer : MonoBehaviour
@@ -118,6 +119,11 @@ public class Customer : MonoBehaviour
         {
             //Destroy customer once full
             Destroy(gameObject);
+            if (GameManager.Instance.AllCustomersSatisfied())
+            {
+            // all customers happy, do something
+            SceneManager.LoadScene("Winner"); 
+            }
         }
 
         //Destroy dish object

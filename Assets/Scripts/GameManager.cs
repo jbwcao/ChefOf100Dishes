@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
     public static GameManager Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         
         inventory = new Queue<Ingredient>();
-        roundRemaining = 10f;
+        roundRemaining = 15f;
         
         
     }
@@ -58,5 +58,25 @@ public class GameManager : MonoBehaviour {
         Debug.Log("New Inventory: " + String.Join(", ", inventory));
         
     }
+
+    public bool AllCustomersSatisfied()
+    {
+    for (int i = 0; i < customerSatisfaction.Length; i++)
+    {
+        if (customerSatisfaction[i] < 10f) // 10 is maxSatisfied
+            return false;
+    }
+    return true;
+}
+    public void ResetGame() {
+    Debug.Log("called reset");
+    // currRound and discoveredDishes intentionally NOT reset
+    inventory.Clear();
+    customerSatisfaction = new float[3];
+    customerWantedIngredient = new Ingredient[3];
+    roundRemaining = 15f;
+    SceneManager.LoadScene("Hub Room");
+    
+}
 }
 

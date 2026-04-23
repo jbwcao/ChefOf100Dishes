@@ -135,7 +135,8 @@ public class Customer : MonoBehaviour
     private void CreateTextDirectly(string message, Transform parent, Vector2 vector) {
         if (currentText != null) {
             Destroy(currentText);
-            }
+        }
+        
         GameObject go = new GameObject("DynamicText");
         
         go.transform.SetParent(GetComponentInChildren<Canvas>().transform, false);

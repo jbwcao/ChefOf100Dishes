@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4652781438847098256}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.6090765, y: 0.34476036, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -184,7 +184,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemySpeed: 1
   direction: 1
-  knockbackTime: 0.15
+  knockbackTime: 0.3
+  anim: {fileID: 4898065601096417297}
+  hurtName: Mushhurt
 --- !u!114 &4649414145517412347
 MonoBehaviour:
   m_ObjectHideFlags: 0

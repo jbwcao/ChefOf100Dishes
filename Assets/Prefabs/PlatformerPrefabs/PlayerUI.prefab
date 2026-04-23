@@ -349,8 +349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -46.53369}
-  m_SizeDelta: {x: 100, y: 93.0674}
+  m_AnchoredPosition: {x: 166, y: -54.394287}
+  m_SizeDelta: {x: 300, y: 68.0443}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5697223965315719139
 CanvasRenderer:
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4057750552865634481, guid: 1e77688ed138842eeabc9d1b1a848942, type: 3}
+  m_Sprite: {fileID: -2742229603119264031, guid: 63c0a3378bd5a44e48029a73a472b893, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -403,10 +403,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthUI
   heartImages:
-  - {fileID: -4477349825573479581, guid: 2f632d7fa174a4cc9bb01194388e826a, type: 3}
-  - {fileID: -5597995755193609183, guid: 41ba6c3502dd24516b5c37a6d9c431f9, type: 3}
-  - {fileID: 6718556743587775568, guid: fa708cda3252e4931a8bc9ce4e0ff9c3, type: 3}
-  - {fileID: 0}
+  - {fileID: -2742229603119264031, guid: 63c0a3378bd5a44e48029a73a472b893, type: 3}
+  - {fileID: -4191169175432157910, guid: 8e051b2276c464f28976d1c9f6c3c6a7, type: 3}
+  - {fileID: -8189284725292238889, guid: c367edea4920849c5abbfbc9f0f32fab, type: 3}
+  - {fileID: 4317557203351311595, guid: 1cc3a75dfac9b46f9a7eb04f36aaaed4, type: 3}
 --- !u!1 &8435461511971459934
 GameObject:
   m_ObjectHideFlags: 0

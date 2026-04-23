@@ -85,8 +85,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 676043779132690603, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
-  m_Color: {r: 0.83396226, g: 0.14318973, b: 0.8278357, a: 1}
+  m_Sprite: {fileID: -2244295033197924520, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}
+  m_Color: {r: 0.6679245, g: 0.14492692, b: 0.66198146, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,7 +133,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.14}
+    oldSize: {x: 0.14, y: 0.12}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -186,6 +186,9 @@ MonoBehaviour:
   bulletLifespan: 5
   tracking: 0
   trackingStrength: 0.5
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!96 &6817655069180864980
 TrailRenderer:
   serializedVersion: 4

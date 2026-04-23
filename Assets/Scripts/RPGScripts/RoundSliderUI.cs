@@ -7,7 +7,7 @@ public class RoundSliderUI : MonoBehaviour
     float currRound;
     void Start()
     {
-        maxRound = 10f;
+        maxRound = 15f;
         RoundSlider = GetComponent<Slider>();
         currRound = GameManager.Instance.roundRemaining;
         RoundSlider.value = currRound/maxRound;

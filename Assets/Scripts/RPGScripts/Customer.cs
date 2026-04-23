@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 public class Customer : MonoBehaviour
@@ -33,6 +34,11 @@ public class Customer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (GameManager.Instance.customerSatisfaction[customerIndex] == -1)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
         //if wanted ingredient is already set from previous round
         if (GameManager.Instance.customerWantedIngredient[customerIndex] != null)
         {
@@ -116,8 +122,15 @@ public class Customer : MonoBehaviour
 
         if (currSatisfied >= maxSatisfied)
         {
+            GameManager.Instance.customerSatisfaction[customerIndex] = -1;
+
             //Destroy customer once full
             Destroy(gameObject);
+            if (GameManager.Instance.AllCustomersSatisfied())
+            {
+            // all customers happy, do something
+            SceneManager.LoadScene("Winner"); 
+            }
         }
 
         //Destroy dish object
@@ -129,7 +142,8 @@ public class Customer : MonoBehaviour
     private void CreateTextDirectly(string message, Transform parent, Vector2 vector) {
         if (currentText != null) {
             Destroy(currentText);
-            }
+        }
+
         GameObject go = new GameObject("DynamicText");
         
         go.transform.SetParent(GetComponentInChildren<Canvas>().transform, false);

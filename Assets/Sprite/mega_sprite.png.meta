@@ -460,10 +460,10 @@ TextureImporter:
       name: mega_sprite_0
       rect:
         serializedVersion: 2
-        x: 272
-        y: 720
-        width: 34
-        height: 63
+        x: 273
+        y: 721
+        width: 32
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,10 +482,10 @@ TextureImporter:
       name: mega_sprite_1
       rect:
         serializedVersion: 2
-        x: 387
-        y: 719
-        width: 56
-        height: 52
+        x: 388
+        y: 720
+        width: 54
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,7 +507,7 @@ TextureImporter:
         x: 508
         y: 719
         width: 38
-        height: 44
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +526,10 @@ TextureImporter:
       name: mega_sprite_3
       rect:
         serializedVersion: 2
-        x: 666
-        y: 751
-        width: 28
-        height: 30
+        x: 667
+        y: 752
+        width: 26
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,10 +548,10 @@ TextureImporter:
       name: mega_sprite_4
       rect:
         serializedVersion: 2
-        x: 698
-        y: 756
-        width: 12
-        height: 18
+        x: 699
+        y: 757
+        width: 10
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: mega_sprite_5
       rect:
         serializedVersion: 2
-        x: 717
-        y: 760
-        width: 15
-        height: 15
+        x: 718
+        y: 761
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -592,10 +592,10 @@ TextureImporter:
       name: mega_sprite_6
       rect:
         serializedVersion: 2
-        x: 739
-        y: 758
-        width: 12
-        height: 17
+        x: 740
+        y: 759
+        width: 10
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,10 +614,10 @@ TextureImporter:
       name: mega_sprite_7
       rect:
         serializedVersion: 2
-        x: 28
-        y: 714
-        width: 32
-        height: 37
+        x: 29
+        y: 715
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,10 +636,10 @@ TextureImporter:
       name: mega_sprite_8
       rect:
         serializedVersion: 2
-        x: 70
-        y: 731
-        width: 10
-        height: 13
+        x: 71
+        y: 732
+        width: 8
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -658,10 +658,10 @@ TextureImporter:
       name: mega_sprite_9
       rect:
         serializedVersion: 2
-        x: 80
-        y: 720
-        width: 20
-        height: 21
+        x: 81
+        y: 721
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: mega_sprite_10
       rect:
         serializedVersion: 2
-        x: 104
-        y: 720
-        width: 36
-        height: 31
+        x: 105
+        y: 721
+        width: 34
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -702,10 +702,10 @@ TextureImporter:
       name: mega_sprite_11
       rect:
         serializedVersion: 2
-        x: 173
-        y: 721
-        width: 22
-        height: 18
+        x: 174
+        y: 722
+        width: 20
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,10 +724,10 @@ TextureImporter:
       name: mega_sprite_12
       rect:
         serializedVersion: 2
-        x: 208
-        y: 723
-        width: 21
-        height: 22
+        x: 209
+        y: 724
+        width: 19
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,10 +746,10 @@ TextureImporter:
       name: mega_sprite_13
       rect:
         serializedVersion: 2
-        x: 236
-        y: 723
-        width: 23
-        height: 27
+        x: 237
+        y: 724
+        width: 21
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -768,10 +768,10 @@ TextureImporter:
       name: mega_sprite_14
       rect:
         serializedVersion: 2
-        x: 318
-        y: 722
-        width: 21
-        height: 18
+        x: 319
+        y: 723
+        width: 19
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,10 +790,10 @@ TextureImporter:
       name: mega_sprite_15
       rect:
         serializedVersion: 2
-        x: 352
-        y: 720
-        width: 26
-        height: 25
+        x: 353
+        y: 721
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -812,10 +812,10 @@ TextureImporter:
       name: mega_sprite_16
       rect:
         serializedVersion: 2
-        x: 457
-        y: 719
-        width: 33
-        height: 33
+        x: 458
+        y: 720
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -834,10 +834,10 @@ TextureImporter:
       name: mega_sprite_18
       rect:
         serializedVersion: 2
-        x: 697
-        y: 735
-        width: 16
-        height: 16
+        x: 718
+        y: 736
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,10 +856,10 @@ TextureImporter:
       name: mega_sprite_19
       rect:
         serializedVersion: 2
-        x: 717
-        y: 735
-        width: 15
-        height: 15
+        x: 738
+        y: 736
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -878,10 +878,10 @@ TextureImporter:
       name: mega_sprite_20
       rect:
         serializedVersion: 2
-        x: 737
-        y: 735
-        width: 16
-        height: 14
+        x: 152
+        y: 721
+        width: 13
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -900,10 +900,10 @@ TextureImporter:
       name: mega_sprite_21
       rect:
         serializedVersion: 2
-        x: 151
-        y: 720
-        width: 15
-        height: 13
+        x: 698
+        y: 712
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,10 +922,10 @@ TextureImporter:
       name: mega_sprite_22
       rect:
         serializedVersion: 2
-        x: 697
-        y: 711
+        x: 716
+        y: 715
         width: 16
-        height: 21
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -944,10 +944,10 @@ TextureImporter:
       name: mega_sprite_23
       rect:
         serializedVersion: 2
-        x: 715
-        y: 714
-        width: 18
-        height: 12
+        x: 740
+        y: 713
+        width: 12
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -966,10 +966,10 @@ TextureImporter:
       name: mega_sprite_24
       rect:
         serializedVersion: 2
-        x: 739
-        y: 712
-        width: 14
-        height: 15
+        x: 26
+        y: 680
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -988,10 +988,10 @@ TextureImporter:
       name: mega_sprite_25
       rect:
         serializedVersion: 2
-        x: 25
-        y: 679
-        width: 25
-        height: 25
+        x: 58
+        y: 680
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1010,10 +1010,10 @@ TextureImporter:
       name: mega_sprite_26
       rect:
         serializedVersion: 2
-        x: 57
-        y: 679
-        width: 25
-        height: 25
+        x: 90
+        y: 680
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1032,10 +1032,10 @@ TextureImporter:
       name: mega_sprite_27
       rect:
         serializedVersion: 2
-        x: 89
-        y: 679
-        width: 25
-        height: 25
+        x: 122
+        y: 680
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1054,10 +1054,10 @@ TextureImporter:
       name: mega_sprite_28
       rect:
         serializedVersion: 2
-        x: 121
-        y: 679
-        width: 25
-        height: 25
+        x: 154
+        y: 680
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1076,10 +1076,10 @@ TextureImporter:
       name: mega_sprite_29
       rect:
         serializedVersion: 2
-        x: 153
-        y: 679
-        width: 25
-        height: 25
+        x: 186
+        y: 680
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,10 +1098,10 @@ TextureImporter:
       name: mega_sprite_30
       rect:
         serializedVersion: 2
-        x: 185
-        y: 679
-        width: 25
-        height: 25
+        x: 697
+        y: 688
+        width: 12
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1120,10 +1120,10 @@ TextureImporter:
       name: mega_sprite_31
       rect:
         serializedVersion: 2
-        x: 696
-        y: 687
-        width: 14
-        height: 23
+        x: 715
+        y: 688
+        width: 21
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,9 +1142,9 @@ TextureImporter:
       name: mega_sprite_32
       rect:
         serializedVersion: 2
-        x: 714
-        y: 687
-        width: 23
+        x: 740
+        y: 686
+        width: 16
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1164,10 +1164,10 @@ TextureImporter:
       name: mega_sprite_33
       rect:
         serializedVersion: 2
-        x: 739
-        y: 685
-        width: 18
-        height: 20
+        x: 27
+        y: 642
+        width: 21
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1186,10 +1186,10 @@ TextureImporter:
       name: mega_sprite_34
       rect:
         serializedVersion: 2
-        x: 26
-        y: 641
-        width: 23
-        height: 27
+        x: 59
+        y: 646
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1208,10 +1208,10 @@ TextureImporter:
       name: mega_sprite_35
       rect:
         serializedVersion: 2
-        x: 58
-        y: 645
-        width: 24
-        height: 26
+        x: 91
+        y: 648
+        width: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1230,10 +1230,10 @@ TextureImporter:
       name: mega_sprite_36
       rect:
         serializedVersion: 2
-        x: 90
-        y: 647
-        width: 24
-        height: 25
+        x: 123
+        y: 646
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1252,10 +1252,10 @@ TextureImporter:
       name: mega_sprite_37
       rect:
         serializedVersion: 2
-        x: 122
-        y: 645
-        width: 24
-        height: 26
+        x: 155
+        y: 642
+        width: 21
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1274,10 +1274,10 @@ TextureImporter:
       name: mega_sprite_38
       rect:
         serializedVersion: 2
-        x: 154
-        y: 641
-        width: 23
-        height: 27
+        x: 187
+        y: 645
+        width: 21
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1296,10 +1296,10 @@ TextureImporter:
       name: mega_sprite_39
       rect:
         serializedVersion: 2
-        x: 186
-        y: 644
-        width: 23
-        height: 26
+        x: 219
+        y: 646
+        width: 21
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,10 +1318,10 @@ TextureImporter:
       name: mega_sprite_40
       rect:
         serializedVersion: 2
-        x: 218
+        x: 251
         y: 645
-        width: 23
-        height: 26
+        width: 21
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1340,10 +1340,10 @@ TextureImporter:
       name: mega_sprite_41
       rect:
         serializedVersion: 2
-        x: 250
-        y: 644
-        width: 23
-        height: 26
+        x: 30
+        y: 594
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1362,10 +1362,10 @@ TextureImporter:
       name: mega_sprite_42
       rect:
         serializedVersion: 2
-        x: 29
-        y: 593
-        width: 32
-        height: 37
+        x: 87
+        y: 594
+        width: 22
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1384,10 +1384,10 @@ TextureImporter:
       name: mega_sprite_43
       rect:
         serializedVersion: 2
-        x: 86
-        y: 593
-        width: 24
-        height: 37
+        x: 131
+        y: 596
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1406,10 +1406,10 @@ TextureImporter:
       name: mega_sprite_44
       rect:
         serializedVersion: 2
-        x: 130
-        y: 595
-        width: 37
-        height: 35
+        x: 195
+        y: 597
+        width: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1428,10 +1428,10 @@ TextureImporter:
       name: mega_sprite_45
       rect:
         serializedVersion: 2
-        x: 194
-        y: 596
-        width: 31
-        height: 34
+        x: 28
+        y: 564
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1450,10 +1450,10 @@ TextureImporter:
       name: mega_sprite_46
       rect:
         serializedVersion: 2
-        x: 27
-        y: 563
-        width: 37
-        height: 10
+        x: 76
+        y: 558
+        width: 33
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1472,10 +1472,10 @@ TextureImporter:
       name: mega_sprite_47
       rect:
         serializedVersion: 2
-        x: 75
-        y: 557
-        width: 35
-        height: 16
+        x: 139
+        y: 518
+        width: 28
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1494,10 +1494,10 @@ TextureImporter:
       name: mega_sprite_48
       rect:
         serializedVersion: 2
-        x: 138
+        x: 180
         y: 517
-        width: 30
-        height: 49
+        width: 28
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1516,10 +1516,10 @@ TextureImporter:
       name: mega_sprite_49
       rect:
         serializedVersion: 2
-        x: 179
-        y: 516
-        width: 30
-        height: 49
+        x: 28
+        y: 551
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1538,10 +1538,10 @@ TextureImporter:
       name: mega_sprite_50
       rect:
         serializedVersion: 2
-        x: 285
-        y: 526
-        width: 33
-        height: 38
+        x: 167
+        y: 554
+        width: 5
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1560,10 +1560,10 @@ TextureImporter:
       name: mega_sprite_51
       rect:
         serializedVersion: 2
-        x: 356
-        y: 526
-        width: 35
-        height: 38
+        x: 208
+        y: 553
+        width: 5
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1582,10 +1582,10 @@ TextureImporter:
       name: mega_sprite_52
       rect:
         serializedVersion: 2
-        x: 427
-        y: 526
-        width: 35
-        height: 38
+        x: 286
+        y: 527
+        width: 31
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1604,10 +1604,10 @@ TextureImporter:
       name: mega_sprite_53
       rect:
         serializedVersion: 2
-        x: 498
-        y: 526
-        width: 34
-        height: 38
+        x: 357
+        y: 527
+        width: 33
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1626,10 +1626,10 @@ TextureImporter:
       name: mega_sprite_54
       rect:
         serializedVersion: 2
-        x: 27
-        y: 550
-        width: 37
-        height: 10
+        x: 428
+        y: 527
+        width: 33
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1648,10 +1648,10 @@ TextureImporter:
       name: mega_sprite_55
       rect:
         serializedVersion: 2
-        x: 166
-        y: 553
-        width: 7
-        height: 8
+        x: 499
+        y: 527
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1670,9 +1670,9 @@ TextureImporter:
       name: mega_sprite_56
       rect:
         serializedVersion: 2
-        x: 207
-        y: 552
-        width: 7
+        x: 28
+        y: 538
+        width: 35
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1692,10 +1692,10 @@ TextureImporter:
       name: mega_sprite_57
       rect:
         serializedVersion: 2
-        x: 27
-        y: 537
-        width: 37
-        height: 10
+        x: 314
+        y: 540
+        width: 5
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1714,10 +1714,10 @@ TextureImporter:
       name: mega_sprite_58
       rect:
         serializedVersion: 2
-        x: 313
-        y: 539
-        width: 7
-        height: 13
+        x: 28
+        y: 525
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1736,10 +1736,10 @@ TextureImporter:
       name: mega_sprite_59
       rect:
         serializedVersion: 2
-        x: 27
-        y: 524
-        width: 37
-        height: 10
+        x: 28
+        y: 510
+        width: 67
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1758,10 +1758,10 @@ TextureImporter:
       name: mega_sprite_60
       rect:
         serializedVersion: 2
-        x: 27
-        y: 509
-        width: 69
-        height: 10
+        x: 28
+        y: 495
+        width: 67
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1780,10 +1780,10 @@ TextureImporter:
       name: mega_sprite_61
       rect:
         serializedVersion: 2
-        x: 27
-        y: 494
-        width: 69
-        height: 10
+        x: 293
+        y: 466
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1802,10 +1802,10 @@ TextureImporter:
       name: mega_sprite_62
       rect:
         serializedVersion: 2
-        x: 292
-        y: 465
-        width: 32
-        height: 37
+        x: 330
+        y: 466
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1824,10 +1824,10 @@ TextureImporter:
       name: mega_sprite_63
       rect:
         serializedVersion: 2
-        x: 329
-        y: 465
-        width: 32
-        height: 37
+        x: 367
+        y: 466
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1846,10 +1846,10 @@ TextureImporter:
       name: mega_sprite_64
       rect:
         serializedVersion: 2
-        x: 366
-        y: 465
-        width: 32
-        height: 37
+        x: 404
+        y: 466
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1868,10 +1868,10 @@ TextureImporter:
       name: mega_sprite_65
       rect:
         serializedVersion: 2
-        x: 403
-        y: 465
-        width: 32
-        height: 37
+        x: 28
+        y: 481
+        width: 67
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1890,10 +1890,10 @@ TextureImporter:
       name: mega_sprite_66
       rect:
         serializedVersion: 2
-        x: 27
-        y: 480
-        width: 69
-        height: 10
+        x: 28
+        y: 468
+        width: 67
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1912,10 +1912,10 @@ TextureImporter:
       name: mega_sprite_67
       rect:
         serializedVersion: 2
-        x: 27
-        y: 467
-        width: 69
-        height: 10
+        x: 28
+        y: 451
+        width: 133
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1934,10 +1934,10 @@ TextureImporter:
       name: mega_sprite_68
       rect:
         serializedVersion: 2
-        x: 27
-        y: 450
-        width: 135
-        height: 10
+        x: 28
+        y: 436
+        width: 133
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1956,10 +1956,10 @@ TextureImporter:
       name: mega_sprite_69
       rect:
         serializedVersion: 2
-        x: 27
-        y: 435
-        width: 135
-        height: 10
+        x: 28
+        y: 422
+        width: 133
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1978,10 +1978,10 @@ TextureImporter:
       name: mega_sprite_70
       rect:
         serializedVersion: 2
-        x: 27
-        y: 421
-        width: 135
-        height: 10
+        x: 28
+        y: 409
+        width: 133
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2000,10 +2000,10 @@ TextureImporter:
       name: mega_sprite_71
       rect:
         serializedVersion: 2
-        x: 27
-        y: 408
-        width: 135
-        height: 10
+        x: 30
+        y: 378
+        width: 19
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2022,9 +2022,9 @@ TextureImporter:
       name: mega_sprite_72
       rect:
         serializedVersion: 2
-        x: 29
-        y: 377
-        width: 21
+        x: 70
+        y: 378
+        width: 18
         height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2044,9 +2044,9 @@ TextureImporter:
       name: mega_sprite_73
       rect:
         serializedVersion: 2
-        x: 69
-        y: 377
-        width: 20
+        x: 112
+        y: 378
+        width: 18
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2066,10 +2066,10 @@ TextureImporter:
       name: mega_sprite_74
       rect:
         serializedVersion: 2
-        x: 111
-        y: 377
-        width: 20
-        height: 23
+        x: 154
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2088,10 +2088,10 @@ TextureImporter:
       name: mega_sprite_75
       rect:
         serializedVersion: 2
-        x: 153
-        y: 377
-        width: 20
-        height: 21
+        x: 196
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2110,10 +2110,10 @@ TextureImporter:
       name: mega_sprite_76
       rect:
         serializedVersion: 2
-        x: 195
-        y: 377
-        width: 20
-        height: 21
+        x: 238
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2132,10 +2132,10 @@ TextureImporter:
       name: mega_sprite_77
       rect:
         serializedVersion: 2
-        x: 237
-        y: 377
-        width: 20
-        height: 21
+        x: 280
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2154,10 +2154,10 @@ TextureImporter:
       name: mega_sprite_78
       rect:
         serializedVersion: 2
-        x: 279
-        y: 377
-        width: 20
-        height: 21
+        x: 322
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2176,10 +2176,10 @@ TextureImporter:
       name: mega_sprite_79
       rect:
         serializedVersion: 2
-        x: 321
-        y: 377
-        width: 20
-        height: 21
+        x: 364
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2198,10 +2198,10 @@ TextureImporter:
       name: mega_sprite_80
       rect:
         serializedVersion: 2
-        x: 363
-        y: 377
-        width: 20
-        height: 21
+        x: 406
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2220,10 +2220,10 @@ TextureImporter:
       name: mega_sprite_81
       rect:
         serializedVersion: 2
-        x: 405
-        y: 377
-        width: 20
-        height: 21
+        x: 448
+        y: 378
+        width: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2242,10 +2242,10 @@ TextureImporter:
       name: mega_sprite_82
       rect:
         serializedVersion: 2
-        x: 447
-        y: 377
-        width: 20
-        height: 21
+        x: 16
+        y: 339
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2264,10 +2264,10 @@ TextureImporter:
       name: mega_sprite_83
       rect:
         serializedVersion: 2
-        x: 15
-        y: 338
-        width: 36
-        height: 25
+        x: 54
+        y: 339
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2286,10 +2286,10 @@ TextureImporter:
       name: mega_sprite_84
       rect:
         serializedVersion: 2
-        x: 53
-        y: 338
-        width: 36
-        height: 25
+        x: 92
+        y: 339
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2308,10 +2308,10 @@ TextureImporter:
       name: mega_sprite_85
       rect:
         serializedVersion: 2
-        x: 91
-        y: 338
-        width: 36
-        height: 25
+        x: 130
+        y: 339
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2330,10 +2330,10 @@ TextureImporter:
       name: mega_sprite_86
       rect:
         serializedVersion: 2
-        x: 129
-        y: 338
-        width: 36
-        height: 25
+        x: 168
+        y: 339
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2352,10 +2352,10 @@ TextureImporter:
       name: mega_sprite_87
       rect:
         serializedVersion: 2
-        x: 167
-        y: 338
-        width: 36
-        height: 25
+        x: 206
+        y: 339
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2374,10 +2374,10 @@ TextureImporter:
       name: mega_sprite_88
       rect:
         serializedVersion: 2
-        x: 205
-        y: 338
-        width: 36
-        height: 25
+        x: 68
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2396,10 +2396,10 @@ TextureImporter:
       name: mega_sprite_89
       rect:
         serializedVersion: 2
-        x: 67
-        y: 288
-        width: 21
-        height: 22
+        x: 109
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2418,10 +2418,10 @@ TextureImporter:
       name: mega_sprite_90
       rect:
         serializedVersion: 2
-        x: 108
-        y: 288
-        width: 21
-        height: 22
+        x: 149
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2440,10 +2440,10 @@ TextureImporter:
       name: mega_sprite_91
       rect:
         serializedVersion: 2
-        x: 149
+        x: 191
         y: 288
-        width: 21
-        height: 26
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2462,10 +2462,10 @@ TextureImporter:
       name: mega_sprite_92
       rect:
         serializedVersion: 2
-        x: 193
-        y: 306
-        width: 16
-        height: 19
+        x: 232
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2484,10 +2484,10 @@ TextureImporter:
       name: mega_sprite_93
       rect:
         serializedVersion: 2
-        x: 234
-        y: 308
-        width: 16
-        height: 19
+        x: 273
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2506,10 +2506,10 @@ TextureImporter:
       name: mega_sprite_94
       rect:
         serializedVersion: 2
-        x: 275
-        y: 299
-        width: 16
-        height: 22
+        x: 32
+        y: 290
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2525,79 +2525,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mega_sprite_95
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 288
-        width: 21
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9df3059517e4c8bd0800000000000000
-      internalID: -2626638233927139367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mega_sprite_96
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 288
-        width: 21
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78b8028e5fd0a3740800000000000000
-      internalID: 5132430075154697095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mega_sprite_97
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 288
-        width: 21
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75d5d77f7c363eb10800000000000000
-      internalID: 2009559569239203159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: mega_sprite_98
       rect:
         serializedVersion: 2
-        x: 272
-        y: 288
-        width: 21
-        height: 9
+        x: 314
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2616,10 +2550,10 @@ TextureImporter:
       name: mega_sprite_99
       rect:
         serializedVersion: 2
-        x: 313
-        y: 288
-        width: 21
-        height: 18
+        x: 355
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2638,10 +2572,10 @@ TextureImporter:
       name: mega_sprite_100
       rect:
         serializedVersion: 2
-        x: 354
-        y: 288
-        width: 21
-        height: 13
+        x: 396
+        y: 289
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2660,10 +2594,10 @@ TextureImporter:
       name: mega_sprite_101
       rect:
         serializedVersion: 2
-        x: 395
-        y: 288
-        width: 21
-        height: 15
+        x: 34
+        y: 193
+        width: 32
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2682,10 +2616,10 @@ TextureImporter:
       name: mega_sprite_102
       rect:
         serializedVersion: 2
-        x: 33
-        y: 192
-        width: 34
-        height: 16
+        x: 77
+        y: 194
+        width: 32
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2704,10 +2638,10 @@ TextureImporter:
       name: mega_sprite_103
       rect:
         serializedVersion: 2
-        x: 76
-        y: 193
-        width: 34
-        height: 19
+        x: 120
+        y: 194
+        width: 32
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2726,10 +2660,10 @@ TextureImporter:
       name: mega_sprite_104
       rect:
         serializedVersion: 2
-        x: 119
-        y: 193
-        width: 34
-        height: 26
+        x: 162
+        y: 194
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2748,10 +2682,10 @@ TextureImporter:
       name: mega_sprite_105
       rect:
         serializedVersion: 2
-        x: 161
-        y: 193
-        width: 35
-        height: 35
+        x: 205
+        y: 194
+        width: 33
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2770,10 +2704,10 @@ TextureImporter:
       name: mega_sprite_106
       rect:
         serializedVersion: 2
-        x: 204
-        y: 193
-        width: 35
-        height: 38
+        x: 248
+        y: 194
+        width: 33
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2792,10 +2726,10 @@ TextureImporter:
       name: mega_sprite_107
       rect:
         serializedVersion: 2
-        x: 247
-        y: 193
-        width: 35
-        height: 46
+        x: 290
+        y: 194
+        width: 34
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2814,10 +2748,10 @@ TextureImporter:
       name: mega_sprite_108
       rect:
         serializedVersion: 2
-        x: 289
-        y: 193
-        width: 36
-        height: 57
+        x: 333
+        y: 194
+        width: 34
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2836,9 +2770,9 @@ TextureImporter:
       name: mega_sprite_109
       rect:
         serializedVersion: 2
-        x: 332
-        y: 193
-        width: 36
+        x: 376
+        y: 194
+        width: 34
         height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2858,10 +2792,10 @@ TextureImporter:
       name: mega_sprite_110
       rect:
         serializedVersion: 2
-        x: 375
-        y: 193
-        width: 36
-        height: 68
+        x: 419
+        y: 194
+        width: 34
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2880,10 +2814,10 @@ TextureImporter:
       name: mega_sprite_111
       rect:
         serializedVersion: 2
-        x: 418
-        y: 193
-        width: 36
-        height: 69
+        x: 462
+        y: 194
+        width: 34
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2902,10 +2836,10 @@ TextureImporter:
       name: mega_sprite_112
       rect:
         serializedVersion: 2
-        x: 461
-        y: 193
-        width: 36
-        height: 69
+        x: 505
+        y: 194
+        width: 34
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2924,10 +2858,10 @@ TextureImporter:
       name: mega_sprite_113
       rect:
         serializedVersion: 2
-        x: 504
-        y: 193
-        width: 36
-        height: 69
+        x: 30
+        y: 146
+        width: 21
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2946,10 +2880,10 @@ TextureImporter:
       name: mega_sprite_114
       rect:
         serializedVersion: 2
-        x: 29
-        y: 145
-        width: 23
-        height: 18
+        x: 60
+        y: 146
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2968,10 +2902,10 @@ TextureImporter:
       name: mega_sprite_115
       rect:
         serializedVersion: 2
-        x: 59
-        y: 145
-        width: 24
-        height: 18
+        x: 91
+        y: 146
+        width: 23
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2990,10 +2924,10 @@ TextureImporter:
       name: mega_sprite_116
       rect:
         serializedVersion: 2
-        x: 90
-        y: 145
-        width: 25
-        height: 18
+        x: 122
+        y: 146
+        width: 23
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3012,10 +2946,10 @@ TextureImporter:
       name: mega_sprite_117
       rect:
         serializedVersion: 2
-        x: 121
-        y: 145
-        width: 25
-        height: 18
+        x: 153
+        y: 146
+        width: 24
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3034,10 +2968,10 @@ TextureImporter:
       name: mega_sprite_118
       rect:
         serializedVersion: 2
-        x: 152
-        y: 145
-        width: 26
-        height: 16
+        x: 184
+        y: 146
+        width: 24
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3056,10 +2990,10 @@ TextureImporter:
       name: mega_sprite_119
       rect:
         serializedVersion: 2
-        x: 183
-        y: 145
-        width: 26
-        height: 16
+        x: 33
+        y: 77
+        width: 34
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3070,6 +3004,116 @@ TextureImporter:
       bones: []
       spriteID: 3063c651d85d42a70800000000000000
       internalID: 8801394373715310083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 736
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74a9ee2441a248c8baa5ab74e9cd36c
+      internalID: 5775637773876535136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_sprite_120
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 77
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f937827db22a8481986c8bdd77be69bc
+      internalID: 1388476778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_sprite_121
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 77
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d3411ce43ac443abef77b2d2f7b294
+      internalID: 1549402966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_sprite_122
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 77
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66a6e646eeb646f7997846f2d9069d4
+      internalID: -1504297047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_sprite_123
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 77
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7477188207883476ab052ba7834d36ab
+      internalID: -1787536919
       vertices: []
       indices: 
       edges: []
@@ -3086,7 +3130,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       mega_sprite_0: -6525655460483394340
       mega_sprite_1: 2989197637211879331
@@ -3113,6 +3159,10 @@ TextureImporter:
       mega_sprite_118: -3203202624070930688
       mega_sprite_119: 8801394373715310083
       mega_sprite_12: 6674173597275006472
+      mega_sprite_120: 1388476778
+      mega_sprite_121: 1549402966
+      mega_sprite_122: -1504297047
+      mega_sprite_123: -1787536919
       mega_sprite_13: 8987804951434621874
       mega_sprite_14: 5653061267226009454
       mega_sprite_15: -183274892818365253

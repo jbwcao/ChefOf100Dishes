@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2537333587115087512, guid: a68fe038431ed574b92647b140748c88, type: 3}
       propertyPath: m_Name
-      value: TomatoDrop 1
+      value: PotatoDrop
       objectReference: {fileID: 0}
     - target: {fileID: 8559145765188168605, guid: a68fe038431ed574b92647b140748c88, type: 3}
       propertyPath: assignedItem

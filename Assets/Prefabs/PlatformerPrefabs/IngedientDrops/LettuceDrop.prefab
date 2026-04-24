@@ -13,6 +13,14 @@ PrefabInstance:
       value: LettuceDrop
       objectReference: {fileID: 0}
     - target: {fileID: 4288067128171671110, guid: 89ada27ae647d254b8f3979b940bf9c5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288067128171671110, guid: 89ada27ae647d254b8f3979b940bf9c5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288067128171671110, guid: 89ada27ae647d254b8f3979b940bf9c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}

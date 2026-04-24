@@ -14,10 +14,12 @@ public class RpgToPlatform : MonoBehaviour
     {
         GameManager.Instance.roundRemaining--;
         FindObjectOfType<InventoryManager>().SaveInventory();
+        Debug.Log(GameManager.Instance.roundRemaining);
 
-        if (GameManager.Instance.roundRemaining <= 0)
+        if (GameManager.Instance.roundRemaining < 0)
         {
-         // game over
+            SceneManager.LoadScene("Game Over");
+            return;
         }
         SceneManager.LoadScene("Hub Room");
     }

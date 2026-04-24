@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 059185792a703dd47962a6bb4a444b65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3691272058964214465
+    second: tofu_ascension_animation_0
+  - first:
+      213: -6170772130862284609
+    second: tofu_ascension_animation_1
+  - first:
+      213: 5344597639001279065
+    second: tofu_ascension_animation_2
+  - first:
+      213: 6503401509135319837
+    second: tofu_ascension_animation_3
+  - first:
+      213: -4044179462573339671
+    second: tofu_ascension_animation_4
+  - first:
+      213: -1353152136884082010
+    second: tofu_ascension_animation_5
+  - first:
+      213: 56578589912461185
+    second: tofu_ascension_animation_6
+  - first:
+      213: -5681911057941905471
+    second: tofu_ascension_animation_7
+  - first:
+      213: -1867333718260981681
+    second: tofu_ascension_animation_8
+  - first:
+      213: 7260673542650093835
+    second: tofu_ascension_animation_9
+  - first:
+      213: 3231163269646464937
+    second: tofu_ascension_animation_10
+  - first:
+      213: -1363042401498730544
+    second: tofu_ascension_animation_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tofu_ascension_animation_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 8
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3dfc1c9e97f5ccc0800000000000000
+      internalID: -3691272058964214465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 9
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0c21ee0730d5aa0800000000000000
+      internalID: -6170772130862284609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 9
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a001c5c33db2a40800000000000000
+      internalID: 5344597639001279065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 9
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1300cf4739b04a50800000000000000
+      internalID: 6503401509135319837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 9
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebc26da43030e7c0800000000000000
+      internalID: -4044179462573339671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 9
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aaa6f10d43a83de0800000000000000
+      internalID: -1353152136884082010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_6
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 9
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fef918de109c000800000000000000
+      internalID: 56578589912461185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 9
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf32023ffbc521b0800000000000000
+      internalID: -5681911057941905471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 9
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40e1f570e5e516e0800000000000000
+      internalID: -1867333718260981681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 9
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b016cbb4e1813c460800000000000000
+      internalID: 7260673542650093835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_10
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 9
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a73192dfd567dc20800000000000000
+      internalID: 3231163269646464937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tofu_ascension_animation_11
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 9
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df6fd45820851de0800000000000000
+      internalID: -1363042401498730544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tofu_ascension_animation_0: -3691272058964214465
+      tofu_ascension_animation_1: -6170772130862284609
+      tofu_ascension_animation_10: 3231163269646464937
+      tofu_ascension_animation_11: -1363042401498730544
+      tofu_ascension_animation_2: 5344597639001279065
+      tofu_ascension_animation_3: 6503401509135319837
+      tofu_ascension_animation_4: -4044179462573339671
+      tofu_ascension_animation_5: -1353152136884082010
+      tofu_ascension_animation_6: 56578589912461185
+      tofu_ascension_animation_7: -5681911057941905471
+      tofu_ascension_animation_8: -1867333718260981681
+      tofu_ascension_animation_9: 7260673542650093835
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

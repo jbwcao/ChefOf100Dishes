@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using System;
 
 public class EnemyCharge : EnemyMovement
 {
@@ -27,6 +28,10 @@ public class EnemyCharge : EnemyMovement
     private Transform player;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+
+    //animaton studd
+    public Animator animator;
+    public String chargeBoolName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -51,7 +56,7 @@ public class EnemyCharge : EnemyMovement
 
             Vector2 nextPosition;
             
-
+            //may be based on framerates
             nextPosition.x = (player.position.x > rb.position.x ? 1f : -1f) * agroSpeed;
             sr.flipX = player.position.x > rb.position.x ? true : false;
 
@@ -79,10 +84,18 @@ public class EnemyCharge : EnemyMovement
                 foreach (Collider2D hit in viewArea) {
                     if (hit.CompareTag("Player"))
                     {
-                        Debug.Log("Player Found!");
                         //TODO add a alert animation + sfx
                         player = hit.transform;
                         isChasing = true;
+                        //add a small impulse up
+                        Vector2 force = new Vector2(0, 2.5f);
+                        rb.AddForce(force, ForceMode2D.Impulse);
+
+                        if (animator != null && chargeBoolName != null)
+                        {
+                            animator.SetBool(chargeBoolName, true);
+                        }
+
                         //disable idle
                         idleScript.enabled = false;
                     }
@@ -100,6 +113,11 @@ public class EnemyCharge : EnemyMovement
                 {
                     player = null;
                     isChasing = false;
+
+                    if (animator != null && chargeBoolName != null)
+                        {
+                            animator.SetBool(chargeBoolName, false);
+                        }
 
                     //if knockback is happening
                     //CancelKnockback();

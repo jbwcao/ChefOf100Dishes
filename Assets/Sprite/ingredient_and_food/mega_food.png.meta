@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 6704b34073575c949a9e73c9f314a598
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8439857962356026187
+    second: mega_food_0
+  - first:
+      213: -4987952270681426246
+    second: mega_food_1
+  - first:
+      213: -7504244763898392293
+    second: mega_food_2
+  - first:
+      213: -838307910734434174
+    second: mega_food_3
+  - first:
+      213: -5260432059067043101
+    second: mega_food_4
+  - first:
+      213: 1883857878941843548
+    second: mega_food_5
+  - first:
+      213: -3421527154368419209
+    second: mega_food_6
+  - first:
+      213: -29861675962663888
+    second: mega_food_7
+  - first:
+      213: 8664586284368170021
+    second: mega_food_8
+  - first:
+      213: -5383538936425978293
+    second: mega_food_9
+  - first:
+      213: -6348495433932221666
+    second: mega_food_10
+  - first:
+      213: -3625695297149405295
+    second: mega_food_11
+  - first:
+      213: 2410563728247543952
+    second: mega_food_12
+  - first:
+      213: -8642780270534134986
+    second: mega_food_13
+  - first:
+      213: 8574013939950858194
+    second: mega_food_14
+  - first:
+      213: 1331852602390838425
+    second: mega_food_15
+  - first:
+      213: 4123520524823976699
+    second: mega_food_16
+  - first:
+      213: -6434888554908097897
+    second: mega_food_17
+  - first:
+      213: 3808072877983071046
+    second: mega_food_18
+  - first:
+      213: -1125459790416429916
+    second: mega_food_19
+  - first:
+      213: 3500527645631485855
+    second: mega_food_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mega_food_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 353
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4babf8b916602570800000000000000
+      internalID: 8439857962356026187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 362
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab63e6d46db37cab0800000000000000
+      internalID: -4987952270681426246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 354
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11504c75219bd790800000000000000
+      internalID: -7504244763898392293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 363
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2803640956bbd54f0800000000000000
+      internalID: -838307910734434174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 370
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e27b3ac9e03ff6b0800000000000000
+      internalID: -5260432059067043101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 367
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5046a182cec42a10800000000000000
+      internalID: 1883857878941843548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 296
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a648e5e2b4480d0800000000000000
+      internalID: -3421527154368419209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 324
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cf8d3c6f8e59ff0800000000000000
+      internalID: -29861675962663888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 324
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c8c75915bce3870800000000000000
+      internalID: 8664586284368170021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_9
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 324
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4668db4cd3d945b0800000000000000
+      internalID: -5383538936425978293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 300
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13d742e90d95e7a0800000000000000
+      internalID: -6348495433932221666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 281
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197fa954651feadc0800000000000000
+      internalID: -3625695297149405295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 286
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098d2aa60fa047120800000000000000
+      internalID: 2410563728247543952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_13
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 282
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633fe07a22dae0880800000000000000
+      internalID: -8642780270534134986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 239
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfa40650440df670800000000000000
+      internalID: 8574013939950858194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 240
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c7faaa2e0bb7210800000000000000
+      internalID: 1331852602390838425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 237
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa5a2ae110b93930800000000000000
+      internalID: 4123520524823976699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_17
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 237
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792e97be3fea2b6a0800000000000000
+      internalID: -6434888554908097897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_18
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 233
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bfaf24b1ef8d430800000000000000
+      internalID: 3808072877983071046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 177
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac3e3798409160f0800000000000000
+      internalID: -1125459790416429916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_food_20
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 163
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f979c4cd85f549030800000000000000
+      internalID: 3500527645631485855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mega_food_0: 8439857962356026187
+      mega_food_1: -4987952270681426246
+      mega_food_10: -6348495433932221666
+      mega_food_11: -3625695297149405295
+      mega_food_12: 2410563728247543952
+      mega_food_13: -8642780270534134986
+      mega_food_14: 8574013939950858194
+      mega_food_15: 1331852602390838425
+      mega_food_16: 4123520524823976699
+      mega_food_17: -6434888554908097897
+      mega_food_18: 3808072877983071046
+      mega_food_19: -1125459790416429916
+      mega_food_2: -7504244763898392293
+      mega_food_20: 3500527645631485855
+      mega_food_3: -838307910734434174
+      mega_food_4: -5260432059067043101
+      mega_food_5: 1883857878941843548
+      mega_food_6: -3421527154368419209
+      mega_food_7: -29861675962663888
+      mega_food_8: 8664586284368170021
+      mega_food_9: -5383538936425978293
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

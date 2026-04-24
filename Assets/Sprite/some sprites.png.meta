@@ -137,12 +137,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 221
+        y: 222
         width: 35
-        height: 10
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 3, z: 2, w: 3}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -158,10 +158,10 @@ TextureImporter:
       name: some sprites_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 212
-        width: 30
-        height: 16
+        x: 42
+        y: 213
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: some sprites_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 208
-        width: 37
-        height: 10
+        x: 6
+        y: 209
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: some sprites_3
       rect:
         serializedVersion: 2
-        x: 67
-        y: 184
-        width: 23
-        height: 28
+        x: 68
+        y: 185
+        width: 21
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: some sprites_4
       rect:
         serializedVersion: 2
-        x: 97
-        y: 190
-        width: 61
-        height: 23
+        x: 98
+        y: 191
+        width: 59
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: some sprites_5
       rect:
         serializedVersion: 2
-        x: 162
-        y: 193
-        width: 35
-        height: 22
+        x: 163
+        y: 194
+        width: 33
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: some sprites_6
       rect:
         serializedVersion: 2
-        x: 5
-        y: 195
-        width: 37
-        height: 10
+        x: 6
+        y: 196
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: some sprites_7
       rect:
         serializedVersion: 2
-        x: 5
-        y: 182
-        width: 37
-        height: 10
+        x: 6
+        y: 183
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: some sprites_8
       rect:
         serializedVersion: 2
-        x: 13
-        y: 114
-        width: 45
-        height: 56
+        x: 14
+        y: 115
+        width: 43
+        height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: some sprites_9
       rect:
         serializedVersion: 2
-        x: 70
-        y: 149
-        width: 26
-        height: 25
+        x: 71
+        y: 150
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: some sprites_10
       rect:
         serializedVersion: 2
-        x: 97
-        y: 149
-        width: 11
-        height: 12
+        x: 98
+        y: 150
+        width: 9
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: some sprites_11
       rect:
         serializedVersion: 2
-        x: 70
-        y: 131
-        width: 27
-        height: 17
+        x: 71
+        y: 132
+        width: 25
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,7 +408,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       some sprites_0: 2482306765757555781
       some sprites_1: 435982004168884725

@@ -35,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6525412445212002394}
@@ -190,7 +190,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.36}
+    oldSize: {x: 2.0625, y: 2.25}
     newSize: {x: 0.33, y: 0.36}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   range: 2
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 65664
   slashAnimator: {fileID: 6656861727984909110}
   slashSr: {fileID: 916176292752304355}
 --- !u!114 &750473072206544146

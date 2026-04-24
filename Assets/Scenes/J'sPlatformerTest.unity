@@ -228,53 +228,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4053919468332610833, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053919468332610833, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.32
-      objectReference: {fileID: 0}
     - target: {fileID: 4583496688128660078, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: m_Size.x
-      value: 0.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583496688128660078, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: m_Size.y
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583496688128660078, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -699407594815662204, guid: 3044102b094e76b47958e9faa04ec43f, type: 3}
-    - target: {fileID: 4583496688128660078, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: range
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: attackSize.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: attackSize.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: knockbackTime
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: playerLayers.m_Bits
-      value: 131072
-      objectReference: {fileID: 0}
-    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: timeBeforecountering
-      value: 0.5
+      propertyPath: direction
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1125,6 +1085,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7105242752695932010, guid: e022b7300c9c2f840b2938fe5b5ef083, type: 3}
   m_PrefabInstance: {fileID: 7876281443676548919}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1797348772 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 838965263158609107, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+  m_PrefabInstance: {fileID: 1849926907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1849926907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1133,6 +1098,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 948961333}
     m_Modifications:
+    - target: {fileID: 675399592232579634, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 675399592232579634, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 675399592232579634, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 675399592232579634, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362498853710711333, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -183274892818365253, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
+    - target: {fileID: 1362498853710711333, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289392928396401354, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289392928396401354, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3289392928396401354, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0174468
@@ -1173,9 +1170,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4080338659090093977, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080338659090093977, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 4705583101133590781, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
       propertyPath: m_Name
       value: ChickenCharger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381100391579494822, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1797348772}
+    - target: {fileID: 6381100391579494822, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: enemySpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381100391579494822, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: chargeBoolName
+      value: Charging
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381100391579494822, guid: 2381acf21b66f544e87e45d305fd4b9d, type: 3}
+      propertyPath: deagrroRange.y
+      value: 8.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1246,6 +1267,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3177080356515379631, guid: 442bfd7862036634eb1f071b5f9067ad, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3200724180056017610, guid: 442bfd7862036634eb1f071b5f9067ad, type: 3}
       propertyPath: m_Size.x
       value: 4
@@ -1262,11 +1287,6 @@ PrefabInstance:
 --- !u!4 &698548606136101984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3855068742020981604, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
-  m_PrefabInstance: {fileID: 7948121747893220575}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &698548606136101985 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4898065601096417297, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
   m_PrefabInstance: {fileID: 7948121747893220575}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &698548606811788756 stripped
@@ -1773,18 +1793,6 @@ PrefabInstance:
     - target: {fileID: 3855068742020981604, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4597096324114626784, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 698548606136101985}
-    - target: {fileID: 4597096324114626784, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
-      propertyPath: hurtName
-      value: Mushhurt
-      objectReference: {fileID: 0}
-    - target: {fileID: 4597096324114626784, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
-      propertyPath: knockbackTime
-      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4652781438847098256, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
       propertyPath: m_Name

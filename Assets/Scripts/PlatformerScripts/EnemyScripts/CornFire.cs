@@ -165,19 +165,19 @@ public class CornFire : TomatoLob, IKnockbackable
 
 
     private IEnumerator RecoverFromKnockback()
-{
-    while (rb.linearVelocity.magnitude > 0.05f)
     {
-        rb.linearVelocity = Vector2.MoveTowards(
-            rb.linearVelocity,
-            Vector2.zero,
-            knockbackRecoverySpeed * Time.deltaTime
-        );
+        while (rb.linearVelocity.magnitude > 0.05f)
+        {
+            rb.linearVelocity = Vector2.MoveTowards(
+                rb.linearVelocity,
+                Vector2.zero,
+                knockbackRecoverySpeed * Time.deltaTime
+            );
 
-        yield return null;
+            yield return null;
+        }
+
+        rb.linearVelocity = Vector2.zero;
+        knockbackRecoveryRoutine = null;
     }
-
-    rb.linearVelocity = Vector2.zero;
-    knockbackRecoveryRoutine = null;
-}
 }

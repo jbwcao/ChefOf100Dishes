@@ -184,9 +184,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemySpeed: 1
   direction: 1
-  knockbackTime: 0.15
-  anim: {fileID: 0}
-  hurtName: 
+  knockbackTime: 0.3
+  anim: {fileID: 4898065601096417297}
+  hurtName: Mushhurt
 --- !u!114 &4649414145517412347
 MonoBehaviour:
   m_ObjectHideFlags: 0

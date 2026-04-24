@@ -218,7 +218,7 @@ MonoBehaviour:
   range: 2
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 65664
   slashAnimator: {fileID: 6656861727984909110}
   slashSr: {fileID: 916176292752304355}
 --- !u!114 &750473072206544146

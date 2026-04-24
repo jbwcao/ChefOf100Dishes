@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: d3cfd326e9e75cc4eb02fe633c4ec49c
+guid: 2db89b3692780044a9b2cfd18895618b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8678448789981272047
-    second: chicken_0
+      213: 9088826964852147652
+    second: MushroomWalk(Fliped)_0
   - first:
-      213: -1249941551368896030
-    second: chicken_1
+      213: 2221334841544277233
+    second: MushroomWalk(Fliped)_1
   - first:
-      213: -8985877945988413723
-    second: chicken_2
+      213: -3516627323905938943
+    second: MushroomWalk(Fliped)_2
   - first:
-      213: 1024765088451093750
-    second: chicken_3
+      213: 1347326897926689235
+    second: MushroomWalk(Fliped)_3
   - first:
-      213: 7067989680129746051
-    second: chicken_4
+      213: -4254973429908490465
+    second: MushroomWalk(Fliped)_4
   - first:
-      213: -3409965803568616162
-    second: chicken_5
+      213: -6123807550442752807
+    second: MushroomWalk(Fliped)_5
+  - first:
+      213: 5737796271209011270
+    second: MushroomWalk(Fliped)_6
+  - first:
+      213: -7269087671463352629
+    second: MushroomWalk(Fliped)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chicken_0
+      name: MushroomWalk(Fliped)_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 24
-        height: 23
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe79040b13b007870800000000000000
-      internalID: 8678448789981272047
+      spriteID: 4c5010948fff12e70800000000000000
+      internalID: 9088826964852147652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_1
+      name: MushroomWalk(Fliped)_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 4
-        width: 24
-        height: 23
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e108a018c057aee0800000000000000
-      internalID: -1249941551368896030
+      spriteID: 1fcf17de444c3de10800000000000000
+      internalID: 2221334841544277233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_2
+      name: MushroomWalk(Fliped)_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 4
-        width: 23
-        height: 23
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e6085a0e9fbb4380800000000000000
-      internalID: -8985877945988413723
+      spriteID: 10a672fa41e623fc0800000000000000
+      internalID: -3516627323905938943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_3
+      name: MushroomWalk(Fliped)_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4
-        width: 23
-        height: 23
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f469532b62b83e00800000000000000
-      internalID: 1024765088451093750
+      spriteID: 3d1df3bdcaaa2b210800000000000000
+      internalID: 1347326897926689235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_4
+      name: MushroomWalk(Fliped)_4
       rect:
         serializedVersion: 2
-        x: 132
-        y: 4
-        width: 23
-        height: 23
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 384a2409a2b861260800000000000000
-      internalID: 7067989680129746051
+      spriteID: f173495953c43f4c0800000000000000
+      internalID: -4254973429908490465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_5
+      name: MushroomWalk(Fliped)_5
       rect:
         serializedVersion: 2
-        x: 164
-        y: 4
-        width: 23
-        height: 23
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +246,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d201e1b2e5da0d0800000000000000
-      internalID: -3409965803568616162
+      spriteID: 9d4310b6a7dd30ba0800000000000000
+      internalID: -6123807550442752807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MushroomWalk(Fliped)_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64859fafe4fb0af40800000000000000
+      internalID: 5737796271209011270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MushroomWalk(Fliped)_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6614da6430f1b90800000000000000
+      internalID: -7269087671463352629
       vertices: []
       indices: 
       edges: []
@@ -250,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d78c174a088e311409b734a582cb5f29
+    spriteID: 2e803a453e21fc9488ec8012d19157cd
     internalID: 0
     vertices: []
     indices: 
@@ -260,14 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      chicken_0: 8678448789981272047
-      chicken_1: -1249941551368896030
-      chicken_2: -8985877945988413723
-      chicken_3: 1024765088451093750
-      chicken_4: 7067989680129746051
-      chicken_5: -3409965803568616162
+      MushroomWalk(Fliped)_0: 9088826964852147652
+      MushroomWalk(Fliped)_1: 2221334841544277233
+      MushroomWalk(Fliped)_2: -3516627323905938943
+      MushroomWalk(Fliped)_3: 1347326897926689235
+      MushroomWalk(Fliped)_4: -4254973429908490465
+      MushroomWalk(Fliped)_5: -6123807550442752807
+      MushroomWalk(Fliped)_6: 5737796271209011270
+      MushroomWalk(Fliped)_7: -7269087671463352629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

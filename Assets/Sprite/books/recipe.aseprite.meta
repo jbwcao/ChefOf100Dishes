@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7fbde5c61bbce84da4323bc5fa37ee8
+guid: d30b41d9d13bc6b498bc2c0637db54a2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: alley
+  - name: recipe
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 400
       height: 225
-    spriteID: 831f191944e9be543b388280dda1313d
+    spriteID: a79b5270850393c4cad9c6a91ff22cfa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2583024781
+      value0: 1590402304
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: alley
+    name: recipe
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: alley
+    - name: recipe
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 0
         width: 400
         height: 225
-      spriteId: 831f191944e9be543b388280dda1313d
+      spriteId: a79b5270850393c4cad9c6a91ff22cfa
     linkedCells: []
     tileCells: []
     tileSetIndex: 0

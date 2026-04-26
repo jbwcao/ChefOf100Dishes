@@ -61,6 +61,9 @@ public class EnemyHitbox : MonoBehaviour, IDamageable
 
     private void death()
     {
+        //sfx addition
+        AudioManager.Instance?.PlayEnemyDeath();
+        
         //drop a designated food item
         foreach (GameObject i in droppedItems)
         {

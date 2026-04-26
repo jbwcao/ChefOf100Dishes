@@ -53,6 +53,9 @@ public class Blackerbox : MonoBehaviour {
         droppedIngredient.Sort((a, b) => String.Compare(a.name, b.name));
         
         animator.SetTrigger("Cook");
+        //sfx additoin
+        AudioManager.Instance?.PlayFoodCreation();
+        
         yield return new WaitForSeconds(1f);
 
         Cookbook.Recipe poop_recipe = cookbook.recipes[0];
@@ -115,6 +118,9 @@ public class Blackerbox : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D coll) {
         GameObject item = coll.gameObject;
         if (item.CompareTag("Ingredient") && item.GetComponent<MasterPrefab>().dish is null) {
+            //sfx addition
+            AudioManager.Instance?.PlayDropFoodIntoPot();
+
             droppedIngredient.Add(item.GetComponent<MasterPrefab>().ingredient);
             int index = droppedIngredient.Count - 1;
             spawnPoints[index].GetComponent<Image>().sprite = droppedIngredient[index].sprite;

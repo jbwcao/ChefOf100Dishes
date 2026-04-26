@@ -102,6 +102,9 @@ public class Customer : MonoBehaviour
 
         else if (item.ingredientList.Contains(wantedIngredient))
         {
+            //sfx addition
+            AudioManager.Instance?.PlayGiveFoodToCustomer();
+            
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
             currSatisfied += satisfaction;

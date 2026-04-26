@@ -16,6 +16,9 @@ public class DoorEnter : MonoBehaviour
     {
         if(enterFlag && Keyboard.current.eKey.wasPressedThisFrame)
         {
+            //sfx additon
+            AudioManager.Instance?.PlayEnterPortal();
+            
             SceneManager.LoadScene(sceneName);
         }    
     }

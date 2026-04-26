@@ -13,19 +13,39 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
     private bool stopMoving = false;
     public float knockbackTime = 0.15f;
 
+    public Animator anim;
+    public string hurtName;
     Vector2 movement;
 
     Rigidbody2D EnemyRB;
+    Collider2D col;
     SpriteRenderer sprite;
 
     // We can query the bitmask once rather than for every attack
     int terrainLayer;
 
     // TODO: implent a stop before turning and moving again
+    private void OnEnable()
+    {
+        if(currentDir != 0)
+            //double check enemy is facing the right direction when renableing script(may be wrong)
+            if (currentDir > 0)
+            {
+                sprite.flipX = true;
+            }
+            else
+            {
+                sprite.flipX = false;   
+            }
+    }
+
+
+
     protected virtual void Start()
     {
         terrainLayer = LayerMask.GetMask("Terrain");
         EnemyRB = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
         currentDir = direction;
         halfwidth = sprite.bounds.extents.x;
@@ -37,10 +57,23 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
     {
         if (!stopMoving)
         {
-            directionChecker();
+
+            RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, col.bounds.min.y - 0.01f), new Vector2(0, -1), 0.1f, terrainLayer);
+            bool onGround = hit.collider == null? false : hit.collider.CompareTag("Platform");
+            if (onGround)
+            {
+                directionChecker();
+            }  
             basic_move();  
         }
-
+        else
+        {
+            if(anim != null && hurtName != null)
+            {
+                //this is meant to play a hurt animation while the enemy is getting knocked back, doesn't work though
+                anim.Play(hurtName, 0, 0f);
+            }
+        }
         
     }
 
@@ -69,7 +102,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
             !Physics2D.Raycast(rightPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
-                sprite.flipX = true;
+                sprite.flipX = false;
 
             
             }
@@ -79,7 +112,7 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
              !Physics2D.Raycast(leftPos, Vector2.down , halfwidth + 0.1f, terrainLayer))
             {
                 currentDir *= -1;
-                sprite.flipX = false;
+                sprite.flipX = true;
             }
         }
     }
@@ -105,6 +138,9 @@ public class EnemyMovement : MonoBehaviour, IKnockbackable
         Invoke(nameof(EndKnockback), knockbackTime);
         return true;
     }
+
+
+
 
     
     void EndKnockback()

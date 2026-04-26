@@ -66,7 +66,7 @@ public class EnemyHitbox : MonoBehaviour, IDamageable
         {
             if (i != null)
             {
-                Instantiate(i, transform.position, transform.rotation);
+                Instantiate(i, transform.position, Quaternion.identity);
             }
             
         }

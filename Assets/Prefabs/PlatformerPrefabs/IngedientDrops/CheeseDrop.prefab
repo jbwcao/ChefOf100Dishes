@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2330566661386821514, guid: e9f738fbc9ebc9d4d984b57ad5fb6242, type: 3}
       propertyPath: m_Name
-      value: ChickenDrop 1
+      value: CheeseDrop
       objectReference: {fileID: 0}
     - target: {fileID: 2488543524118844009, guid: e9f738fbc9ebc9d4d984b57ad5fb6242, type: 3}
       propertyPath: m_LocalPosition.x

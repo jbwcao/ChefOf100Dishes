@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Potato
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   name: potato
-  sprite: {fileID: -3133512689994751562, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}
+  sprite: {fileID: 4619654489617785536, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}

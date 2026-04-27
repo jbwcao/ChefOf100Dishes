@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Enemy SFX")]
     public AudioClip enemyDeath;
+    public AudioClip enemyTakeDamage;
     public AudioClip tomatoSpit;
 
     [Header("Item / World SFX")]
@@ -36,6 +37,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip foodCreation;
     public AudioClip dropFoodIntoPot;
     public AudioClip giveFoodToCustomer;
+    public AudioClip customerYuck;
 
     [Header("Volumes")]
     [Range(0f, 1f)] public float musicVolume = 0.6f;
@@ -103,7 +105,7 @@ public class AudioManager : MonoBehaviour
 
         if (sceneName == "Hub Room")
         {
-            // PlayMusic(platformerMusic);
+            StopMusic();
             PlayAmbience(hubPortalHum);
             return;
         }
@@ -139,6 +141,13 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void StopMusic()
+    {
+        if (musicSource == null) return;
+        musicSource.Stop();
+        musicSource.clip = null;
+    }
+
     public void PlayAmbience(AudioClip clip)
     {
         if (clip == null || ambienceSource == null) return;
@@ -157,6 +166,8 @@ public class AudioManager : MonoBehaviour
         ambienceSource.Stop();
         ambienceSource.clip = null;
     }
+
+    //an audio mulitplier might be nice for intensifying game? wont hurt to add
 
     public void PlaySFX(AudioClip clip, float volumeMultiplier = 1f)
     {
@@ -188,10 +199,12 @@ public class AudioManager : MonoBehaviour
     public void PlayAttack() => PlaySFX(attack);
     public void PlayTakeDamage() => PlaySFX(takeDamage);
     public void PlayEnemyDeath() => PlaySFX(enemyDeath);
+    public void PlayEnemyTakeDamage() => PlaySFX(enemyTakeDamage);
     public void PlayTomatoSpit() => PlaySFX(tomatoSpit);
     public void PlayItemPickup() => PlaySFX(itemPickup);
     public void PlayEnterPortal() => PlaySFX(enterPortal);
     public void PlayFoodCreation() => PlaySFX(foodCreation);
     public void PlayDropFoodIntoPot() => PlaySFX(dropFoodIntoPot);
     public void PlayGiveFoodToCustomer() => PlaySFX(giveFoodToCustomer);
+    public void PlayCustomerYuck() => PlaySFX(customerYuck);
 }

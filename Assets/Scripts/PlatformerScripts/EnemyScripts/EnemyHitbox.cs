@@ -56,6 +56,10 @@ public class EnemyHitbox : MonoBehaviour, IDamageable
         if (currHealth <= 0)
         {
             death();
+        } 
+        else //sfx addition, put in else so it doesn't overlap with death noise
+        {
+            AudioManager.Instance?.PlayEnemyTakeDamage();
         }
     }
 
@@ -63,7 +67,7 @@ public class EnemyHitbox : MonoBehaviour, IDamageable
     {
         //sfx addition
         AudioManager.Instance?.PlayEnemyDeath();
-        
+
         //drop a designated food item
         foreach (GameObject i in droppedItems)
         {

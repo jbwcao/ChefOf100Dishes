@@ -53,23 +53,25 @@ MonoBehaviour:
   ambienceSource: {fileID: 1308759055515008449}
   sfxSource: {fileID: 8913815838332063518}
   footstepSource: {fileID: 5932719687595859105}
-  platformerMusic: {fileID: 0}
-  rpgMusic: {fileID: 8300000, guid: 86daf17405c8f4a45b03351f12bd2a78, type: 3}
+  platformerMusic: {fileID: 8300000, guid: 4d3a73795b00f4899a1a6a5ff6132d3c, type: 3}
+  rpgMusic: {fileID: 8300000, guid: 695cb12819ee64a2b9fe2c1d43f7e181, type: 3}
   hubPortalHum: {fileID: 8300000, guid: 38e9f7564ef7f4fc8899e2ced3271a68, type: 3}
-  footstepLoop: {fileID: 8300000, guid: 211de3b9cfb494949842ece0d7a6f8de, type: 3}
-  jump: {fileID: 8300000, guid: 160dd2db0cb374fb4b215d66c175fcfc, type: 3}
+  footstepLoop: {fileID: 8300000, guid: 555b253058e2242fcb9efc9f04a2bfc3, type: 3}
+  jump: {fileID: 8300000, guid: ea210c53dfe204a11a3f37befd20cac1, type: 3}
   attack: {fileID: 8300000, guid: 73d7c9dd1c9ad4e55aca6c20ba5d0aba, type: 3}
-  takeDamage: {fileID: 8300000, guid: 04b3c12487b2941ef8c8a140fecb1778, type: 3}
+  takeDamage: {fileID: 8300000, guid: dcd2ccb999e1b4714a5bdd7979bad9d6, type: 3}
   enemyDeath: {fileID: 8300000, guid: 81f1dcd70bfba4bb4987e0a179c96b08, type: 3}
+  enemyTakeDamage: {fileID: 8300000, guid: 807e52a8d16ed4879b4c2ad31c1cd5a5, type: 3}
   tomatoSpit: {fileID: 8300000, guid: 02d33c95cdb404f1f881d3add105e1c7, type: 3}
-  itemPickup: {fileID: 8300000, guid: 3f57852ed5f614d6faba2707cdf88517, type: 3}
+  itemPickup: {fileID: 8300000, guid: 7bae123d8cfa843a18b04ef841acae98, type: 3}
   enterPortal: {fileID: 8300000, guid: 1be354093eef7404999034c465a6de81, type: 3}
   foodCreation: {fileID: 8300000, guid: 61eec52d3d636417795373c067daef23, type: 3}
   dropFoodIntoPot: {fileID: 8300000, guid: cf4949a2697974a219780f32d3d31bdc, type: 3}
   giveFoodToCustomer: {fileID: 8300000, guid: e0d17a3ad15264ba89aacccf962db23e, type: 3}
-  musicVolume: 0.6
-  ambienceVolume: 0.45
-  sfxVolume: 1
+  customerYuck: {fileID: 8300000, guid: 4686f1d41e72840e5aae7e34615891dd, type: 3}
+  musicVolume: 0.25
+  ambienceVolume: 0.081
+  sfxVolume: 0.325
   footstepVolume: 0
 --- !u!82 &1015460100052663897
 AudioSource:

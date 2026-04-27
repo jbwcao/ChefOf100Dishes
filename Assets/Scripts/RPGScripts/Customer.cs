@@ -96,6 +96,9 @@ public class Customer : MonoBehaviour
         }
         if (item.dish.name == "poop")
         {
+            //sfx addition
+            AudioManager.Instance?.PlayCustomerYuck();
+            
             CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
             StartCoroutine(Shake(0.3f, 0.1f));
         }
@@ -104,7 +107,7 @@ public class Customer : MonoBehaviour
         {
             //sfx addition
             AudioManager.Instance?.PlayGiveFoodToCustomer();
-            
+
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
             currSatisfied += satisfaction;

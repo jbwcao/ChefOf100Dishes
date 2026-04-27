@@ -20,13 +20,17 @@ PrefabInstance:
       propertyPath: assignedItem
       value: 
       objectReference: {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
+    - target: {fileID: 4306695650718153486, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.413022
       objectReference: {fileID: 0}
     - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -5.017151
       objectReference: {fileID: 0}
     - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -63,6 +67,14 @@ PrefabInstance:
     - target: {fileID: 5972226706887278202, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_Name
       value: BreadDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759129486567190683, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759129486567190683, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

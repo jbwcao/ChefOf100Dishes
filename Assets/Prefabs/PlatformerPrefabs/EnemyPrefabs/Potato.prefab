@@ -66,7 +66,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.2, y: 0.3}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!1 &8601284075821542861
 GameObject:
@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 2322556019785091978}
   - component: {fileID: 3858982636885102585}
   - component: {fileID: 5380880068034480941}
+  - component: {fileID: 1794691754001912943}
   m_Layer: 7
   m_Name: Potato
   m_TagString: Enemy
@@ -110,7 +111,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7219, y: -6.3661, z: 0}
-  m_LocalScale: {x: 4.915, y: 4.913, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1228209407397113181}
@@ -187,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6307e28da393ac1498a3af91c8c41ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  maxHealth: 5
+  maxHealth: 2
   contactDamage: 1
   EnemyRB: {fileID: 2322556019785091978}
   EnemyCollider: {fileID: 8014028034058246961}
@@ -199,12 +200,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8601284075821542861}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa517ca485134892bda5ceb374415b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotatoEnemy
-  enemySpeed: 3
+  enemySpeed: 0
   direction: 1
   knockbackTime: 1
   anim: {fileID: 0}
@@ -274,17 +275,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.86}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.37}
+    oldSize: {x: 1.1875, y: 2.3125}
     newSize: {x: 1.5999999, y: 1.4100635}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4, y: 0.26}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!95 &5380880068034480941
 Animator:
@@ -308,3 +309,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1794691754001912943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8601284075821542861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24daf1e18a387df42b5c541fa79fa9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  enemySpeed: 0
+  direction: 1
+  knockbackTime: 0
+  anim: {fileID: 0}
+  hurtName: 

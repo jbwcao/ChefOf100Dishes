@@ -186,17 +186,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.05673247, y: -0.027340725}
+  m_Offset: {x: 0, y: -0.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0625, y: 2.25}
+    oldSize: {x: 1.9375, y: 2.125}
     newSize: {x: 0.33, y: 0.36}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.21569668, y: 0.22801071}
+  m_Size: {x: 0.85, y: 1.75}
   m_EdgeRadius: 0
 --- !u!114 &4486393675553088728
 MonoBehaviour:
@@ -212,10 +212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerAttack
   damage: 3
   attackSpeed: 0.5
-  knockBackUpwardsPower: 0.75
+  knockBackUpwardsPower: 0.5
   knockBackPower: 5
-  attackSize: {x: 3.5, y: 2}
-  range: 2
+  attackSize: {x: 4.5, y: 2}
+  range: 2.25
   enemyLayers:
     serializedVersion: 2
     m_Bits: 65664
@@ -320,8 +320,8 @@ Transform:
   m_GameObject: {fileID: 4962442781841690919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5115453329745534546}
@@ -380,7 +380,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 4, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

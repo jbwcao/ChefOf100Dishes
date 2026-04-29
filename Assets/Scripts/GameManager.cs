@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour {
     {
         for (int i = 0; i < customerSatisfaction.Length; i++)
     {
-        if (customerSatisfaction[i] < 10f) // 10 is maxSatisfied
+        if (customerSatisfaction[i] < 12f) // 10 is maxSatisfied
             return false;
     }
     return true;

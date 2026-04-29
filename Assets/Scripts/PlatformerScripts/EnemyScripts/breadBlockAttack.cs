@@ -10,11 +10,19 @@ public class breadBlockAttack : EnemyMovement, IKnockbackable
     public Vector2 attackSize = new Vector2(1f, 0.5f);
     public float range = 1.15f;
     private bool stop = false;
+    private Animator animator;
+    public Animator attackAnimator;
+
+    public Transform slashPos;
+    private Vector3 originalLocalPos;
+    public SpriteRenderer slashSR;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
-    {
+    { 
+        animator = GetComponent<Animator>();
+        originalLocalPos = slashPos.localPosition;
         
             base.Start();
         
@@ -25,6 +33,9 @@ public class breadBlockAttack : EnemyMovement, IKnockbackable
     {
         if(!stop){
             base.Update();
+
+            slashSR.flipX = currentDir > 0;
+            SetFacing(currentDir > 0);
         }
     }
 
@@ -37,6 +48,7 @@ public class breadBlockAttack : EnemyMovement, IKnockbackable
         if (hitFromFront) // if player attacks from the front(Implement)
         {
             // play a block animation
+            animator.Play("Block", 0, 0f);
             base.applyKnockback(hitFromPosition, 0, 2);
             StartCoroutine(Counter());
             //attack after -timeBeforecountering- seconds
@@ -57,6 +69,8 @@ public class breadBlockAttack : EnemyMovement, IKnockbackable
     {
         //stop movement speed
         stop = true;
+        //animator.Play("Attack", 0, 0f);
+        attackAnimator.Play("Breadflare", 0, 0f);
         yield return new WaitForSeconds(timeBeforecountering);
         attack(currentDir * range);
     
@@ -66,6 +80,7 @@ public class breadBlockAttack : EnemyMovement, IKnockbackable
     void attack(float attackDirectionOffset)
     {
         //bread then counters with a swing attack, swing moves him forward a little
+        //animator.Play("Attack", 0, 0f);
         Vector2 attackCenter = (Vector2) transform.position + new Vector2(attackDirectionOffset, 0);
         Collider2D[] enemiesHit = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, playerLayers);
         //play swing attack animation here
@@ -81,6 +96,13 @@ public class breadBlockAttack : EnemyMovement, IKnockbackable
         }
         //start movement
         stop = false;
+    }
+
+    public void SetFacing(bool facingRight)
+    {
+        Vector3 pos = originalLocalPos;
+        pos.x = facingRight ? Mathf.Abs(originalLocalPos.x) : -Mathf.Abs(originalLocalPos.x);
+        slashPos.localPosition = pos;
     }
 
     private void OnDrawGizmos()

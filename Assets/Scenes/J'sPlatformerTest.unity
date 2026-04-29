@@ -234,12 +234,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: range
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8079582531595772237, guid: 21d40d33b29ea2b488a0043aca9a474d, type: 3}
-      propertyPath: attackSize.x
-      value: 4
+      propertyPath: timeBeforecountering
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1434,6 +1430,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3177133999490120169, guid: 25ae146ae0443ef4889b1477e7796812, type: 3}
+      propertyPath: m_Size.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177133999490120169, guid: 25ae146ae0443ef4889b1477e7796812, type: 3}
+      propertyPath: m_Size.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7002653586997081887, guid: 25ae146ae0443ef4889b1477e7796812, type: 3}
       propertyPath: m_Name
       value: J'sLevelStarterKit

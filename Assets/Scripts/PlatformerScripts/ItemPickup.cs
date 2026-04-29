@@ -83,7 +83,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
         //only glow if the item has landed
         if (collision.transform.CompareTag("Player") && itemRB.linearVelocity.magnitude < 0.01f && playerInRange == false)
         {
-            StartCoroutine(Glow());
+            //StartCoroutine(Glow());
             playerInRange = true;//do somthing with playerInRange
         }
     }
@@ -92,7 +92,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
     {
         if (collision.transform.CompareTag("Player") && itemRB.linearVelocity.magnitude < 0.01f && playerInRange == true)
         {
-            StartCoroutine(GoBack());
+            //StartCoroutine(GoBack());
             playerInRange = false;
         }
         

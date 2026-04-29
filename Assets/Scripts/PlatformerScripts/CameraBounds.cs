@@ -14,13 +14,17 @@ public class CameraBounds : MonoBehaviour
     private float xUpperBound;
     private float xLowerBound;
 
+    private float cameraSize;
+
 
     void Start()
     {
-        yUpperBound = top.transform.position.y;
-        yLowerBound = bottom.transform.position.y;
-        xUpperBound = right.transform.position.x;
-        xLowerBound = left.transform.position.x;
+        cameraSize = GetComponent<Camera>().orthographicSize;
+
+        yUpperBound = top.transform.position.y - cameraSize;
+        yLowerBound = bottom.transform.position.y + cameraSize;
+        xUpperBound = right.transform.position.x - cameraSize * 2;
+        xLowerBound = left.transform.position.x + cameraSize * 2;
     }
 
     // Update is called once per frame

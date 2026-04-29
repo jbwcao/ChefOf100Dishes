@@ -135,13 +135,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8125, y: 1.8125}
+    oldSize: {x: 1.6875, y: 1.6875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.3, y: 0.3}
+  m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
 --- !u!50 &7172187334768384071
 Rigidbody2D:
@@ -187,7 +187,7 @@ MonoBehaviour:
   EnemyRB: {fileID: 7172187334768384071}
   EnemyCollider: {fileID: 1807178169373915736}
   droppedItems:
-  - {fileID: 2330566661386821514, guid: e9f738fbc9ebc9d4d984b57ad5fb6242, type: 3}
+  - {fileID: 991757934026514697, guid: e9f738fbc9ebc9d4d984b57ad5fb6242, type: 3}
 --- !u!114 &5917165758816365068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,5 +300,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.25, y: 0.25}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0

@@ -10,7 +10,7 @@ public class Customer : MonoBehaviour
 {
     #region satisfaction_var
     public int customerIndex;
-    [SerializeField] private float maxSatisfied = 10;
+    [SerializeField] private float maxSatisfied = 12;
     private float currSatisfied;
     private Slider satisfactionSlider;
     #endregion
@@ -110,6 +110,14 @@ public class Customer : MonoBehaviour
 
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
+            if (satisfaction = 4)
+            {
+                satisfaction++;
+            } else if (satisfaction > 4)
+            {
+                satisfaction = satisfaction + 2;
+            }
+            
             currSatisfied += satisfaction;
             GameManager.Instance.customerSatisfaction[customerIndex] = currSatisfied;
 

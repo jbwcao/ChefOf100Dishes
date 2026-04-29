@@ -66,7 +66,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 0.75, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &4946858727012636788
 GameObject:
@@ -209,7 +209,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.04}
+  m_Offset: {x: 0, y: -0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -219,7 +219,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.2, y: 0.25}
+  m_Size: {x: 1, y: 1.5}
   m_EdgeRadius: 0
 --- !u!50 &7221800895101310491
 Rigidbody2D:
@@ -282,8 +282,8 @@ MonoBehaviour:
   EnemyRB: {fileID: 7221800895101310491}
   EnemyCollider: {fileID: 6570622248916149310}
   droppedItems:
-  - {fileID: 2537333587115087512, guid: a68fe038431ed574b92647b140748c88, type: 3}
-  - {fileID: 2537333587115087512, guid: a68fe038431ed574b92647b140748c88, type: 3}
+  - {fileID: 2260429630114700829, guid: a2336900f56c7424193244d89cd75281, type: 3}
+  - {fileID: 2260429630114700829, guid: a2336900f56c7424193244d89cd75281, type: 3}
 --- !u!95 &2788864314302056444
 Animator:
   serializedVersion: 7

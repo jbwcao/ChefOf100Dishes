@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4810499485673312924}
   - component: {fileID: 6653471656089688068}
+  - component: {fileID: 5206992929116100220}
   m_Layer: 8
   m_Name: DamageHitbox
   m_TagString: Untagged
@@ -39,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543256865252833470}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -78,6 +79,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
+--- !u!58 &5206992929116100220
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543256865252833470}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!1 &4433467763227497900
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +256,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.3, y: 0.3}
+  m_Size: {x: 1, y: 0.3}
   m_EdgeRadius: 0
 --- !u!50 &2844088303142499845
 Rigidbody2D:
@@ -265,9 +302,9 @@ MonoBehaviour:
   EnemyRB: {fileID: 2844088303142499845}
   EnemyCollider: {fileID: 6653471656089688068}
   droppedItems:
-  - {fileID: 991757934026514697, guid: 8f3c880829cfce44896ce683d8dfb455, type: 3}
-  - {fileID: 97598292517897280, guid: 6a367072394cd534da25cdefafa240d5, type: 3}
-  - {fileID: 97598292517897280, guid: 6a367072394cd534da25cdefafa240d5, type: 3}
+  - {fileID: 1497514930399812902, guid: 8f3c880829cfce44896ce683d8dfb455, type: 3}
+  - {fileID: 207995139686816087, guid: 6a367072394cd534da25cdefafa240d5, type: 3}
+  - {fileID: 207995139686816087, guid: 6a367072394cd534da25cdefafa240d5, type: 3}
 --- !u!114 &8207773339016239290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,4 +359,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.165
+  m_Radius: 1

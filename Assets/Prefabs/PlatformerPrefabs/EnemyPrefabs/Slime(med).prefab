@@ -264,7 +264,7 @@ MonoBehaviour:
   EnemyRB: {fileID: 7437222141004451649}
   EnemyCollider: {fileID: 6189350368726450268}
   droppedItems:
-  - {fileID: 991757934026514697, guid: 01b4f9dda1e2bb74d9d425afc874824d, type: 3}
+  - {fileID: 2927619398115759523, guid: 01b4f9dda1e2bb74d9d425afc874824d, type: 3}
   - {fileID: 2350199684741759713, guid: 38afad0a41ac3714b926dd7c290b2d64, type: 3}
   - {fileID: 2350199684741759713, guid: 38afad0a41ac3714b926dd7c290b2d64, type: 3}
 --- !u!114 &1199300957693347599
@@ -285,5 +285,5 @@ MonoBehaviour:
   jumpPowerY: 7
   squashTime: 0.1
   stretchTime: 0.08
-  squashScale: {x: 5.1, y: 4.9, z: 1}
-  stretchScale: {x: 4.9, y: 5.1, z: 1}
+  squashScale: {x: 1.1, y: 0.9, z: 1}
+  stretchScale: {x: 0.9, y: 1.1, z: 1}

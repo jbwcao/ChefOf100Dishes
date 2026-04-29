@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 38ccb366a9de4114b9559a48b11aaa53
+guid: a89beea30b65cc64abcaab5cb7d79ddb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: sprites
+  - name: platforms
     originalName: 
-    pivot: {x: 0.6552632, y: -0.47826087}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 190
-      height: 115
-    spriteID: a483976cdc2acac4fa978f6db1f188d1
+      width: 80
+      height: 47
+    spriteID: e504a93e7c8dc09408c0495870333c05
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3883541408
+      value0: 3479768782
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: sprites
+    name: platforms
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: sprites
+    - name: platforms
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 15
-        y: 55
-        width: 190
-        height: 115
-      spriteId: a483976cdc2acac4fa978f6db1f188d1
+        x: 0
+        y: 0
+        width: 80
+        height: 47
+      spriteId: e504a93e7c8dc09408c0495870333c05
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -181,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 279, y: 233}
-  previousTextureSize: {x: 256, y: 128}
+  canvasSize: {x: 80, y: 47}
+  previousTextureSize: {x: 128, y: 64}

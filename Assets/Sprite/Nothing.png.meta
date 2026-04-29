@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: a3f7d454c5bc0774aaaf8e5d70775064
+guid: 4ea015b097d2aab46958ec6d2511b5f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5287773014763375610
-    second: bread_block_0
-  - first:
-      213: 234300861469565472
-    second: bread_block_1
-  - first:
-      213: -5280880571232398064
-    second: bread_block_2
-  - first:
-      213: 5508771123922964687
-    second: bread_block_3
-  - first:
-      213: -403481194318703759
-    second: bread_block_4
+      213: -932697194445080084
+    second: Nothing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bread_block_0
+      name: Nothing_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 15
-        width: 36
-        height: 31
+        x: 0
+        y: 0
+        width: 1
+        height: 1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,96 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 604f12a757e0e96b0800000000000000
-      internalID: -5287773014763375610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bread_block_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 15
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02226726467604300800000000000000
-      internalID: 234300861469565472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bread_block_2
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 15
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0155e6a891b86b6b0800000000000000
-      internalID: -5280880571232398064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bread_block_3
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 15
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc09b568626137c40800000000000000
-      internalID: 5508771123922964687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bread_block_4
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 15
-        width: 36
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1735513ddfb866af0800000000000000
-      internalID: -403481194318703759
+      spriteID: ce9f812e7d46e03f0800000000000000
+      internalID: -932697194445080084
       vertices: []
       indices: 
       edges: []
@@ -235,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bread_block_0: -5287773014763375610
-      bread_block_1: 234300861469565472
-      bread_block_2: -5280880571232398064
-      bread_block_3: 5508771123922964687
-      bread_block_4: -403481194318703759
+      Nothing_0: -932697194445080084
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

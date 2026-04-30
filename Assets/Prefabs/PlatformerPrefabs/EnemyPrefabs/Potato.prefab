@@ -89,11 +89,9 @@ GameObject:
   - component: {fileID: 3271333613959913717}
   - component: {fileID: 7572784341571229846}
   - component: {fileID: 7125109483184196210}
-  - component: {fileID: 4921987025868530664}
   - component: {fileID: 2322556019785091978}
   - component: {fileID: 3858982636885102585}
   - component: {fileID: 5380880068034480941}
-  - component: {fileID: 1794691754001912943}
   m_Layer: 7
   m_Name: Potato
   m_TagString: Enemy
@@ -192,28 +190,8 @@ MonoBehaviour:
   contactDamage: 1
   EnemyRB: {fileID: 2322556019785091978}
   EnemyCollider: {fileID: 8014028034058246961}
-  droppedItems: []
---- !u!114 &4921987025868530664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8601284075821542861}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aa517ca485134892bda5ceb374415b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PotatoEnemy
-  enemySpeed: 0
-  direction: 1
-  knockbackTime: 1
-  anim: {fileID: 0}
-  hurtName: 
-  player: {fileID: 0}
-  detectionRange: 9
-  arrivalThreshold: 0.8
-  hitbox: {fileID: 7125109483184196210}
+  droppedItems:
+  - {fileID: 7965002134808000255, guid: 7e5435de95121694db0c552d9536b9be, type: 3}
 --- !u!50 &2322556019785091978
 Rigidbody2D:
   serializedVersion: 5
@@ -285,7 +263,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 1, y: 0.25}
   m_EdgeRadius: 0
 --- !u!95 &5380880068034480941
 Animator:
@@ -309,20 +287,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1794691754001912943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8601284075821542861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24daf1e18a387df42b5c541fa79fa9ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  enemySpeed: 0
-  direction: 1
-  knockbackTime: 0
-  anim: {fileID: 0}
-  hurtName: 

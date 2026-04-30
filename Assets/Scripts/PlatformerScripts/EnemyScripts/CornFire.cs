@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Threading.Tasks;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class CornFire : TomatoLob, IKnockbackable
@@ -19,10 +20,14 @@ public class CornFire : TomatoLob, IKnockbackable
 
 
     public float knockbackRecoverySpeed = 12f;
+    private Coroutine SartupMovement;
+    private Coroutine AttackDelay;
     private Coroutine knockbackRecoveryRoutine;
+    private Animator animatorr;
 
     void Start()
     {
+        animatorr = GetComponent<Animator>();
         base.Start();
     }
 
@@ -44,7 +49,7 @@ public class CornFire : TomatoLob, IKnockbackable
 
             if(movementScript.enabled != true)
             {
-                StartCoroutine(StartupMovement());
+                SartupMovement = StartCoroutine(StartupMovement());
             }
             
 
@@ -73,7 +78,7 @@ public class CornFire : TomatoLob, IKnockbackable
 
             if (!waitingToAttack)
             {
-                StartCoroutine(DelayedAttack());
+                AttackDelay = StartCoroutine(DelayedAttack());
             }
         }
         else
@@ -90,29 +95,42 @@ public class CornFire : TomatoLob, IKnockbackable
         {
             waitingToAttack = true;
 
-            if (movementScript != null)
+            if(SartupMovement != null)
             {
-                Debug.Log("Shutting down movement");
+                //stop overlap
+                StopCoroutine(SartupMovement);
+                SartupMovement = null;
+                
+            }
+
+
+            if (movementScript != null && movementScript.enabled)
+            {
                 movementScript.enabled = false;
             }
 
+
+
+            animatorr.Play("CornAim", 0, 0f);
             yield return new WaitForSeconds(firstAttackDelay);
 
             waitingToAttack = false;
 
             if (currentTarget != null && attackCooldown <= 0 && !attacking)
             {
+                animatorr.Play("CornFire", 0, 0f);
                 StartCoroutine(Attack(currentTarget.position));
             }
         }
 
     private IEnumerator StartupMovement()
     {
-        Debug.Log("Starting movement");
+        
         yield return new WaitForSeconds(timeBeforeMoving);
-        if(movementScript != null)
+        if(movementScript != null && SartupMovement != null)
         {   
             rb.linearVelocity = Vector2.zero;
+            animatorr.Play("CornUnaim", 0, 0f);
             movementScript.enabled = true;
         }
         

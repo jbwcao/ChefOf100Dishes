@@ -9,7 +9,7 @@ public class PotatoEnemy : EnemyMovement
     public EnemyHitbox hitbox;
     private int normalDamage;
 
-    Animator anim;
+    Animator animator;
     bool isChasing = false;
 
     protected override void Start()
@@ -18,8 +18,8 @@ public class PotatoEnemy : EnemyMovement
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player")?.transform;
         
-        anim = GetComponent<Animator>();
-        anim.Play("PotatoBounce");
+        animator = GetComponent<Animator>();
+        animator.Play("PotatoBounce");
         normalDamage = hitbox.contactDamage;
         
     }
@@ -41,7 +41,7 @@ public class PotatoEnemy : EnemyMovement
             if (isChasing)
             {
                 isChasing = false;
-                anim.Play("PotatoBounce");
+                animator.Play("PotatoBounce");
                 hitbox.contactDamage = normalDamage;
             }
         }
@@ -50,7 +50,7 @@ public class PotatoEnemy : EnemyMovement
             if (isChasing)
             {
                 isChasing = false;
-                anim.Play("PotatoBounce");
+                animator.Play("PotatoBounce");
                 hitbox.contactDamage = normalDamage;
             }
         }
@@ -59,7 +59,7 @@ public class PotatoEnemy : EnemyMovement
             if (!isChasing)
             {
                 isChasing = true;
-                anim.Play("Chase");
+                animator.Play("Chase");
                 hitbox.contactDamage = 0;
 
             }

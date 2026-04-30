@@ -2648,6 +2648,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -9.95
       objectReference: {fileID: 0}
+    - target: {fileID: 3752629036770451767, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: 'heartImages.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1564688358316481467, guid: c6385fd08f60a3240af7086344b0432c, type: 3}
+    - target: {fileID: 3752629036770451767, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: 'heartImages.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5726080727020278575, guid: c6385fd08f60a3240af7086344b0432c, type: 3}
+    - target: {fileID: 3752629036770451767, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: 'heartImages.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8522625820373494394, guid: c6385fd08f60a3240af7086344b0432c, type: 3}
+    - target: {fileID: 3752629036770451767, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: 'heartImages.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7885684081779559860, guid: c6385fd08f60a3240af7086344b0432c, type: 3}
     - target: {fileID: 4202895069796571417, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
       propertyPath: m_LocalPosition.y
       value: 13.2
@@ -2692,6 +2708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6095085260405722314, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 6434974881618032656, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2728,6 +2748,10 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 540
       objectReference: {fileID: 0}
+    - target: {fileID: 9158367830338963203, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1564688358316481467, guid: c6385fd08f60a3240af7086344b0432c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

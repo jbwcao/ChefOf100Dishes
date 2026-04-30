@@ -21,9 +21,11 @@ public class FlyingChase : MonoBehaviour, IKnockbackable
     public LayerMask playerLayer;
     private Transform player;
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(SearchForPlayer());
     }
@@ -38,13 +40,16 @@ public class FlyingChase : MonoBehaviour, IKnockbackable
     {
         if (isChasing && player != null && !stopMoving)
         {
+            //flip sprite
+            sr.flipX = player.position.x > transform.position.x;
+
             float distance = Vector2.Distance(rb.position, player.position);
-        if (distance <= 0.01) return;
-            Vector2 nextPosition = Vector2.MoveTowards(
-            rb.position,
-            player.position,
-            agroSpeed * Time.fixedDeltaTime
-        );
+            if (distance <= 0.01) return;
+                Vector2 nextPosition = Vector2.MoveTowards(
+                rb.position,
+                player.position,
+                agroSpeed * Time.fixedDeltaTime
+            );
 
         rb.MovePosition(nextPosition);
         }
@@ -63,9 +68,9 @@ public class FlyingChase : MonoBehaviour, IKnockbackable
                 foreach (Collider2D hit in viewArea) {
                     if (hit.CompareTag("Player"))
                     {
-                        Debug.Log("Player Found!");
-                        //TODO add a alert animation + sfx
+
                         player = hit.transform;
+                        
                         isChasing = true;
                         //disable Flying idle
                         idleScript.enabled = false;

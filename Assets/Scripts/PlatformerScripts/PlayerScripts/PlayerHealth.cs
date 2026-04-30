@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public bool resetOnDeath = false;
     public string RPGSceneName = "RPG Scene";
 
-    public int maxHP = 3;
+    public int maxHP = 4;
     private int currentHP;
     public float iframeLength = 1.5f;
     private float ifameTimer;

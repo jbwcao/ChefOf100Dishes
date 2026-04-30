@@ -58,6 +58,9 @@ public class ItemPickup : MonoBehaviour, IInteractable
         Debug.Log(assignedItem.name + " interacted by " + interactor.name);
         GameManager.Instance.addInventory(assignedItem);
 
+        //sfx addition: 
+        AudioManager.Instance?.PlayItemPickup();
+
         Destroy(gameObject);
     }
 

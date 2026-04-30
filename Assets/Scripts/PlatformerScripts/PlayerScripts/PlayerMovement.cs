@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     private float coyoteTimer;
     private float jumpBufferTimer;
 
+    // sfx addition
+    private bool wasPlayingFootsteps = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -68,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
 
             bool onGround = hit.collider == null? false : hit.collider.CompareTag("Platform");
             float xInput = moveValue.x;
+
+            // sfx addition
+            HandleFootsteps(onGround, xInput);
 
             if (xInput == 0)
             {
@@ -108,6 +114,11 @@ public class PlayerMovement : MonoBehaviour
     //BUG: itemdrops from enemies pervent jumping when nearby
     private IEnumerator Jump()
     {
+
+        //sfx addition
+        AudioManager.Instance?.PlayJump();
+        AudioManager.Instance?.StopFootsteps();
+
         rb.linearVelocityY = jumpStrength;
 
         float startingY = transform.position.y;
@@ -133,6 +144,10 @@ public class PlayerMovement : MonoBehaviour
 
      public void applyKnockback(Vector2 hitFromPosition, float upwardForce = 2f, float knockbackForce = 7f)
     {
+        //sfx addition
+        AudioManager.Instance?.StopFootsteps();
+        wasPlayingFootsteps = false;
+
         perventControl = true;
 
         float xDir = transform.position.x > hitFromPosition.x ? 1f : -1f;
@@ -160,5 +175,26 @@ public class PlayerMovement : MonoBehaviour
         Vector3 pos = originalLocalPos;
         pos.x = facingRight ? Mathf.Abs(originalLocalPos.x) : -Mathf.Abs(originalLocalPos.x);
         slash.localPosition = pos;
+    }
+
+    private void HandleFootsteps(bool onGround, float xInput)
+    {
+        bool shouldPlayFootsteps = onGround && Mathf.Abs(xInput) > 0.1f && !perventControl;
+
+        if (shouldPlayFootsteps && !wasPlayingFootsteps)
+        {
+            AudioManager.Instance?.StartFootsteps();
+            wasPlayingFootsteps = true;
+        }
+        else if (!shouldPlayFootsteps && wasPlayingFootsteps)
+        {
+            AudioManager.Instance?.StopFootsteps();
+            wasPlayingFootsteps = false;
+        }
+    }
+
+    private void OnDisable()
+    {
+        AudioManager.Instance?.StopFootsteps();
     }
 }

@@ -10,7 +10,7 @@ public class Customer : MonoBehaviour
 {
     #region satisfaction_var
     public int customerIndex;
-    [SerializeField] private float maxSatisfied = 10;
+    [SerializeField] private float maxSatisfied = 12;
     private float currSatisfied;
     private Slider satisfactionSlider;
     #endregion
@@ -96,14 +96,28 @@ public class Customer : MonoBehaviour
         }
         if (item.dish.name == "poop")
         {
+            //sfx addition
+            AudioManager.Instance?.PlayCustomerYuck();
+            
             CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
             StartCoroutine(Shake(0.3f, 0.1f));
         }
 
         else if (item.ingredientList.Contains(wantedIngredient))
         {
+            //sfx addition
+            AudioManager.Instance?.PlayGiveFoodToCustomer();
+
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
+            if (satisfaction = 4)
+            {
+                satisfaction++;
+            } else if (satisfaction > 4)
+            {
+                satisfaction = satisfaction + 2;
+            }
+            
             currSatisfied += satisfaction;
             GameManager.Instance.customerSatisfaction[customerIndex] = currSatisfied;
 

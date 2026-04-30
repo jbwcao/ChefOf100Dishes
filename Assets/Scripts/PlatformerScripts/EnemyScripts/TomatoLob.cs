@@ -152,6 +152,10 @@ public class TomatoLob : MonoBehaviour
 
             //TODO - instead of instantation and destroying objects, pool items
             //create and launch the projectile
+            
+            //sfx addition
+            AudioManager.Instance?.PlayTomatoSpit();
+
             GameObject tomato = Instantiate(projectile, transform.position, transform.rotation);
             Rigidbody2D rb = tomato.GetComponent<Rigidbody2D>();
             rb.linearVelocity = new Vector2 (vx, vy);

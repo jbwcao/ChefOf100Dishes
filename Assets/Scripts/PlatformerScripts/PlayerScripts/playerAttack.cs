@@ -62,6 +62,9 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack(float attackDirectionOffset)
     {
+        //sfx addition
+        AudioManager.Instance?.PlayAttack();
+        
         //attack animation looks janky with moving
         attackCooldown = attackSpeed;
         Vector2 attackCenter = (Vector2) transform.position + new Vector2(attackDirectionOffset, 0);

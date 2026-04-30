@@ -39,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (ifameTimer <= 0)
         { 
+            //sfx addition
+            AudioManager.Instance?.PlayTakeDamage();
             
             currentHP -= damage;
             float healthLeft = (float)currentHP/maxHP;

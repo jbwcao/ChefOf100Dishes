@@ -92,9 +92,46 @@ public class AudioManager : MonoBehaviour
         ApplySceneAudio(scene.name);
     }
 
+    // private void ApplySceneAudio(string sceneName)
+    // {
+    //     StopFootsteps();
+
+    //     if (sceneName == "RPG Phase")
+    //     {
+    //         PlayMusic(rpgMusic);
+    //         StopAmbience();
+    //         return;
+    //     }
+
+    //     if (sceneName == "Hub Room")
+    //     {
+    //         StopMusic();
+    //         PlayAmbience(hubPortalHum);
+    //         return;
+    //     }
+
+    //     if (sceneName == "Platformer Phase" ||
+    //         sceneName == "Corn gunner" ||
+    //         sceneName == "DoubleLayered" ||
+    //         sceneName == "Lettuce 1" ||
+    //         sceneName == "Tomato 1")
+    //     {
+    //         PlayMusic(platformerMusic);
+    //         StopAmbience();
+    //         return;
+    //     }
+
+
     private void ApplySceneAudio(string sceneName)
     {
         StopFootsteps();
+
+        if (sceneName == "Tutorial")
+        {
+            StopMusic();
+            StopAmbience();
+            return;
+        }
 
         if (sceneName == "RPG Phase")
         {
@@ -110,22 +147,16 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        if (sceneName == "Platformer Phase" ||
-            sceneName == "Corn gunner" ||
-            sceneName == "DoubleLayered" ||
-            sceneName == "Lettuce 1" ||
-            sceneName == "Tomato 1")
-        {
-            PlayMusic(platformerMusic);
-            StopAmbience();
-            return;
-        }
+        // if (sceneName == "Platformer Phase" ||
+    //         sceneName == "Corn gunner" ||
+    //         sceneName == "DoubleLayered" ||
+    //         sceneName == "Lettuce 1" ||
+    //         sceneName == "Tomato 1")
+    //     {
 
-        // if (start scene)
-        // {
-        //     PlayMusic(rpgMusic);
-        //     StopAmbience();
-        // }
+        // everything else is a platformer level
+        StopAmbience();
+        PlayMusic(platformerMusic);
     }
 
     public void PlayMusic(AudioClip clip)

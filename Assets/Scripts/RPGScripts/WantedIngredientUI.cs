@@ -13,7 +13,7 @@ public class WantedIngredientUI : MonoBehaviour
         img.transform.localScale = new Vector3(1f, 1f, 1.0f);
         SpriteRenderer sr = img.AddComponent<SpriteRenderer>();
         sr.sprite = ingredient.sprite;
-        sr.sortingOrder = -1;
+        sr.sortingOrder = 0;
     }
 }
 

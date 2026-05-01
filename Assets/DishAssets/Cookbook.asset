@@ -13,38 +13,71 @@ MonoBehaviour:
   m_Name: Cookbook
   m_EditorClassIdentifier: Assembly-CSharp::Cookbook
   recipes:
-  - dish: {fileID: 11400000, guid: 19a4c44b4a7e9483886bdb5b785c3c82, type: 2}
-    ingredients: []
+  - dish: {fileID: 11400000, guid: 74a1085244a3e429eabb17aa95a07a19, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
+    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
   - dish: {fileID: 11400000, guid: a5a276bdaf4324b13bddae96b5c24e18, type: 2}
     ingredients:
+    - {fileID: 11400000, guid: a27646cb3da4a42448759975a81e6361, type: 2}
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
+  - dish: {fileID: 11400000, guid: eab4683db4a4346629bd7af203500168, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
+    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
+    - {fileID: 11400000, guid: a27646cb3da4a42448759975a81e6361, type: 2}
+    - {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
+  - dish: {fileID: 11400000, guid: 371a359b36c1f48aa980b19ce3329b76, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
+    - {fileID: 11400000, guid: 06b0c8fa03b8043a2bd98e9d346d23ef, type: 2}
+    - {fileID: 11400000, guid: a797d45ab367c4e948aa9f3c098afb3c, type: 2}
+  - dish: {fileID: 11400000, guid: 72a515283c84f413689c63dc8e21ea25, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 06b0c8fa03b8043a2bd98e9d346d23ef, type: 2}
+    - {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
+  - dish: {fileID: 11400000, guid: 5821396ad898e4e868c4b50f6973ded7, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 52c403770365d4413bda3ca262c35de3, type: 2}
+    - {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
+  - dish: {fileID: 11400000, guid: aa4fcbb1233c04a38808a7d6c37eb5a4, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 52c403770365d4413bda3ca262c35de3, type: 2}
     - {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
     - {fileID: 11400000, guid: a27646cb3da4a42448759975a81e6361, type: 2}
     - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
-  - dish: {fileID: 11400000, guid: 5821396ad898e4e868c4b50f6973ded7, type: 2}
+  - dish: {fileID: 11400000, guid: a1567d3b8e12a4624bd75cc67150f8aa, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: d29806f17b32c49f792d9a7a2fac5a7a, type: 2}
+    - {fileID: 11400000, guid: 52c403770365d4413bda3ca262c35de3, type: 2}
+  - dish: {fileID: 11400000, guid: 6c94d5217c98c457db08af8cc02fb617, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 9ac2d33e7b0144d27bd579a48b7cfe54, type: 2}
+    - {fileID: 11400000, guid: 52c403770365d4413bda3ca262c35de3, type: 2}
+  - dish: {fileID: 11400000, guid: 0d09a2da4ef1943408e4ad6143ca84f0, type: 2}
     ingredients:
     - {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
     - {fileID: 11400000, guid: 52c403770365d4413bda3ca262c35de3, type: 2}
-    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
-  - dish: {fileID: 11400000, guid: 74a1085244a3e429eabb17aa95a07a19, type: 2}
-    ingredients:
-    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
-    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
-  - dish: {fileID: 11400000, guid: c012f578682b848019f95d3a3c5c43e6, type: 2}
-    ingredients:
-    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
-    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
-    - {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
-    - {fileID: 11400000, guid: a797d45ab367c4e948aa9f3c098afb3c, type: 2}
-  - dish: {fileID: 11400000, guid: eab4683db4a4346629bd7af203500168, type: 2}
-    ingredients:
-    - {fileID: 11400000, guid: 1970b4946914a434097a62cd804f9668, type: 2}
     - {fileID: 11400000, guid: a27646cb3da4a42448759975a81e6361, type: 2}
-    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
-  - dish: {fileID: 11400000, guid: caaca690c20cf4b12917da4eb5bc23df, type: 2}
-    ingredients:
+    - {fileID: 11400000, guid: 2b1ba4cd314ac4484af194a6f83a4f97, type: 2}
     - {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
-    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
-  - dish: {fileID: 11400000, guid: 769f9df10e42e435f873088eb53aed95, type: 2}
+  - dish: {fileID: 11400000, guid: a0746bd525b4248f89ce1c039b71be20, type: 2}
     ingredients:
-    - {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
+    - {fileID: 11400000, guid: 06b0c8fa03b8043a2bd98e9d346d23ef, type: 2}
     - {fileID: 11400000, guid: a797d45ab367c4e948aa9f3c098afb3c, type: 2}
+  - dish: {fileID: 11400000, guid: e06212e4624924fdaa276d078d8d30f7, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 06b0c8fa03b8043a2bd98e9d346d23ef, type: 2}
+    - {fileID: 11400000, guid: d29806f17b32c49f792d9a7a2fac5a7a, type: 2}
+    - {fileID: 11400000, guid: 9ac2d33e7b0144d27bd579a48b7cfe54, type: 2}
+  - dish: {fileID: 11400000, guid: 28ac9070b3529410881264dc1c80b634, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: a797d45ab367c4e948aa9f3c098afb3c, type: 2}
+    - {fileID: 11400000, guid: 50d76e2043bb1464988d52806ad01fc4, type: 2}
+    - {fileID: 11400000, guid: b7eb47f3bc05244e28c81a53f6a46fd2, type: 2}
+  - dish: {fileID: 11400000, guid: 1452b41f7a6cf4ce68782446104a344b, type: 2}
+    ingredients:
+    - {fileID: 11400000, guid: 06b0c8fa03b8043a2bd98e9d346d23ef, type: 2}
+    - {fileID: 11400000, guid: 9ac2d33e7b0144d27bd579a48b7cfe54, type: 2}
+    - {fileID: 11400000, guid: a27646cb3da4a42448759975a81e6361, type: 2}

@@ -60,7 +60,7 @@ public class Customer : MonoBehaviour
         //slider iniatilize
         satisfactionSlider = GetComponentInChildren<Slider>();
         satisfactionSlider.value = currSatisfied / maxSatisfied;
-        CreateTextDirectly("I want ...", gameObject.transform, textOffset);
+        //CreateTextDirectly("I want ...", gameObject.transform, textOffset);
 
         
     }
@@ -84,7 +84,7 @@ public class Customer : MonoBehaviour
         ui.transform.SetParent(transform);
         ui.GetComponent<WantedIngredientUI>().SetIngredient(wantedIngredient);
         currentIngredientUI = ui;
-        CreateTextDirectly("I want ...", gameObject.transform, textOffset);
+        //CreateTextDirectly("I want ...", gameObject.transform, textOffset);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -99,7 +99,7 @@ public class Customer : MonoBehaviour
             //sfx addition
             AudioManager.Instance?.PlayCustomerYuck();
             
-            CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
+            //CreateTextDirectly("Yuck...", gameObject.transform, textOffset);
             StartCoroutine(Shake(0.3f, 0.1f));
         }
 

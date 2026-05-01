@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Potato and Chicken Gravy
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: potato and chicken gravy
-  sprite: {fileID: 0}
+  sprite: {fileID: 3500527645631485855, guid: 6704b34073575c949a9e73c9f314a598, type: 3}

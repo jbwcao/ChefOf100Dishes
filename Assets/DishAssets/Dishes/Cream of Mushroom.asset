@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Cream of Mushroom
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: cream of mushroom
-  sprite: {fileID: 0}
+  sprite: {fileID: 1926828398, guid: 6704b34073575c949a9e73c9f314a598, type: 3}

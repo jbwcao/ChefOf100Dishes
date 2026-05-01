@@ -70,7 +70,7 @@ public class InventoryManager : MonoBehaviour
 
                 // Sets all of the instance variables values of the new gameobject
                 ingredientObj.name = items[i].name;
-                ingredientObj.transform.localScale = new Vector3(1f, 1f, 1.0f);
+                ingredientObj.transform.localScale = new Vector3(.8f, .8f, 1.0f);
 
                 
                 ingredientItem.inventoryManager = this;

@@ -13,9 +13,11 @@ public class DoorWithSignScript : MonoBehaviour
     {
         int randomIndex = Random.Range(0, sceneNamesPool.Count);
         sceneName = sceneNamesPool[randomIndex];
-        ingredient = ingredientSprites[randomIndex];
-
-        signIngredient.GetComponent<SpriteRenderer>().sprite = ingredient;
+        if (ingredientSprites.Count > 0)
+        {
+            ingredient = ingredientSprites[randomIndex];
+            signIngredient.GetComponent<SpriteRenderer>().sprite = ingredient;
+        }
     }
 
 }

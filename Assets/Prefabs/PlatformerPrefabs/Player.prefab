@@ -235,7 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   resetOnDeath: 0
   RPGSceneName: RPG Phase
-  maxHP: 3
+  maxHP: 4
   iframeLength: 1.5
   damageBlinkTime: 0.2
   sr: {fileID: 9041975644031640519}

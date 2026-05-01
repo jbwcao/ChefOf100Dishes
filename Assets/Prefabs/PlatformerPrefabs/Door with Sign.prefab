@@ -247,9 +247,13 @@ MonoBehaviour:
   sceneNamesPool:
   - Tomato 1
   - Lettuce 1
+  - DoubleLayered
+  - Corn gunner Barrage
   ingredientSprites:
   - {fileID: -4876367332212131202, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
   - {fileID: 8929029408404404377, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
+  - {fileID: -3133512689994751562, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}
+  - {fileID: 8016956765513793903, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}
   signIngredient: {fileID: 4629496548360891736}
   sceneName: 
   ingredient: {fileID: 0}

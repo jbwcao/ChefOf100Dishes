@@ -58,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,9 +116,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 52
-        y: 93
+        y: 13
         width: 23
-        height: 21
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,94 +129,6 @@ TextureImporter:
       bones: []
       spriteID: a416ddd640f0ca950800000000000000
       internalID: 6461556077067329866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dropped2.0_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 73
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff8f0e69beabd8990800000000000000
-      internalID: -7382038693178967809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dropped2.0_2
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 53
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13605380d58a0fa90800000000000000
-      internalID: -7282135479934974415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dropped2.0_3
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 33
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a84fc597f8610420800000000000000
-      internalID: 2594470272921716900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dropped2.0_4
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 13
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f91351724f733b0d0800000000000000
-      internalID: -3408318971222085217
       vertices: []
       indices: 
       edges: []

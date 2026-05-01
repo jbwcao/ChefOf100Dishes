@@ -435,7 +435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4057750552865634481, guid: 1e77688ed138842eeabc9d1b1a848942, type: 3}
+  m_Sprite: {fileID: 1564688358316481467, guid: c6385fd08f60a3240af7086344b0432c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -458,10 +458,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthUI
   heartImages:
-  - {fileID: -4477349825573479581, guid: 2f632d7fa174a4cc9bb01194388e826a, type: 3}
-  - {fileID: -5597995755193609183, guid: 41ba6c3502dd24516b5c37a6d9c431f9, type: 3}
-  - {fileID: 6718556743587775568, guid: fa708cda3252e4931a8bc9ce4e0ff9c3, type: 3}
-  - {fileID: 0}
+  - {fileID: 151731911220091413, guid: 6370ebcc5c79e4d48a13e30705037a26, type: 3}
+  - {fileID: -4015748935678841230, guid: 6370ebcc5c79e4d48a13e30705037a26, type: 3}
+  - {fileID: -5237434237350438744, guid: 6370ebcc5c79e4d48a13e30705037a26, type: 3}
+  - {fileID: -669708138199646340, guid: 6370ebcc5c79e4d48a13e30705037a26, type: 3}
 --- !u!1 &3163575622572133298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   resetOnDeath: 0
   RPGSceneName: RPG Phase
-  maxHP: 3
+  maxHP: 4
   iframeLength: 1.5
   damageBlinkTime: 0.2
   sr: {fileID: 1836668224058424560}

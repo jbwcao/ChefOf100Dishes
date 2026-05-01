@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -405399633674095294, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
+  m_Sprite: {fileID: -6159622742257257342, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,21 +123,21 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0003284216, y: 0.003048107}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.875, y: 3.0625}
+    oldSize: {x: 1.75, y: 2.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.29218602, y: 0.485889}
+  m_Size: {x: 1.75, y: 2.9375}
   m_EdgeRadius: 0
 --- !u!114 &1178469795011746750
 MonoBehaviour:
@@ -152,5 +152,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   sceneNamesPool:
-  - CabbagePatch
-  sceneName: 
+  - RPG Phase
+  sceneName: RPG Phase

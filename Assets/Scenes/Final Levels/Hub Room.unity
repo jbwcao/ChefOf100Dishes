@@ -1262,6 +1262,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1258517248494044586, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: maxHP
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258517248494044586, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: heartUI
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1836668224058424560, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
       propertyPath: m_SortingLayer
       value: 0

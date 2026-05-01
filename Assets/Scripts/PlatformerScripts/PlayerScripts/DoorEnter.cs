@@ -25,13 +25,14 @@ public class DoorEnter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Door") ) 
+        if (collision.CompareTag("Door")) 
         {
             // spaghetti way of just checking one of two scripts 
             enterFlag = true;
             sceneName = collision.gameObject.GetComponent<DoorWithSignScript>().sceneName;
-            if (sceneName == null)
+            if (sceneName == "")
             {
+                Debug.Log("got here");
                 sceneName = collision.gameObject.GetComponent<DoorScript>().sceneName;
             }
         }

@@ -3117,10 +3117,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1178469795011746750, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2260340709006721378, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1100441742}
   m_SourcePrefab: {fileID: 100100000, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
 --- !u!1001 &1066105165
 PrefabInstance:
@@ -3179,6 +3183,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 070d38cadc25d6742ad73e148461b4c2, type: 3}
+--- !u!1 &1100441737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2260340709006721378, guid: beddcf7dd515ea943b6d16e3ca58a919, type: 3}
+  m_PrefabInstance: {fileID: 982116748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1100441742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100441737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db5c48fd6834854a9deb27ef866a3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorWithSignScript
+  sceneNamesPool:
+  - RPG Phase
+  ingredientSprites: []
+  signIngredient: {fileID: 0}
+  sceneName: 
+  ingredient: {fileID: 0}
 --- !u!1 &1392422219
 GameObject:
   m_ObjectHideFlags: 0

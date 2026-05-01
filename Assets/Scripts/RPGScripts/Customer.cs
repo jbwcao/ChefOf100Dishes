@@ -104,7 +104,7 @@ public class Customer : MonoBehaviour
         {
             //satisfaction = complexity
             float satisfaction = item.ingredientList.Count;
-            if (satisfaction = 4)
+            if (satisfaction == 4)
             {
                 satisfaction++;
             } else if (satisfaction > 4)

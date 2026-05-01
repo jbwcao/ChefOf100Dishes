@@ -10,7 +10,7 @@ public class WantedIngredientUI : MonoBehaviour
         GameObject img = new GameObject(ingredient.name);
         img.transform.SetParent(transform);
         img.transform.localPosition = new Vector3(1.1f, 0, 0);
-        img.transform.localScale = new Vector3(5f, 5f, 1.0f);
+        img.transform.localScale = new Vector3(1f, 1f, 1.0f);
         SpriteRenderer sr = img.AddComponent<SpriteRenderer>();
         sr.sprite = ingredient.sprite;
         sr.sortingOrder = -1;

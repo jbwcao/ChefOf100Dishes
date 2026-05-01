@@ -9,6 +9,10 @@ public class TutorialRPG : MonoBehaviour
     [SerializeField] private Vector2 inventorytextoffset;
     [SerializeField] private Vector2 customertextoffset;
 
+
+
+
+
     [SerializeField]private GameObject inventory;
     [SerializeField]private GameObject blackbox;
     [SerializeField]private GameObject customer;
@@ -61,6 +65,12 @@ public class TutorialRPG : MonoBehaviour
         }
         if (i == 6)
         {
+
+            CreateTextDirectly("The red button is the cook button, press to cook :D", gameObject.transform, bbtextoffset);
+
+        }
+        if (i == 7)
+        {
             blackbox.GetComponent<SpriteRenderer>().sortingOrder=0;
 
             
@@ -69,14 +79,21 @@ public class TutorialRPG : MonoBehaviour
 
 
         }
-        if (i ==7)
+         if (i ==8)
         {
-            customer.GetComponent<SpriteRenderer>().sortingOrder = -2;
+
+            CreateTextDirectly("Once the yellow bar depletes, it's ggs :(", gameObject.transform, customertextoffset);
+
+        }    
+    
+        if (i ==9)
+        {
+            customer.GetComponent<SpriteRenderer>().sortingOrder = -5;
             CreateTextDirectly("Try not to burn the place down...", gameObject.transform, customertextoffset);
 
             
         }
-        if (i == 8)
+        if (i == 10)
         {
             CreateTextDirectly(" ", gameObject.transform, customertextoffset);
 

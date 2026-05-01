@@ -203,8 +203,7 @@ MonoBehaviour:
   contactDamage: 1
   EnemyRB: {fileID: 8833242981162086603}
   EnemyCollider: {fileID: 2339981705928044370}
-  droppedItems:
-  - {fileID: 2260429630114700829, guid: a2336900f56c7424193244d89cd75281, type: 3}
+  droppedItems: []
 --- !u!95 &4898065601096417297
 Animator:
   serializedVersion: 7

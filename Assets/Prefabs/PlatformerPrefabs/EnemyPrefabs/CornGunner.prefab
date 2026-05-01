@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 3509600440030846846}
   - component: {fileID: 820885365302123827}
   - component: {fileID: 7808887321245770623}
+  - component: {fileID: 5883554220109216145}
   m_Layer: 7
   m_Name: CornGunner
   m_TagString: Enemy
@@ -311,3 +312,25 @@ MonoBehaviour:
   movementScript: {fileID: 820885365302123827}
   firstAttackDelay: 0.75
   knockbackRecoverySpeed: 12
+--- !u!95 &5883554220109216145
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4524128586524270916}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f16ffa44e855aa948be585cd0d892972, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

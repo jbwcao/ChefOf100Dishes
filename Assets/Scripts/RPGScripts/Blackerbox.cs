@@ -100,7 +100,10 @@ public class Blackerbox : MonoBehaviour {
         GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
         MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
 
+
         ingredientObj.name = recipe.dish.name;
+        ingredientObj.transform.localScale = new Vector3(1f, 1f, 1.0f);
+
         ingredientItem.sprite = recipe.dish.sprite;
         ingredientItem.name = recipe.dish.name;
         ingredientItem.dish = recipe.dish;

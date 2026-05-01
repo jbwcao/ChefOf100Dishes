@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1749067820565535143}
   - component: {fileID: 5917165758816365068}
   - component: {fileID: 925252447831471406}
+  - component: {fileID: 1502437152670210176}
   m_Layer: 7
   m_Name: BurgBug
   m_TagString: Enemy
@@ -224,6 +225,28 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 131072
+--- !u!95 &1502437152670210176
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2818050014729793352}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2ab6cacaf1d9eb449aad8677575ebc5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4997164251714790916
 GameObject:
   m_ObjectHideFlags: 0

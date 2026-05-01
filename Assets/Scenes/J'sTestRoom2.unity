@@ -259,17 +259,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 948961333}
     m_Modifications:
-    - target: {fileID: 3509600440030846846, guid: e2b6d83b1fcbcdd439682aacc603b55e, type: 3}
-      propertyPath: 'droppedItems.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1497514930399812902, guid: f05b53bd73d9c344c9e2669fb0060d43, type: 3}
     - target: {fileID: 4524128586524270916, guid: e2b6d83b1fcbcdd439682aacc603b55e, type: 3}
       propertyPath: m_Name
       value: CornGunner
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808887321245770623, guid: e2b6d83b1fcbcdd439682aacc603b55e, type: 3}
-      propertyPath: projectileAmount
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8478031951327708451, guid: e2b6d83b1fcbcdd439682aacc603b55e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -316,6 +308,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2b6d83b1fcbcdd439682aacc603b55e, type: 3}
+--- !u!1001 &377549223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.786172
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.179211
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271333613959913717, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601284075821542861, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+      propertyPath: m_Name
+      value: Potato (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
 --- !u!1001 &395131732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1264,9 +1313,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potato
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1794691754001912943, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
-    - {fileID: 4921987025868530664, guid: 986e53318e837428a9fd9ef3522a216e, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1795,3 +1842,4 @@ SceneRoots:
   - {fileID: 1277468614}
   - {fileID: 1828890181}
   - {fileID: 216842293}
+  - {fileID: 377549223}

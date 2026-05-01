@@ -111,12 +111,10 @@ public class AudioManager : MonoBehaviour
         }
 
         if (sceneName == "Platformer Phase" ||
-            sceneName == "BreadBurg" ||
-            sceneName == "CabbagePatch" ||
-            sceneName == "MushCaves" ||
-            sceneName == "DoubleLayered(Hard)" ||
-            sceneName.Contains("Platformer") ||
-            sceneName.Contains("Tutorial"))
+            sceneName == "Corn gunner" ||
+            sceneName == "DoubleLayered" ||
+            sceneName == "Lettuce 1" ||
+            sceneName == "Tomato 1")
         {
             PlayMusic(platformerMusic);
             StopAmbience();

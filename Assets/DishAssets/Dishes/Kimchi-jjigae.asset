@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Kimchi-jjigae
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: kimchi-jjigae
-  sprite: {fileID: 0}
+  sprite: {fileID: -1981690355, guid: 6704b34073575c949a9e73c9f314a598, type: 3}

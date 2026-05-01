@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Corn Chowder
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: corn chowder
-  sprite: {fileID: 0}
+  sprite: {fileID: 1172877427, guid: 6704b34073575c949a9e73c9f314a598, type: 3}

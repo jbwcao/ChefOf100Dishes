@@ -27,8 +27,13 @@ public class DoorEnter : MonoBehaviour
     {
         if (collision.CompareTag("Door") ) 
         {
+            // spaghetti way of just checking one of two scripts 
             enterFlag = true;
-            sceneName = collision.gameObject.GetComponent<DoorScript>().sceneName;
+            sceneName = collision.gameObject.GetComponent<DoorWithSignScript>().sceneName;
+            if (sceneName == null)
+            {
+                sceneName = collision.gameObject.GetComponent<DoorScript>().sceneName;
+            }
         }
     }
 

@@ -43,9 +43,7 @@ public class PlayerHealth : MonoBehaviour
             AudioManager.Instance?.PlayTakeDamage();
             
             currentHP -= damage;
-            float healthLeft = (float)currentHP/maxHP;
-            Debug.Log("Health % left: " + healthLeft);
-            heartUI.spriteUpdate(healthLeft);
+            heartUI.spriteUpdate(currentHP);
 
             if (currentHP <= 0)
             {

@@ -4,6 +4,7 @@ using System;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Blackerbox : MonoBehaviour {
     public Cookbook cookbook;
@@ -11,6 +12,7 @@ public class Blackerbox : MonoBehaviour {
     public Transform dishSpawn;
     public GameObject masterPrefab;
     public List<GameObject> spawnPoints = new List<GameObject>();
+    [SerializeField] private Sprite[] poopImages;
     List<GameObject> potDisplay = new List<GameObject>();
     private Animator animator;
     
@@ -83,6 +85,11 @@ public class Blackerbox : MonoBehaviour {
 
         if (!matched)
         {
+            //array of items 
+            //Sprite selected_poop = poopImages[UnityEngine.Random.Range(0, poopImages.Length)];
+            //set image to item from array
+            //SpriteRenderer poopRenderer = poop_recipe.dish.GetComponent<SpriteRenderer>();
+            //poopRenderer.sprite = selected_poop;
             spawnDish(poop_recipe);
         }
         

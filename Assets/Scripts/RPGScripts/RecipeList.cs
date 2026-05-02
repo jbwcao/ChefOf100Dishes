@@ -19,7 +19,7 @@ public class RecipeList : MonoBehaviour
         foreach (Cookbook.Recipe recipe in cookbook.recipes)
         {
             GameObject entry = Instantiate(recipeEntryPrefab, grid);
-            bool discovered = GameManager.Instance.discoveredDishes.Contains(recipe);
+            bool discovered = GameManager.Instance.discoveredDishes.Contains(recipe.dish.name);
             entry.GetComponent<RecipeEntryUI>().Setup(recipe, discovered);
         }
     }

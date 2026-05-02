@@ -989,12 +989,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   airAcceleration: 100
   groundAcceleration: 100
-  maxHorizontalSpeed: 10
-  jumpStrength: 10
-  maxJumpHeight: 4
+  maxHorizontalSpeed: 12
+  jumpStrength: 17
+  maxJumpHeight: 4.5
   jumpBuffer: 0.1
   coyoteTime: 0.1
-  gravity: 4
+  gravity: 7
   slashSr: {fileID: 945104242129819022}
   groundlayer:
     serializedVersion: 2

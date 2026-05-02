@@ -77,7 +77,8 @@ public class Blackerbox : MonoBehaviour {
                 if (flag) {
                     spawnDish(recipe);
                     matched = true;
-                    GameManager.Instance.discoveredDishes.Add(recipe);
+                    GameManager.Instance.discoveredDishes.Add(recipe.dish.name);
+                    
                 }
             }
         }
@@ -107,6 +108,10 @@ public class Blackerbox : MonoBehaviour {
         GameObject ingredientObj = Instantiate(masterPrefab, dishSpawn.position, dishSpawn.rotation);
         MasterPrefab ingredientItem = ingredientObj.GetComponent<MasterPrefab>();
 
+        if (recipe.dish.name.ToLower() == "salad")
+        {
+            ingredientObj.GetComponent<CircleCollider2D>().radius *= 3;
+        }
 
         ingredientObj.name = recipe.dish.name;
         ingredientObj.transform.localScale = new Vector3(.6f, .6f, 1.0f);

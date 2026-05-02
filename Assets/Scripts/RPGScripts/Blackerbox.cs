@@ -102,7 +102,7 @@ public class Blackerbox : MonoBehaviour {
 
 
         ingredientObj.name = recipe.dish.name;
-        ingredientObj.transform.localScale = new Vector3(1f, 1f, 1.0f);
+        ingredientObj.transform.localScale = new Vector3(.6f, .6f, 1.0f);
 
         ingredientItem.sprite = recipe.dish.sprite;
         ingredientItem.name = recipe.dish.name;

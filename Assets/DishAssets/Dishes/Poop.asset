@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Poop
   m_EditorClassIdentifier: Assembly-CSharp::Dish
   name: poop
-  sprite: {fileID: 4619654489617785536, guid: 0c799d782eafa48ba994a5af57d49f28, type: 3}
+  sprite: {fileID: 6698888957473279548, guid: 42b3d4d6c0c094a97ad7a95fda1bbdb3, type: 3}

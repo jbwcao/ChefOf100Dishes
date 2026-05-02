@@ -18,6 +18,7 @@ public class HealthUI : MonoBehaviour
 
     public void spriteUpdate(int healthLeft)
     {   
-        displayHeart.sprite = heartImages[healthLeft];
+        // spaghetti
+        displayHeart.sprite = heartImages[healthLeft % 4];
     }
 }

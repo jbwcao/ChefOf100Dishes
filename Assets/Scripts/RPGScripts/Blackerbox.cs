@@ -75,7 +75,8 @@ public class Blackerbox : MonoBehaviour {
                 if (flag) {
                     spawnDish(recipe);
                     matched = true;
-                    GameManager.Instance.discoveredDishes.Add(recipe);
+                    GameManager.Instance.discoveredDishes.Add(recipe.dish.name);
+                    
                 }
             }
         }

@@ -47,6 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Levels/CheeseCorridor.unity
     guid: ecb99a443e4aaa046b8b89b6bf412bef
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/Chicken.unity
+    guid: cfb6e73565238a848980011fc9bea864
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/Potato.unity
+    guid: f89599a0cb450a94bacf53cff09987ff
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

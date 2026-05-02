@@ -4642,6 +4642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformerCore
       objectReference: {fileID: 0}
+    - target: {fileID: 8071845149476467507, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: startTime
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 8188281497278017016, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
       propertyPath: m_UiScaleMode
       value: 1

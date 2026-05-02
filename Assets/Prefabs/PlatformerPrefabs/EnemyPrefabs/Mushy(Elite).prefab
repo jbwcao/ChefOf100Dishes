@@ -166,7 +166,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8065142928809733020, guid: c3893bee277d1a8448c1ecd77038da89, type: 3}
-  m_Color: {r: 1, g: 0.50377357, b: 0.50377357, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -277,8 +277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6307e28da393ac1498a3af91c8c41ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  maxHealth: 18
-  contactDamage: 2
+  maxHealth: 9
+  contactDamage: 1
   EnemyRB: {fileID: 7221800895101310491}
   EnemyCollider: {fileID: 6570622248916149310}
   droppedItems:

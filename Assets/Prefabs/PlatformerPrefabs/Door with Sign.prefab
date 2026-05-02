@@ -252,7 +252,7 @@ MonoBehaviour:
   - BreadBurg
   - LettuceCaves
   - MushCave
-  - Johnnathan's Slime Cave
+  - JonathansSlimeCage
   - CheeseCorridor
   ingredientSprites:
   - {fileID: -4876367332212131202, guid: d11e92e32bcf1f54da073f6175ad532c, type: 3}

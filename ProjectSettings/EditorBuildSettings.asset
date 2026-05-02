@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Levels/BreadBurg.unity
     guid: a51136fe44b43a5408dc10cd2467df9c
   - enabled: 1
-    path: Assets/Scenes/Final Levels/Johnnathan'sSlimeCage.unity
+    path: Assets/Scenes/Final Levels/JonathansSlimeCage.unity
     guid: c24b6431c63d019419c5337bffabbdb2
   - enabled: 1
     path: Assets/Scenes/Final Levels/LettuceCaves.unity

@@ -2126,6 +2126,18 @@ PrefabInstance:
       propertyPath: movementLimited
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4649414145517412347, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
+      propertyPath: maxHealth
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649414145517412347, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
+      propertyPath: droppedItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649414145517412347, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
+      propertyPath: 'droppedItems.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2260429630114700829, guid: a2336900f56c7424193244d89cd75281, type: 3}
     - target: {fileID: 4652781438847098256, guid: 60d5dafa10995ed4e9c6e8ac17f371ee, type: 3}
       propertyPath: m_Name
       value: Mushy

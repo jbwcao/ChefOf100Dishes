@@ -32,6 +32,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Levels/DoubleLayered.unity
     guid: 8c0efac40edb1654ba2af7510f6b1e1d
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/BreadBurg.unity
+    guid: a51136fe44b43a5408dc10cd2467df9c
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/Johnnathan'sSlimeCage.unity
+    guid: c24b6431c63d019419c5337bffabbdb2
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/LettuceCaves.unity
+    guid: ce95496661c8fd549b1f64ac63f43698
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/MushCave.unity
+    guid: 0a3856e453cf1174fa8082f76177676d
+  - enabled: 1
+    path: Assets/Scenes/Final Levels/CheeseCorridor.unity
+    guid: ecb99a443e4aaa046b8b89b6bf412bef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

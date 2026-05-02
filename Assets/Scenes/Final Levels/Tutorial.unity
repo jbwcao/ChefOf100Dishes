@@ -3294,7 +3294,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5760155, y: 32.510136}
   m_EdgeRadius: 0
---- !u!1001 &1460985810
+--- !u!1001 &1462905883
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3302,55 +3302,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.87
+      value: 26.959204
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.99
+      value: -8.306247
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2125817651462050814, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5782445645692040089, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2260429630114700829, guid: a2336900f56c7424193244d89cd75281, type: 3}
+    - target: {fileID: 5972226706887278202, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
       propertyPath: m_Name
-      value: J'sDrop
+      value: TomatoDrop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a2336900f56c7424193244d89cd75281, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: a2ec35820073e4f44b3a4b4b52af91a4, type: 3}
 --- !u!1001 &1574650288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3682,6 +3682,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 665824699088099746, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
+      propertyPath: maxHorizontalSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1258517248494044586, guid: efc7991c8954b9d4c9886a2920cce400, type: 3}
       propertyPath: maxHP
       value: 4
@@ -3842,9 +3846,9 @@ SceneRoots:
   - {fileID: 475495905}
   - {fileID: 982116748}
   - {fileID: 401671389}
-  - {fileID: 1460985810}
   - {fileID: 1066105165}
   - {fileID: 523357677}
   - {fileID: 568179302}
   - {fileID: 252931305}
   - {fileID: 1615208632}
+  - {fileID: 1462905883}
